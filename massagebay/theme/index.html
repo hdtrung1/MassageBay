@@ -4,15 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Massage Bay</title>
+    <link rel="stylesheet"
+        href="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\MassageBay\massagebay\theme\frontend\css\header.css" />
+    <link rel="stylesheet"
+        href="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\MassageBay\massagebay\theme\frontend\css\body.css">
+    <script src="https://kit.fontawesome.com/1c8367bfe7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- Header -->
-    <div>
-        <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\logo.png"
-            alt="logo-image">
-
+    <div class="header">
+        <div class="background-image overlay">
+            <img class="logo-image"
+                src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\MassageBay\massagebay\theme\frontend\images\home\logo-background.png"
+                alt="logo-background">
+        </div>
+        <div class="logo-container">
+            <img class="logo-image"
+                src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\logo.png"
+                alt="logo-image">
+        </div>
     </div>
     <!-- Menu -->
     <nav>
@@ -21,7 +33,14 @@
             <li class="has-submenu">
                 <a href="#">DIỄN ĐÀN</a>
                 <ul class="submenu">
-                    <li><a href="#">Mục con 1</a></li>
+                    <li class="has-submenu">
+                        <a href="#">Mục con 1</a>
+                        <ul class="submenu">
+                            <li><a href="#">Mục con 1.1</a></li>
+                            <li><a href="#">Mục con 1.2</a></li>
+                            <!-- Các mục con khác nếu cần -->
+                        </ul>
+                    </li>
                     <li><a href="#">Mục con 2</a></li>
                     <!-- Các mục con khác nếu cần -->
                 </ul>
@@ -41,137 +60,360 @@
 
 
     <div class="container">
+        <!--Spa uy tín-->
         <div class="row">
             <div class="col-lg-9">
                 <div class="row">
                     <div class="col-12 col-sm-9 col-lg-4 mb-3">
                         <div class="massage-item">
-                            <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-1.png" alt="item-1">
+                            <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-1.png"
+                                alt="item-1">
                             <div class="massage-item-text">
                                 <div>
                                     <p><b>SPA LÂM ANH</b></p>
                                     <p>Bình Dương</p>
                                 </div>
-                                <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-rating.png" alt="">
-                                <p>Nổi bật trên không gian làng quê yên tĩnh, TRÀNG AN LUXURY là một trong những khách sạn mới nhất của</p>
+                                <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-rating.png"
+                                    alt="">
+                                <p>Nổi bật trên không gian làng quê yên tĩnh, TRÀNG AN LUXURY là một trong những khách
+                                    sạn mới nhất của</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-9 col-lg-4 mb-3">
-                        <div class="massage-item"></div>
-                            <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-2.png" alt="item-2">
-                            <div class="massage-item-text">
-                                <div>
-                                    <p><b>SPA LÂM ANH</b></p>
-                                    <p>Bình Dương</p>
-                                </div>
-                                <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-rating.png" alt="">
-                                <p>Nổi bật trên không gian làng quê yên tĩnh, TRÀNG AN LUXURY là một trong những khách sạn mới nhất của</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-9 col-lg-4 mb-3">
-                        <div class="massage-item"></div>
-                            <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-3.png" alt="item-3">
-                            <div class="massage-item-text">
-                                <div>
-                                    <p><b>SPA LÂM ANH</b></p>
-                                    <p>Bình Dương</p>
-                                </div>
-                                <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-rating.png" alt="">
-                                <p>Nổi bật trên không gian làng quê yên tĩnh, TRÀNG AN LUXURY là một trong những khách sạn mới nhất của</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-9 col-lg-4 mb-3">
-                        <div class="massage-item"></div>    
-                            <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-4.png" alt="item-4">
-                            <div class="massage-item-text">
-                                <div>
-                                    <p><b>SPA LÂM ANH</b></p>
-                                    <p>Bình Dương</p>
-                                </div>
-                                <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-rating.png" alt="">
-                                <p>Nổi bật trên không gian làng quê yên tĩnh, TRÀNG AN LUXURY là một trong những khách sạn mới nhất của</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-9 col-lg-4 mb-3">
-                        <div class="massage-item"></div>
-                            <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-5.png" alt="item-5">
-                            <div class="massage-item-text">
-                                <div>
-                                    <p><b>SPA LÂM ANH</b></p>
-                                    <p>Bình Dương</p>
-                                </div>
-                                <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-rating.png" alt="">
-                                <p>Nổi bật trên không gian làng quê yên tĩnh, TRÀNG AN LUXURY là một trong những khách sạn mới nhất của</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-9 col-lg-4 mb-3">
-                        <div class="massage-item"></div>
-                            <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-6.png" alt="item-6">
-                            <div class="massage-item-text">
-                                <div>
-                                    <p><b>SPA LÂM ANH</b></p>
-                                    <p>Bình Dương</p>
-                                </div>
-                                <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-rating.png" alt="">
-                                <p>Nổi bật trên không gian làng quê yên tĩnh, TRÀNG AN LUXURY là một trong những khách sạn mới nhất của</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-9 col-lg-4 mb-3">
-                        <div class="massage-item"></div>
-                            <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-7.png" alt="item-7">
-                            <div class="massage-item-text">
-                                <div>
-                                    <p><b>SPA LÂM ANH</b></p>
-                                    <p>Bình Dương</p>
-                                </div>
-                                <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-rating.png" alt="">
-                                <p>Nổi bật trên không gian làng quê yên tĩnh, TRÀNG AN LUXURY là một trong những khách sạn mới nhất của</p>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="col-12 col-sm-9 col-lg-4 mb-3">
                         <div class="massage-item">
-                            <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-8.png" alt="item-8">
+                            <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-2.png"
+                                alt="item-2">
                             <div class="massage-item-text">
                                 <div>
                                     <p><b>SPA LÂM ANH</b></p>
                                     <p>Bình Dương</p>
                                 </div>
-                                <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-rating.png" alt="">
-                                <p>Nổi bật trên không gian làng quê yên tĩnh, TRÀNG AN LUXURY là một trong những khách sạn mới nhất của</p>
+                                <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-rating.png"
+                                    alt="">
+                                <p>Nổi bật trên không gian làng quê yên tĩnh, TRÀNG AN LUXURY là một trong những khách
+                                    sạn mới nhất của</p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-12 col-sm-9 col-lg-4 mb-3">
                         <div class="massage-item">
-                            <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-9.png" alt="item-9">
+                            <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-3.png"
+                                alt="item-3">
                             <div class="massage-item-text">
                                 <div>
                                     <p><b>SPA LÂM ANH</b></p>
                                     <p>Bình Dương</p>
                                 </div>
-                                <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-rating.png" alt="">
-                                <p>Nổi bật trên không gian làng quê yên tĩnh, TRÀNG AN LUXURY là một trong những khách sạn mới nhất của</p>
+                                <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-rating.png"
+                                    alt="">
+                                <p>Nổi bật trên không gian làng quê yên tĩnh, TRÀNG AN LUXURY là một trong những khách
+                                    sạn mới nhất của</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-9 col-lg-4 mb-3">
+                        <div class="massage-item">
+                            <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-4.png"
+                                alt="item-4">
+                            <div class="massage-item-text">
+                                <div>
+                                    <p><b>SPA LÂM ANH</b></p>
+                                    <p>Bình Dương</p>
+                                </div>
+                                <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-rating.png"
+                                    alt="">
+                                <p>Nổi bật trên không gian làng quê yên tĩnh, TRÀNG AN LUXURY là một trong những khách
+                                    sạn mới nhất của</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-9 col-lg-4 mb-3">
+                        <div class="massage-item">
+                            <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-5.png"
+                                alt="item-5">
+                            <div class="massage-item-text">
+                                <div>
+                                    <p><b>SPA LÂM ANH</b></p>
+                                    <p>Bình Dương</p>
+                                </div>
+                                <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-rating.png"
+                                    alt="">
+                                <p>Nổi bật trên không gian làng quê yên tĩnh, TRÀNG AN LUXURY là một trong những khách
+                                    sạn mới nhất của
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-9 col-lg-4 mb-3">
+                        <div class="massage-item">
+                            <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-6.png"
+                                alt="item-6">
+                            <div class="massage-item-text">
+                                <div>
+                                    <p><b>SPA LÂM ANH</b></p>
+                                    <p>Bình Dương</p>
+                                </div>
+                                <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-rating.png"
+                                    alt="">
+                                <p>Nổi bật trên không gian làng quê yên tĩnh, TRÀNG AN LUXURY là một trong những khách
+                                    sạn mới nhất của</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-9 col-lg-4 mb-3">
+                        <div class="massage-item">
+                            <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-7.png"
+                                alt="item-7">
+                            <div class="massage-item-text">
+                                <div>
+                                    <p><b>SPA LÂM ANH</b></p>
+                                    <p>Bình Dương</p>
+                                </div>
+                                <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-rating.png"
+                                    alt="">
+                                <p>Nổi bật trên không gian làng quê yên tĩnh, TRÀNG AN LUXURY là một trong những khách
+                                    sạn mới nhất của
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-9 col-lg-4 mb-3">
+                        <div class="massage-item">
+                            <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-8.png"
+                                alt="item-8">
+                            <div class="massage-item-text">
+                                <div>
+                                    <p><b>SPA LÂM ANH</b></p>
+                                    <p>Bình Dương</p>
+                                </div>
+                                <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-rating.png"
+                                    alt="">
+                                <p>Nổi bật trên không gian làng quê yên tĩnh, TRÀNG AN LUXURY là một trong những khách
+                                    sạn mới nhất của
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-9 col-lg-4 mb-3">
+                        <div class="massage-item">
+                            <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-9.png"
+                                alt="item-9">
+                            <div class="massage-item-text">
+                                <div>
+                                    <p><b>SPA LÂM ANH</b></p>
+                                    <p>Bình Dương</p>
+                                </div>
+                                <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-rating.png"
+                                    alt="">
+                                <p>Nổi bật trên không gian làng quê yên tĩnh, TRÀNG AN LUXURY là một trong những khách
+                                    sạn mới nhất của
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
+
             <div class="col-lg-3">
-                
+                <div>
+                    <p>TÌM KIẾM</p>
+                    <form action="/tim-kiem" method="GET">
+                        <label for="tu-khoa">Từ khóa:</label>
+                        <input type="text" name="tu-khoa" placeholder="Từ khóa ...">
+                        <label for="thanh-pho">Thành phố:</label>
+                        <select name="thanh-pho">
+                            <option value="">---Chọn điểm đến---</option>
+                            <option value="Hà Nội">Hà Nội</option>
+                            <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                            <option value="Hải Phòng">Hải Phòng</option>
+                            <option value="Đà Nẵng">Đà Nẵng</option>
+                            <option value="Nha Trang">Nha Trang</option>
+                            <!-- And other cities ... -->
+                        </select>
+                        <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\massageBay\massagebay\theme\frontend\images\home\item-rating.png"
+                            alt="rating">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\MassageBay\massagebay\theme\frontend\images\home\advertise-1.png"
+                    alt="advertisement">
+                <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\MassageBay\massagebay\theme\frontend\images\home\advertise-2.png"
+                    alt="advertisement">
+            </div>
+        </div>
+
+        <!--Spa tiêu biểu-->
+        <div>
+            <p>Spa tiêu biểu</p>
+            <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\MassageBay\massagebay\theme\frontend\images\home\logo-font-1.png"
+                alt="">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="row">
+                        <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\MassageBay\massagebay\theme\frontend\images\home\font1-item1.png"
+                            alt="">
+                        <p>Spa LuxuryBoss</p>
+                        <p><i>Vũng Tàu</i></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="row">
+                        <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\MassageBay\massagebay\theme\frontend\images\home\font1-item2.png"
+                            alt="">
+                        <p>Spa LuxuryBoss</p>
+                        <p><i>Vũng Tàu</i></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="row">
+                        <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\MassageBay\massagebay\theme\frontend\images\home\font1-item3.png"
+                            alt="">
+                        <p>Spa LuxuryBoss</p>
+                        <p><i>Vũng Tàu</i></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="row">
+                        <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\MassageBay\massagebay\theme\frontend\images\home\font1-item4.png"
+                            alt="">
+                        <p>Spa LuxuryBoss</p>
+                        <p><i>Vũng Tàu</i></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="row">
+                        <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\MassageBay\massagebay\theme\frontend\images\home\font1-item1.png"
+                            alt="">
+                        <p>Spa LuxuryBoss</p>
+                        <p><i>Vũng Tàu</i></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="row">
+                        <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\MassageBay\massagebay\theme\frontend\images\home\font1-item6.png"
+                            alt="">
+                        <p>Spa LuxuryBoss</p>
+                        <p><i>Vũng Tàu</i></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="row">
+                        <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\MassageBay\massagebay\theme\frontend\images\home\font1-item7.png"
+                            alt="">
+                        <p>Spa LuxuryBoss</p>
+                        <p><i>Vũng Tàu</i></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="row">
+                        <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\MassageBay\massagebay\theme\frontend\images\home\font1-item8.png"
+                            alt="">
+                        <p>Spa LuxuryBoss</p>
+                        <p><i>Vũng Tàu</i></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="row">
+                        <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\MassageBay\massagebay\theme\frontend\images\home\font1-item9.png"
+                            alt="">
+                        <p>Spa LuxuryBoss</p>
+                        <p><i>Vũng Tàu</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Tin tuc moi nhat-->
+        <div>
+            <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\MassageBay\massagebay\theme\frontend\images\home\font2-background.png"
+                alt="background-font2">
+            <p>Tin tức mới nhất</p>
+            <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\MassageBay\massagebay\theme\frontend\images\home\logo-font-2.png"
+                alt="">
+            <div>
+                <div>
+                    <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\MassageBay\massagebay\theme\frontend\images\home\font2-item1.png"
+                        alt="">
+                    <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\MassageBay\massagebay\theme\frontend\images\home\font2-item2.png"
+                        alt="">
+                    <img src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\MassageBay\massagebay\theme\frontend\images\home\font2-item3.png"
+                        alt="">
+                </div>
+                <button>XEM TẤT CẢ</button>
+            </div>
+            <div>
+                <div>
+                    <p><b>Về hotel84.com</b></p>
+                    <ul>
+                        <li>Trang chủ</li>
+                        <li>Giới thiệu</li>
+                        <li>Điều khoản sử dụng</li>
+                        <li>Thông tin cá nhân</li>
+                        <li>Tin tức công ty</li>
+                        <li>Sitemap</li>
+                        <li>Hướng dẫn sử dụng</li>
+                        <li>Liên hệ</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p><b>Về hotel84.com</b></p>
+                    <ul>
+                        <li>Viết bài PR quảng cáo khách sạn</li>
+                        <li>Tư vấn quảng bá khách sạn</li>
+                        <li>Đặt phòng khách sạn</li>
+                        <li>Đặt phòng du thuyền</li>
+                        <li>Khách sạn tuyển dụng</li>
+                        <li>Thuê xe du lịch</li>
+                        <li>Sản phẩm cho khách sạn</li>
+                        <li>Dịch vụ Quảng cáo Khách sạn</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p>Quảng bá khách sạn Việt Nam</p>
+                    <p>Địa chỉ: 38B ngach 6/31/5 Đặng Văn Ngữ</p>
+                    <p>Tel: 024 39958520 ; Mobile: 0903215458 (không liên hệ đặt phòng ở đây)</p>
+                    <p>Email: info@hotel84.com</p>
+                    <p>Website khach sạn: http://www.hotel84.com</p>
+                    <p>Website Vietnam hotels: http://www.hotel84.com</p>
+                    <p>Đối tác khách sạn</p>
+                </div>
 
             </div>
         </div>
 
-
     </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer">
+            <p>Địa chỉ: số nhà 38b ngách 6/31/5 Đặng Văn Ngữ, phường Phương Liên, quận Đống Đa, Hà Nội</p>
+            <p>Điện thoại: 024 357359928 - 39958520; Fax: 024 35735928; Di động: 0903215458</p>
+            <p>Email: info@hotel84.com ; Website: www.hotel84.com ; www.hotel84.com ; www.vietnamtradefair.com ;
+                www.halongtravelguide.com</p>
+            <p>Số ĐKKD: 0103003424; Ngày cấp: 02/1/2004; Giám đốc: Phan Văn Thu</p>
+        </div>
+
+    </footer>
+
 </body>
 
 </html>
