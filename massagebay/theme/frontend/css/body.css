@@ -1,4 +1,4 @@
-.menu ul {
+.nav ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7,18 +7,18 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-.menu ul li {
+.nav ul li {
   position: relative;
   padding: 0 15px;
 }
-.menu ul li a {
+.nav ul li a {
   text-decoration: none;
   color: #333;
 }
-.menu ul li a:hover {
+.nav ul li a:hover {
   color: #007bff;
 }
-.menu ul li .submenu {
+.nav ul li .submenu {
   display: none;
   position: absolute;
   top: 100%;
@@ -34,35 +34,130 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.menu ul li .submenu li a {
+.nav ul li .submenu li a {
   padding: 8px 15px;
 }
-.menu ul li .submenu li.has-submenu {
+.nav ul li .submenu li.has-submenu {
   position: relative;
 }
-.menu ul li .submenu li.has-submenu:hover .submenu {
+.nav ul li .submenu li.has-submenu:hover .submenu {
   display: block;
+}
+
+.checked {
+  color: #f6e909;
+}
+
+@font-face {
+  font-family: UVNKieuBold;
+  src: url("../fonts/UVNKieu_B.TTF");
+}
+.popular-spa {
+  text-align: center;
+  background-image: url("../images/home/font1-background.png");
+  background-size: 100% 100%;
+}
+.popular-spa .font-style {
+  font-family: UVNKieuBold;
+  font-size: 80px;
+  font-weight: 600;
+  color: #f9c636;
+}
+
+.searching {
+  background-color: black;
+  color: #ffb628;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.searching p {
+  color: black;
+  background-color: #ffb628;
+  border: none;
+  padding: 2px;
+  margin: 2px;
 }
 
 .latest-news {
   text-align: center;
-  background-image: url("frontend/images/home/font2-background.png");
+  background-image: url("../images/home/font2-background.png");
+  background-size: 100% 100%;
+  padding: 30px;
+}
+.latest-news .font-style {
+  font-family: UVNKieuBold;
+  font-size: 80px;
+  font-weight: 600;
+  color: #7b0200;
 }
 .latest-news .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
+}
+.latest-news .content .col-lg-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.latest-news .content .col-lg-4 a img {
+  max-width: 100%;
+  height: auto;
+}
+.latest-news .content .content-text {
+  background-color: #fff;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: left;
 }
 .latest-news button {
   border: 1px solid brown;
   background-color: transparent;
   margin-top: 2%;
   padding: 0.2cm 5cm;
+}
+
+.about-massage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #ebebeb;
+  padding: 10px 60px;
+}
+.about-massage .div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px;
+}
+.about-massage .div .ul {
+  list-style: none;
+  padding: 0;
+}
+.about-massage .div .ul .li a {
+  text-decoration: none;
+  color: black;
+}
+.about-massage .div .ul .li a :hover {
+  text-decoration: none;
 }

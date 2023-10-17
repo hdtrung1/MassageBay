@@ -1,5 +1,6 @@
-footer {
+.footer {
   background-color: black;
   color: whitesmoke;
   text-align: center;
+  padding: 10px;
 }
