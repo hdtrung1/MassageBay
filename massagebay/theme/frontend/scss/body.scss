@@ -7,9 +7,11 @@
         li {
             position: relative;
             padding: 0 15px;
+
             a {
                 text-decoration: none;
                 color: #333;
+
                 &:hover {
                     color: #007bff;
                 }
@@ -34,6 +36,7 @@
 
                     &.has-submenu {
                         position: relative;
+
                         &:hover .submenu {
                             display: block;
                         }
@@ -41,5 +44,24 @@
                 }
             }
         }
+    }
+}
+
+.latest-news {
+    text-align: center;
+    background-image: url("frontend/images/home/font2-background.png");
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    button {
+        border: 1px solid brown;
+        background-color: transparent;
+        margin-top: 2%;
+        padding: 0.2cm 5cm;
     }
 }

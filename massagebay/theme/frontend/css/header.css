@@ -9,6 +9,7 @@
   width: 100%;
   height: auto;
   z-index: -1;
+  background-image: url("./frontend/images/home/logo-background.png");
 }
 .header .background-image.overlay {
   background-color: rgba(0, 0, 0, 0.5);
@@ -21,4 +22,47 @@
 .header .logo-container .logo-image {
   display: block;
   max-width: 200px;
+}
+
+nav {
+  background-color: rgb(245, 184, 75);
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav ul li {
+  margin: 0 10px;
+  position: relative;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+nav ul li ul.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+}
+nav ul li ul.submenu li {
+  background-color: rgb(245, 184, 75);
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+nav ul li ul.submenu li a {
+  color: #333;
+}
+nav ul li:hover ul.submenu {
+  display: block;
 }
