@@ -1,68 +1,59 @@
-.header {
-  position: relative;
-  text-align: center;
+header {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), to(rgb(0, 0, 0))), url("../images/home/logo-background.png");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgb(0, 0, 0)), url("../images/home/logo-background.png");
 }
-.header .background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  z-index: -1;
-  background-image: url("../images/home/logo-background.png");
-}
-.header .background-image.overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.header .logo-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-.header .logo-container .logo-image {
+header .logo-image {
+  margin-left: auto;
+  margin-right: auto;
   display: block;
-  max-width: 200px;
+  width: 20%;
+  padding: 5px 0;
 }
 
 nav {
   background-color: rgb(245, 184, 75);
 }
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  list-style-type: none;
+  text-align: center;
+  overflow: hidden;
 }
-nav ul li {
+nav ul > li {
   margin: 0 10px;
+  display: inline;
   position: relative;
 }
-nav ul li a {
+nav ul > li a {
+  display: inline-block;
   text-decoration: none;
   color: #333;
+  font-weight: bold;
+  padding: 5px 10px;
+  position: relative;
 }
-nav ul li a:hover {
+nav ul > li a:hover {
+  background-color: #ddd;
   text-decoration: underline;
 }
-nav ul li ul.submenu {
+nav ul > li .submenu {
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  display: none;
-}
-nav ul li ul.submenu li {
   background-color: rgb(245, 184, 75);
-  border: 1px solid #ccc;
-  padding: 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  z-index: 9000;
+  overflow: hidden;
 }
-nav ul li ul.submenu li a {
-  color: #333;
+nav ul > li .submenu li {
+  display: block;
 }
-nav ul li:hover ul.submenu {
+nav ul > li .submenu li a {
+  padding: 5px 10px;
+  display: block;
+}
+nav ul > li:hover .submenu {
   display: block;
 }

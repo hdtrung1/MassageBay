@@ -19,46 +19,39 @@
 
 <body>
     <!-- Header -->
-    <div class="header">
-        <div class="background-image overlay">
-            <!-- <img class="logo-image"
-                src="C:\Users\trunghd\Desktop\Study HTML,CSS,JS\MassageBay\massagebay\theme\frontend\images\home\logo-background.png"
-                alt="logo-background"> -->
-
-        </div>
-        <div class="logo-container">
+    <header>
+        <div>
             <img class="logo-image" src="./frontend/images/home/logo.png" alt="logo-image">
         </div>
-    </div>
+    </header>
     <!-- Menu -->
     <nav>
         <ul>
-            <li><a href="#">MASSAGEBAY</a></li>
-            <li class="has-submenu">
-                <a href="#">DIỄN ĐÀN</a>
+            <li><a href="">MASSAGEBAY</a></li>
+            <li>
+                <a href="">DIỄN ĐÀN</a>
                 <ul class="submenu">
-                    <li class="has-submenu">
-                        <a href="#">Mục con 1</a>
+                    <li><a href="">Mục con 1</a>
                         <ul class="submenu">
-                            <li><a href="#">Mục con 1.1</a></li>
-                            <li><a href="#">Mục con 1.2</a></li>
-                            <!-- Các mục con khác nếu cần -->
+                            <li><a href="">Mục con 1.1</a></li>
+                            <li><a href="">Mục con 1.2</a></li>
+                            <!-- Các mục con khác -->
                         </ul>
                     </li>
-                    <li><a href="#">Mục con 2</a></li>
-                    <!-- Các mục con khác nếu cần -->
+                    <li><a href="">Mục con 2</a></li>
+                    <!-- Các mục con khác -->
                 </ul>
             </li>
-            <li class="has-submenu">
-                <a href="#">TIN TỨC</a>
+            <li>
+                <a href="">TIN TỨC</a>
                 <ul class="submenu">
-                    <li><a href="#">Mục con 1</a></li>
-                    <li><a href="#">Mục con 2</a></li>
-                    <!-- Các mục con khác nếu cần -->
+                    <li><a href="">Mục con 1</a></li>
+                    <li><a href="">Mục con 2</a></li>
+                    <!-- Các mục con khác -->
                 </ul>
             </li>
-            <li><a href="#">COUPON</a></li>
-            <li><a href="#">LIÊN HỆ</a></li>
+            <li><a href="">COUPON</a></li>
+            <li><a href="">LIÊN HỆ</a></li>
         </ul>
     </nav>
 
@@ -67,15 +60,32 @@
         <div class="row">
             <div class="col-lg-9">
                 <div class="row">
-                    <div class="col-12 col-sm-9 col-lg-4 mb-3">
+                    <div>
+                        <div class="row title">
+                            <div class="col">
+                                <p class="font-style">Spa uy tín</p>
+                            </div>
+                            <div class="col col-button">
+                                <button class="button">MIỀN BẮC</button>
+                                <button class="button">MIỀN TRUNG</button>
+                                <button class="button">MIỀN NAM</button>
+                            </div>
+                            <hr class="absolute">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-9 col-lg-4">
                         <div class="massage-item">
                             <a href="">
-                                <img src="./frontend/images/home/item-1.png" alt="item-1">
+                                <img src="./frontend/images/home/item-1.png" class="img-fluid" alt="item-1">
                             </a>
                             <div class="massage-item-text">
-                                <div>
-                                    <p><b>SPA LÂM ANH</b></p>
-                                    <p>Bình Dương</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <p><b>SPA LÂM ANH</b></p>
+                                    </div>
+                                    <div class="col">
+                                        <p><i>Bình Dương</i></p>
+                                    </div>
                                 </div>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -88,14 +98,20 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-9 col-lg-4 mb-3">
+                    <div class="col-12 col-sm-9 col-lg-4">
                         <div class="massage-item">
                             <a href="">
-                                <img src="./frontend/images/home/item-2.png" alt="item-2"></a>
+                                <img src="./frontend/images/home/item-2.png" class="img-fluid" alt="item-2"></a>
                             <div class="massage-item-text">
-                                <div>
-                                    <p><b>SPA LÂM ANH</b></p>
-                                    <p>Bình Dương</p>
+                                <div class="massage-item-text-title">
+                                    <div class="row">
+                                        <div class="col">
+                                            <p><b>SPA LÂM ANH</b></p>
+                                        </div>
+                                        <div class="col">
+                                            <p><i>Bình Dương</i></p>
+                                        </div>
+                                    </div>
                                 </div>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -108,14 +124,18 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-9 col-lg-4 mb-3">
+                    <div class="col-12 col-sm-9 col-lg-4">
                         <div class="massage-item">
                             <a href="">
-                                <img src="./frontend/images/home/item-3.png" alt="item-3"></a>
+                                <img src="./frontend/images/home/item-3.png" class="img-fluid" alt="item-3"></a>
                             <div class="massage-item-text">
-                                <div>
-                                    <p><b>SPA LÂM ANH</b></p>
-                                    <p>Bình Dương</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <p><b>SPA LÂM ANH</b></p>
+                                    </div>
+                                    <div class="col">
+                                        <p><i>Bình Dương</i></p>
+                                    </div>
                                 </div>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -130,11 +150,15 @@
 
                     <div class="col-12 col-sm-9 col-lg-4 mb-3">
                         <div class="massage-item">
-                            <a href=""><img src="./frontend/images/home/item-4.png" alt="item-4"></a>
+                            <a href=""><img src="./frontend/images/home/item-4.png" class="img-fluid" alt="item-4"></a>
                             <div class="massage-item-text">
-                                <div>
-                                    <p><b>SPA LÂM ANH</b></p>
-                                    <p>Bình Dương</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <p><b>SPA LÂM ANH</b></p>
+                                    </div>
+                                    <div class="col">
+                                        <p><i>Bình Dương</i></p>
+                                    </div>
                                 </div>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -149,11 +173,15 @@
 
                     <div class="col-12 col-sm-9 col-lg-4 mb-3">
                         <div class="massage-item">
-                            <a href=""><img src="./frontend/images/home/item-5.png" alt="item-5"></a>
+                            <a href=""><img src="./frontend/images/home/item-5.png" class="img-fluid" alt="item-5"></a>
                             <div class="massage-item-text">
-                                <div>
-                                    <p><b>SPA LÂM ANH</b></p>
-                                    <p>Bình Dương</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <p><b>SPA LÂM ANH</b></p>
+                                    </div>
+                                    <div class="col">
+                                        <p><i>Bình Dương</i></p>
+                                    </div>
                                 </div>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -169,11 +197,15 @@
 
                     <div class="col-12 col-sm-9 col-lg-4 mb-3">
                         <div class="massage-item">
-                            <a href=""><img src="./frontend/images/home/item-6.png" alt="item-6"></a>
+                            <a href=""><img src="./frontend/images/home/item-6.png" class="img-fluid" alt="item-6"></a>
                             <div class="massage-item-text">
-                                <div>
-                                    <p><b>SPA LÂM ANH</b></p>
-                                    <p>Bình Dương</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <p><b>SPA LÂM ANH</b></p>
+                                    </div>
+                                    <div class="col">
+                                        <p><i>Bình Dương</i></p>
+                                    </div>
                                 </div>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -188,11 +220,15 @@
 
                     <div class="col-12 col-sm-9 col-lg-4 mb-3">
                         <div class="massage-item">
-                            <a href=""><img src="./frontend/images/home/item-7.png" alt="item-7"></a>
+                            <a href=""><img src="./frontend/images/home/item-7.png" class="img-fluid" alt="item-7"></a>
                             <div class="massage-item-text">
-                                <div>
-                                    <p><b>SPA LÂM ANH</b></p>
-                                    <p>Bình Dương</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <p><b>SPA LÂM ANH</b></p>
+                                    </div>
+                                    <div class="col">
+                                        <p><i>Bình Dương</i></p>
+                                    </div>
                                 </div>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -208,11 +244,15 @@
 
                     <div class="col-12 col-sm-9 col-lg-4 mb-3">
                         <div class="massage-item">
-                            <a href=""><img src="./frontend/images/home/item-8.png" alt="item-8"></a>
+                            <a href=""><img src="./frontend/images/home/item-8.png" class="img-fluid" alt="item-8"></a>
                             <div class="massage-item-text">
-                                <div>
-                                    <p><b>SPA LÂM ANH</b></p>
-                                    <p>Bình Dương</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <p><b>SPA LÂM ANH</b></p>
+                                    </div>
+                                    <div class="col">
+                                        <p><i>Bình Dương</i></p>
+                                    </div>
                                 </div>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -228,11 +268,15 @@
 
                     <div class="col-12 col-sm-9 col-lg-4 mb-3">
                         <div class="massage-item">
-                            <a href=""><img src="./frontend/images/home/item-9.png" alt="item-9"></a>
+                            <a href=""><img src="./frontend/images/home/item-9.png" class="img-fluid" alt="item-9"></a>
                             <div class="massage-item-text">
-                                <div>
-                                    <p><b>SPA LÂM ANH</b></p>
-                                    <p>Bình Dương</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <p><b>SPA LÂM ANH</b></p>
+                                    </div>
+                                    <div class="col">
+                                        <p><i>Bình Dương</i></p>
+                                    </div>
                                 </div>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -256,12 +300,12 @@
                         <div>
                             <label for="tu-khoa">Từ khóa:</label>
                             <br>
-                            <input type="text" name="tu-khoa" placeholder="Từ khóa ...">
+                            <input type="text" name="tu-khoa" placeholder="Từ khóa ..." style="width:100%">
                         </div>
                         <div>
                             <label for="thanh-pho">Thành phố:</label>
                             <br>
-                            <select name="thanh-pho">
+                            <select name="thanh-pho" style="width:100%">
                                 <option value="">---Chọn điểm đến---</option>
                                 <option value="Hà Nội">Hà Nội</option>
                                 <option value="Hồ Chí Minh">Hồ Chí Minh</option>
@@ -269,19 +313,30 @@
                                 <option value="Đà Nẵng">Đà Nẵng</option>
                                 <option value="Nha Trang">Nha Trang</option>
                                 <!-- And other cities ... -->
+
                             </select>
                         </div>
                         <br>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <button type="submit"><i class="fa fa-search"></i></button>
+                        <div class="searching-rating">
+                            <div class="left">
+                                <label>Rating</label>
+                                <br>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="right">
+                                <button type="submit" class="button"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
                     </form>
                 </div>
-                <a href=""><img src="./frontend/images/home/advertise-1.png" alt="advertisement"></a>
-                <a href=""><img src="./frontend/images/home/advertise-2.png" alt="advertisement"></a>
+                <a class="advertise" href=""><img src="./frontend/images/home/advertise-1.png" class="img-fluid"
+                        alt="advertisement"></a>
+                <a class="advertise" href=""><img src="./frontend/images/home/advertise-2.png" class="img-fluid"
+                        alt="advertisement"></a>
             </div>
         </div>
     </div>
@@ -373,24 +428,27 @@
         <img src="./frontend/images/home/logo-font-2.png" alt="logo">
         <div>
             <div class="content">
-                <div class="col-lg-4">
-                    <a href=""><img src="./frontend/images/home/font2-item1.png" alt="item1" style="width:100%"></a>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <a href=""><img src="./frontend/images/home/font2-item1.png" class="img-fluid" alt="item1"
+                            style="width:100%"></a>
                     <div class="content-text container w3-margin-bottom">
                         <h6>NỔI BẬT TRÊN KHÔNG GIAN LÀNG QUÊ YÊN TĨNH</h6>
                         <p>là một trong những khách sạn mới nhất của TRÀNG AN LUXURY là một trong những khách sạn mới
                             nhất của</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <a href=""><img src="./frontend/images/home/font2-item2.png" alt="item2" style="width:100%"></a>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <a href=""><img src="./frontend/images/home/font2-item2.png" class="img-fluid" alt="item2"
+                            style="width:100%"></a>
                     <div class="content-text container w3-margin-bottom">
                         <h6>NỔI BẬT TRÊN KHÔNG GIAN LÀNG QUÊ YÊN TĨNH</h6>
                         <p>là một trong những khách sạn mới nhất của TRÀNG AN LUXURY là một trong những khách sạn mới
                             nhất của</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <a href=""><img src="./frontend/images/home/font2-item3.png" alt="item3" style="width:100%"></a>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <a href=""><img src="./frontend/images/home/font2-item3.png" class="img-fluid" alt="item3"
+                            style="width:100%"></a>
                     <div class="content-text container w3-margin-bottom">
                         <h6>NỔI BẬT TRÊN KHÔNG GIAN LÀNG QUÊ YÊN TĨNH</h6>
                         <p>là một trong những khách sạn mới nhất của TRÀNG AN LUXURY là một trong những khách sạn mới
@@ -487,7 +545,16 @@
         </div>
 
     </footer>
-
+    <!-- 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".region-button").click(function () {
+                $(".region-button").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+    </script> -->
 </body>
 
 </html>
