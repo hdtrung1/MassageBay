@@ -10,50 +10,49 @@ header .logo-image {
   padding: 5px 0;
 }
 
-nav {
+.menu {
   background-color: rgb(245, 184, 75);
-}
-nav ul {
-  list-style-type: none;
   text-align: center;
-  overflow: hidden;
 }
-nav ul > li {
-  margin: 0 10px;
-  display: inline;
+.menu > li {
+  display: inline-block;
+}
+.menu > li > ul {
+  left: 0;
+  top: 100%;
+  padding: 0;
+}
+.menu > li > ul ul {
+  left: 100%;
+  top: 0;
+  padding: 0;
+}
+.menu ul {
+  display: none;
+  position: absolute;
+  background-color: rgb(245, 184, 75);
+  z-index: 1;
+}
+.menu ul > li > a {
+  min-width: 150px;
+  max-width: 300px;
+}
+.menu li {
   position: relative;
 }
-nav ul > li a {
-  display: inline-block;
+.menu li a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
+  display: inline-block;
   padding: 5px 10px;
-  position: relative;
 }
-nav ul > li a:hover {
-  background-color: #ddd;
-  text-decoration: underline;
-}
-nav ul > li .submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: rgb(245, 184, 75);
+.menu li:hover > ul {
+  display: block;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  z-index: 9000;
-  overflow: hidden;
+  margin: none;
 }
-nav ul > li .submenu li {
-  display: block;
-}
-nav ul > li .submenu li a {
-  padding: 5px 10px;
-  display: block;
-}
-nav ul > li:hover .submenu {
+
+.menu li:hover > ul {
   display: block;
 }
