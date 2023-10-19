@@ -62,7 +62,8 @@ button.active {
     //     margin: 0;
     // }
     > img {
-        width: 100%;
+        object-fit: cover;
+        min-width: 100%;
     }
 
     .col>p {
@@ -72,6 +73,9 @@ button.active {
     .checked {
         color: rgb(216, 190, 75);
     }
+}
+#massage-item-text-title{
+    margin-bottom: 0rem !important;
 }
 
 .searching {

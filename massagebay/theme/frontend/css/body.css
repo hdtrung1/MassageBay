@@ -52,13 +52,19 @@ button.active {
   background-size: 100%;
 }
 .massage-item > img {
-  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-width: 100%;
 }
 .massage-item .col > p {
   line-height: 35.5px;
 }
 .massage-item .checked {
   color: rgb(216, 190, 75);
+}
+
+#massage-item-text-title {
+  margin-bottom: 0rem !important;
 }
 
 .searching {
