@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-size: 100%;
@@ -15,35 +15,47 @@
   font-size: 40px;
   font-weight: 600;
   color: black;
+  position: absolute;
+  margin: 0px;
+  top: -10px;
 }
 
 .title {
   position: relative;
+
 }
-.title .col-button {
+.title > .col-button {
+  width:100%;
+  /* top: 20px;
+  left: 50%; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: flex-end;
+  position: relative;
+  border-bottom: 1px solid #000;
+  align-items: end;
 }
-.title .col-button button {
+.title > .col-button > button {
+  background-color: white;
+  height: 40px;
   padding: 0 10px;
-  margin: auto;
+  margin: 0px;
   border: none;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
 }
 .title .col-button button:hover {
-  border: 2px solid black;
+  background-color: #e9e9e9;
+  border: 1px solid black;
 }
-.title .absolute {
+.col-button > .absolute {
   position: absolute;
-  bottom: 0.001%;
 }
 
 button.active {
   font-weight: bold;
-  border: 2px solid #000;
+  border: 1px solid #000;
 }
 
 .massage-item {
@@ -53,7 +65,7 @@ button.active {
 }
 .massage-item > img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   min-width: 100%;
 }
 .massage-item .col > p {
@@ -81,13 +93,17 @@ button.active {
   margin: 2px;
   text-align: center;
 }
+.searching > form {
+  padding: 10px;
+}
 .searching .searching-rating {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  align-items: center;
 }
 .searching .searching-rating .left {
   float: left;
@@ -99,12 +115,24 @@ button.active {
   float: right;
 }
 .searching .searching-rating .right .button {
-  padding: 0 15px;
+  padding: 10px 15px;
   margin-right: 5px;
   background-color: #ffb628;
   border: none;
 }
-
+.searching-input-field {
+  padding: 10px;
+  outline: none;
+}
+.searching-select-field {
+  padding: 10px;
+  outline: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 0.65rem auto;
+}
 .advertise {
   display: block;
   margin-bottom: 20px;
@@ -112,9 +140,11 @@ button.active {
 
 .popular-spa {
   text-align: center;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), to(rgb(0, 0, 0))), url("../images/home/font1-background.png");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgb(0, 0, 0)), url("../images/home/font1-background.png");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)),
+      url("../images/home/font1-background.png");
+  z-index: -1;
   background-size: cover;
+  padding: 20px;
 }
 .popular-spa .font-style {
   font-family: UVNKieuBold;
@@ -130,7 +160,7 @@ button.active {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   padding: 10px;
 }
 .popular-spa .spa-align .text-style .text1 {
@@ -146,7 +176,7 @@ button.active {
   text-align: center;
   background-image: url("../images/home/font2-background.png");
   background-size: cover;
-  padding: 30px;
+  padding: 50px 30px;
   background-repeat: no-repeat;
 }
 .latest-news .font-style {
@@ -163,19 +193,51 @@ button.active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #fff;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
   background-size: 100%;
 }
-.latest-news .content .lastest-news-item-text {
+@media (max-width: 768px) {
+  .latest-news .content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      
+  }
+}
+.lastest-news-item {
+  width: 95%;
+  background-color: #fff;
+  margin: 10px 0px;
+}
+.lastest-news-item-text {
   margin-top: 20px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+.lastest-news-item-image {
+  width: 100%;
+}
+.lastest-news-item-image > a > img {
+  width: 100%;
+  object-fit: cover;
+}
+.lastest-news-item-text > h6 {
+  font-size: 14px;
+  font-weight: bold;
+  color: brown;
+}
+.lastest-news-item-text > p {
+  font-size: 14px;
 }
 .latest-news button {
   border: 1px solid brown;
@@ -189,8 +251,8 @@ button.active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background-color: #ebebeb;
   padding: 10px 60px;
   font-size: 12pt;
@@ -198,8 +260,8 @@ button.active {
 }
 .about-massage div {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   padding: 10px;
 }
 .about-massage div a {
@@ -208,4 +270,54 @@ button.active {
 }
 .about-massage div a :hover {
   text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .about-massage {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      
+  }
+}
+
+/*Sửa*/
+.massage-item {
+  margin: 20px 0px;
+}
+
+.massage-item-text-title {
+  margin-bottom: 0rem;
+}
+
+.massage-item-text {
+  padding: 5px 10px;
+}
+
+.message-item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.massage-item-image > a > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.popular-spa {
+}
+
+.popular-spa-font-style {
+  font-family: UVNKieuBold;
+  font-size: 50px;
+  font-weight: 600;
+  color: #f9c636;
+}
+
+.latest-news-font-style {
+  font-family: UVNKieuBold;
+  font-size: 50px;
+  font-weight: 600;
+  color: #7b0200;
 }

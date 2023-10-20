@@ -10,44 +10,57 @@ header .logo-image {
   padding: 5px 0;
 }
 
-.menu {
+.menu-container {
   background-color: rgb(245, 184, 75);
-  text-align: center;
 }
-.menu > li {
+.menu-container .menu {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto 30px auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 60%;
+}
+.menu-container .menu > li {
   display: inline-block;
 }
-.menu > li > ul {
+.menu-container .menu > li > ul {
   left: 0;
   top: 100%;
   padding: 0;
 }
-.menu > li > ul ul {
+.menu-container .menu > li > ul ul {
   left: 100%;
   top: 0;
   padding: 0;
 }
-.menu ul {
+.menu-container .menu ul {
   display: none;
   position: absolute;
   background-color: rgb(245, 184, 75);
   z-index: 1;
 }
-.menu ul > li > a {
+.menu-container .menu ul > li > a {
   min-width: 150px;
   max-width: 300px;
 }
-.menu li {
+.menu-container .menu li {
   position: relative;
 }
-.menu li a {
+.menu-container .menu li a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
   display: inline-block;
   padding: 5px 10px;
 }
-.menu li:hover > ul {
+.menu-container .menu li:hover > ul {
   display: block;
   list-style-type: none;
   margin: none;
