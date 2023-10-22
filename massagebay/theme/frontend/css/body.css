@@ -200,8 +200,7 @@ button.active {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("../images/home/font1-background.png");
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/home/font1-background.png");
   background-size: cover;
-  z-index: -1;
-  padding: 20px;
+  padding-bottom: 20px;
 }
 .popular-spa .popular-spa-font-style {
   font-family: UVNKieuBold;
@@ -213,19 +212,28 @@ button.active {
 .popular-spa > img {
   padding-bottom: 30px;
 }
-.popular-spa .spa-align {
+.popular-spa .popular-spa-align {
+  margin-left: 84px;
+  margin-right: 84px;
+}
+.popular-spa .popular-spa-align .align-border {
+  padding: 0;
+}
+.popular-spa .popular-spa-align .align-border .spa-align {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 10px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 10px;
 }
-.popular-spa .spa-align .text-style .text1 {
+.popular-spa .popular-spa-align .align-border .spa-align .text-style .text1 {
   color: #fff;
   margin-bottom: 0;
 }
-.popular-spa .spa-align .text-style .text2 {
+.popular-spa .popular-spa-align .align-border .spa-align .text-style .text2 {
+  font-size: 12pt;
   color: gray;
   text-align: left;
 }
@@ -234,7 +242,7 @@ button.active {
   text-align: center;
   background-image: url("../images/home/font2-background.png");
   background-size: cover;
-  padding: 50px 30px;
+  padding: 50px 0px;
   background-repeat: no-repeat;
 }
 .latest-news .latest-news-font-style {
@@ -247,7 +255,11 @@ button.active {
 .latest-news > img {
   padding-bottom: 30px;
 }
-.latest-news .content {
+.latest-news .latest-news-align {
+  margin-left: 84px;
+  margin-right: 84px;
+}
+.latest-news .latest-news-align .latest-news-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -260,15 +272,15 @@ button.active {
   background-color: transparent;
   background-size: 100%;
 }
-.latest-news .content .lastest-news-item {
-  width: 95%;
+.latest-news .latest-news-align .latest-news-content .lastest-news-item {
+  width: 370px;
   background-color: #fff;
   margin: 10px 0px;
 }
-.latest-news .content .lastest-news-item .lastest-news-item-image > a > img {
+.latest-news .latest-news-align .latest-news-content .lastest-news-item .lastest-news-item-image > a > img {
   width: 100%;
 }
-.latest-news .content .lastest-news-item .lastest-news-item-text {
+.latest-news .latest-news-align .latest-news-content .lastest-news-item .lastest-news-item-text {
   margin-top: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -283,12 +295,12 @@ button.active {
   padding: 10px 20px;
   font-size: 14pt;
 }
-.latest-news .content .lastest-news-item .lastest-news-item-text .lastest-news-item-text-title {
+.latest-news .latest-news-align .latest-news-content .lastest-news-item .lastest-news-item-text .lastest-news-item-text-title {
   font-weight: bold;
   font-family: MyriadProRegular;
   color: #7b0200;
 }
-.latest-news .content .lastest-news-item .lastest-news-item-text .lastest-news-item-text-content {
+.latest-news .latest-news-align .latest-news-content .lastest-news-item .lastest-news-item-text .lastest-news-item-text-content {
   font-family: Arial;
 }
 .latest-news button {
@@ -359,11 +371,14 @@ button.active {
 }
 
 @media (max-width: 768px) {
-  .latest-news .content {
+  .latest-news .latest-news-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .about-massage {
     -webkit-box-orient: vertical;
