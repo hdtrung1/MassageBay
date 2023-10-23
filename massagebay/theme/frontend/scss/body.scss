@@ -1,113 +1,113 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    font-size: 100%;
-    font-family: Arial;
-    font-size: 14pt;
-}
+// * {
+//     box-sizing: border-box;
+//     padding: 0;
+//     font-size: 100%;
+//     font-family: Arial;
+//     font-size: 14pt;
+// }
 
-.body-content {
-    margin-left: 84px;
-    margin-right: 84px;
-}
+// .body-content {
+//     margin-left: 84px;
+//     margin-right: 84px;
+// }
 
 @font-face {
     font-family: UVNKieuBold;
     src: url("../fonts/UVNKieu_B.TTF");
 }
 
-.font-style {
-    font-family: UVNKieuBold;
-    font-size: 30pt; //50pt; 
-    font-weight: 600;
-    color: black;
-    position: absolute;
-    margin: 0px;
-    top: -10px;
-}
+// .font-style {
+//     font-family: UVNKieuBold;
+//     font-size: 30pt; //50pt; 
+//     font-weight: 600;
+//     color: black;
+//     position: absolute;
+//     margin: 0px;
+//     top: -10px;
+// }
 
-// Spa uy tín
-.title {
-    position: relative;
+// // Spa uy tín
+// .title {
+//     position: relative;
 
-    >.col-button {
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        position: relative;
-        border-bottom: 1px solid #000;
-        align-items: end;
+//     >.col-button {
+//         width: 100%;
+//         display: flex;
+//         justify-content: flex-end;
+//         position: relative;
+//         border-bottom: 1px solid #000;
+//         align-items: end;
 
-        >button {
-            background-color: white;
-            height: 40px;
-            padding: 0 10px;
-            margin: 0px;
-            border: 1px solid transparent;
-            // width: 102px;
-            // height: 34px;
+//         >button {
+//             background-color: white;
+//             height: 40px;
+//             padding: 0 10px;
+//             margin: 0px;
+//             border: 1px solid transparent;
+//             // width: 102px;
+//             // height: 34px;
 
-            &:hover {
-                border: 1px solid black;
-                background-color: #e9e9e9;
-                font-weight: bold;
-            }
-        }
-    }
+//             &:hover {
+//                 border: 1px solid black;
+//                 background-color: #e9e9e9;
+//                 font-weight: bold;
+//             }
+//         }
+//     }
 
-    .absolute {
-        position: absolute;
-    }
-}
+//     .absolute {
+//         position: absolute;
+//     }
+// }
 
-button.active {
-    font-weight: bold;
-    border: 1px solid #000;
-}
+// button.active {
+//     font-weight: bold;
+//     border: 1px solid #000;
+// }
 
-.massage-item {
-    font-size: small;
-    background-color: rgb(235, 235, 235);
-    background-size: 100%;
-    margin: 20px 0;
-    // width: 270px;
-    // height: 308px;
+// .massage-item {
+//     font-size: small;
+//     background-color: rgb(235, 235, 235);
+//     background-size: 100%;
+//     margin: 20px 0;
+//     // width: 270px;
+//     // height: 308px;
 
-    .massage-item-image {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
+//     .massage-item-image {
+//         object-fit: cover;
+//         width: 100%;
+//         height: 100%;
 
-        >a>img {
-            width: 100%;
-            object-fit: cover;
-        }
-    }
+//         >a>img {
+//             width: 100%;
+//             object-fit: cover;
+//         }
+//     }
 
-    .massage-item-text {
-        padding: 5px 10px;
+//     .massage-item-text {
+//         padding: 5px 10px;
 
-        .massage-item-text-title {
-            margin-bottom: 0rem;
-        }
+//         .massage-item-text-title {
+//             margin-bottom: 0rem;
+//         }
 
-        .start-align {
-            text-align: start;
-        }
+//         .start-align {
+//             text-align: start;
+//         }
 
-        .end-align {
-            text-align: end;
-        }
+//         .end-align {
+//             text-align: end;
+//         }
 
-        .small-fontsize {
-            font-size: 12px;
-        }
-    }
+//         .small-fontsize {
+//             font-size: 12px;
+//         }
+//     }
 
-    .checked {
-        color: rgb(216, 190, 75);
-    }
-}
+//     .checked {
+//         color: rgb(216, 190, 75);
+//     }
+// }
 
 // Tìm kiếm
 .searching {
@@ -219,57 +219,7 @@ button.active {
     }
 }
 
-
-// Spa tiêu biểu
-.popular-spa {
-    text-align: center;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/home/font1-background.png");
-    background-size: cover;
-    padding-bottom: 20px;
-
-    .popular-spa-font-style {
-        font-family: UVNKieuBold;
-        font-size: 50px;
-        font-weight: 600;
-        color: #f9c636;
-        margin: 0;
-    }
-
-    >img {
-        padding-bottom: 30px;
-    }
-
-    .popular-spa-align {
-        margin-left: 84px;
-        margin-right: 84px;
-
-        .align-border {
-            padding: 0;
-
-            .spa-align {
-                display: flex;
-                justify-content: space-evenly;
-                padding: 0 20px 20px 20px;
-
-                .text-style {
-                    padding-left: 20px;
-
-                    .text1 {
-                        color: #fff;
-                        margin-bottom: 0;
-                    }
-
-                    .text2 {
-                        font-size: 12pt;
-                        color: gray;
-                        text-align: left;
-                    }
-                }
-            }
-        }
-    }
-}
-
+// Tin tức mới nhất
 .latest-news {
     text-align: center;
     background-image: url("../images/home/font2-background.png");
