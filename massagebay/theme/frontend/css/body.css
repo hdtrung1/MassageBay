@@ -18,7 +18,7 @@
 }
 .font-style {
   font-family: UVNKieuBold;
-  font-size: 50pt;
+  font-size: 30pt;
   font-weight: 600;
   color: black;
   position: absolute;
@@ -45,7 +45,7 @@
 }
 .title > .col-button > button {
   background-color: white;
-  height: 70px;
+  height: 40px;
   padding: 0 10px;
   margin: 0px;
   border: 1px solid transparent;

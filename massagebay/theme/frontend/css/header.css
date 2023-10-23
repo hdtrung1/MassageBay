@@ -31,7 +31,8 @@ header .logo-image {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 60%;
-  font-family: MyriadProRegular;
+  font-family: MyriadProRegular !important;
+  font-size: 18pt !important;
 }
 .menu-container .menu > li {
   display: inline-block;
