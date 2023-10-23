@@ -105,6 +105,7 @@ button.active {
   color: #ffb628;
   padding: 2px;
   margin-bottom: 20px;
+  margin-left: auto;
   width: 271px;
   height: 284px;
 }
@@ -227,7 +228,10 @@ button.active {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding-bottom: 10px;
+  padding: 0 20px 20px 20px;
+}
+.popular-spa .popular-spa-align .align-border .spa-align .text-style {
+  padding-left: 20px;
 }
 .popular-spa .popular-spa-align .align-border .spa-align .text-style .text1 {
   color: #fff;
@@ -372,11 +376,31 @@ button.active {
 }
 
 @media (max-width: 768px) {
+  .popular-spa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .latest-news .latest-news-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .latest-news .button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

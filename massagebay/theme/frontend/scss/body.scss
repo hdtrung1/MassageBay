@@ -115,6 +115,7 @@ button.active {
     color: #ffb628;
     padding: 2px;
     margin-bottom: 20px;
+    margin-left: auto;
     width: 271px;
     height: 284px;
 
@@ -248,9 +249,11 @@ button.active {
             .spa-align {
                 display: flex;
                 justify-content: space-evenly;
-                padding-bottom: 10px;
+                padding: 0 20px 20px 20px;
 
                 .text-style {
+                    padding-left: 20px;
+
                     .text1 {
                         color: #fff;
                         margin-bottom: 0;
@@ -403,9 +406,22 @@ button.active {
 }
 
 @media (max-width: 768px) {
-    .latest-news .latest-news-content {
-        flex-direction: column;
+    .popular-spa {
+        display: flex;
+        justify-content: center;
         align-items: center;
+        flex-direction: column;
+    }
+
+    .latest-news {
+        .latest-news-content {
+            flex-direction: column;
+            align-items: center;
+        }
+        .button {
+            align-items: center;
+        }
+
     }
 
     .about-massage {
