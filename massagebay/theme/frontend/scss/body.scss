@@ -4,6 +4,7 @@
     font-size: 100%;
     font-family: Arial;
     font-size: 14pt;
+
 }
 
 .body-content {
@@ -16,19 +17,19 @@
     src: url("../fonts/UVNKieu_B.TTF");
 }
 
-.font-style {
-    font-family: UVNKieuBold;
-    font-size: 30pt; //50pt; 
-    font-weight: 600;
-    color: black;
-    position: absolute;
-    margin: 0px;
-    top: -10px;
-}
-
 // Spa uy tín
 .title {
     position: relative;
+
+    .font-style {
+        font-family: UVNKieuBold;
+        font-size: 50pt; 
+        font-weight: 600;
+        color: black;
+        position: absolute;
+        margin: 0px;
+        top: -50px;
+    }
 
     >.col-button {
         width: 100%;
@@ -40,12 +41,12 @@
 
         >button {
             background-color: white;
-            height: 40px;
+            //height: 40px;
             padding: 0 10px;
             margin: 0px;
             border: 1px solid transparent;
-            // width: 102px;
-            // height: 34px;
+            //width: 102px;
+            height: 34px;
 
             &:hover {
                 border: 1px solid black;
@@ -53,17 +54,33 @@
                 font-weight: bold;
             }
         }
+
+        // .button-clicked {
+        //     background-color: #e9e9e9;
+        //     border: 1px solid black;
+        //     font-weight: bold;
+        // }
+        
+        // .button-default {
+        //     background-color: white;
+        //     padding: 0 10px;
+        //     margin: 0px;
+        //     border: 1px solid transparent;
+        //     height: 34px;
+        //     font-weight: normal;
+        // }
+        
     }
 
     .absolute {
-        position: absolute;
+        position: absolute; 
     }
 }
 
-button.active {
-    font-weight: bold;
-    border: 1px solid #000;
-}
+// button.active {
+//     font-weight: bold;
+//     border: 1px solid #000;
+// }
 
 .massage-item {
     font-size: small;
@@ -260,7 +277,7 @@ button.active {
                     }
 
                     .text2 {
-                        font-size: 12pt;
+                        font-size: 12pt !important;
                         color: gray;
                         text-align: left;
                     }

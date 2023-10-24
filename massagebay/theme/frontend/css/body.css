@@ -16,18 +16,17 @@
   font-family: UVNKieuBold;
   src: url("../fonts/UVNKieu_B.TTF");
 }
-.font-style {
+.title {
+  position: relative;
+}
+.title .font-style {
   font-family: UVNKieuBold;
-  font-size: 30pt;
+  font-size: 50pt;
   font-weight: 600;
   color: black;
   position: absolute;
   margin: 0px;
-  top: -10px;
-}
-
-.title {
-  position: relative;
+  top: -50px;
 }
 .title > .col-button {
   width: 100%;
@@ -45,10 +44,10 @@
 }
 .title > .col-button > button {
   background-color: white;
-  height: 40px;
   padding: 0 10px;
   margin: 0px;
   border: 1px solid transparent;
+  height: 34px;
 }
 .title > .col-button > button:hover {
   border: 1px solid black;
@@ -57,11 +56,6 @@
 }
 .title .absolute {
   position: absolute;
-}
-
-button.active {
-  font-weight: bold;
-  border: 1px solid #000;
 }
 
 .massage-item {
@@ -238,7 +232,7 @@ button.active {
   margin-bottom: 0;
 }
 .popular-spa .popular-spa-align .align-border .spa-align .text-style .text2 {
-  font-size: 12pt;
+  font-size: 12pt !important;
   color: gray;
   text-align: left;
 }
