@@ -26,20 +26,43 @@ header {
         margin: 0 auto 30px auto;
         flex-direction: row;
         width: 60%;
-        font-family: MyriadProRegular !important;
-        font-size: 18pt !important;
 
         >li {
             display: inline-block;
             // border-right: 1px solid #000;
+            position: relative;
 
-            :hover {
-                text-decoration: underline;
+            a {
+                font-family: MyriadProRegular !important;
+                font-size: 18px !important;
             }
 
-            // :last-child {
-            //     border-right: none;
-            // }
+            :hover::before {
+                content: "";
+                position: absolute;
+                width: 80px;
+                height: 3px;
+                bottom: 10px;
+                background: linear-gradient(0deg, rgba(49, 39, 11, 1) 35%, rgba(255, 255, 255, 1) 100%);
+                opacity: 0.5;
+                border-radius: 2px;
+            }
+
+            &:last-child::after {
+                display: none;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 30px;
+                top: 2px;
+                right: 0;
+                // background: radial-gradient(circle, rgba(7,5,1,1) 35%, rgba(255,255,255,1) 100%);
+                background: linear-gradient(0deg, rgba(49, 39, 11, 1) 35%, rgba(255, 255, 255, 1) 100%);
+                transform: translateX(50px);
+            }
 
             >ul {
                 left: 0;

@@ -4,30 +4,24 @@
   padding: 0;
   font-size: 100%;
   font-family: Arial;
-  font-size: 14pt;
-}
-
-.body-content {
-  margin-left: 84px;
-  margin-right: 84px;
+  font-size: 14px;
 }
 
 @font-face {
   font-family: UVNKieuBold;
   src: url("../fonts/UVNKieu_B.TTF");
 }
-.font-style {
+.title {
+  position: relative;
+}
+.title .font-style {
   font-family: UVNKieuBold;
-  font-size: 30pt;
+  font-size: 50px;
   font-weight: 600;
   color: black;
   position: absolute;
   margin: 0px;
-  top: -10px;
-}
-
-.title {
-  position: relative;
+  top: -30px;
 }
 .title > .col-button {
   width: 100%;
@@ -45,10 +39,10 @@
 }
 .title > .col-button > button {
   background-color: white;
-  height: 40px;
   padding: 0 10px;
   margin: 0px;
   border: 1px solid transparent;
+  height: 34px;
 }
 .title > .col-button > button:hover {
   border: 1px solid black;
@@ -94,7 +88,7 @@ button.active {
   text-align: end;
 }
 .massage-item .massage-item-text .small-fontsize {
-  font-size: 12px;
+  font-size: 12px !important;
 }
 .massage-item .checked {
   color: rgb(216, 190, 75);
@@ -119,7 +113,7 @@ button.active {
   font-family: MyriadProRegular;
 }
 .searching .searching-field {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .searching .searching-field label {
   margin-left: 20px;
@@ -172,7 +166,7 @@ button.active {
   float: right;
 }
 .searching .searching-rating .searching-rating-right .button {
-  margin-right: 5px;
+  margin: 3px 15px;
   background-color: #ffb628;
   border: none;
   width: 58px;
@@ -215,8 +209,8 @@ button.active {
   padding-bottom: 30px;
 }
 .popular-spa .popular-spa-align {
-  margin-left: 84px;
-  margin-right: 84px;
+  margin-left: 268.5px;
+  margin-right: 268.5px;
 }
 .popular-spa .popular-spa-align .align-border {
   padding: 0;
@@ -234,11 +228,11 @@ button.active {
   padding-left: 20px;
 }
 .popular-spa .popular-spa-align .align-border .spa-align .text-style .text1 {
+  font-size: 18px;
   color: #fff;
   margin-bottom: 0;
 }
 .popular-spa .popular-spa-align .align-border .spa-align .text-style .text2 {
-  font-size: 12pt;
   color: gray;
   text-align: left;
 }
@@ -259,10 +253,6 @@ button.active {
 }
 .latest-news > img {
   padding-bottom: 30px;
-}
-.latest-news .latest-news-align {
-  margin-left: 84px;
-  margin-right: 84px;
 }
 .latest-news .latest-news-align .latest-news-content {
   display: -webkit-box;
@@ -298,7 +288,6 @@ button.active {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 10px 20px;
-  font-size: 14pt;
 }
 .latest-news .latest-news-align .latest-news-content .lastest-news-item .lastest-news-item-text .lastest-news-item-text-title {
   font-weight: bold;
@@ -324,11 +313,11 @@ button.active {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #ebebeb;
-  padding: 10px 60px;
-  font-size: 14pt;
-  font-family: Arial;
+  padding: 10px 0px;
 }
 .about-massage .about-massage-link {
+  margin-left: 268.5px;
+  margin-right: 268.5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
