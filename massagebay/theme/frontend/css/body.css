@@ -208,10 +208,6 @@ button.active {
 .popular-spa > img {
   padding-bottom: 30px;
 }
-.popular-spa .popular-spa-align {
-  margin-left: 268.5px;
-  margin-right: 268.5px;
-}
 .popular-spa .popular-spa-align .align-border {
   padding: 0;
 }
@@ -228,7 +224,6 @@ button.active {
   padding-left: 20px;
 }
 .popular-spa .popular-spa-align .align-border .spa-align .text-style .text1 {
-  font-size: 18px;
   color: #fff;
   margin-bottom: 0;
 }
@@ -315,24 +310,19 @@ button.active {
   background-color: #ebebeb;
   padding: 10px 0px;
 }
-.about-massage .about-massage-link {
-  margin-left: 268.5px;
-  margin-right: 268.5px;
+.about-massage .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
 }
-.about-massage .about-massage-link div {
+.about-massage .about-massage-link {
+  padding: 10px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 10px;
 }
 .about-massage .about-massage-link div p {
   margin: 5px;
@@ -347,20 +337,23 @@ button.active {
 .about-massage .about-massage-link div a li {
   margin: 5px;
 }
-.about-massage .about-massage-info {
+.about-massage .align-column {
+  margin-left: auto;
+}
+.about-massage .align-column .about-massage-info {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   padding: 10px;
 }
-.about-massage .about-massage-info p {
+.about-massage .align-column .about-massage-info p {
   margin: 5px;
 }
-.about-massage .about-massage-info a {
+.about-massage .align-column .about-massage-info a {
   text-decoration: none;
   color: black;
 }
-.about-massage .about-massage-info a :hover {
+.about-massage .align-column .about-massage-info a :hover {
   text-decoration: underline;
 }
 

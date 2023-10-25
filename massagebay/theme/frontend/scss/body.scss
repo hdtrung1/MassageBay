@@ -22,7 +22,7 @@
 
     .font-style {
         font-family: UVNKieuBold;
-        font-size: 50px; 
+        font-size: 50px;
         font-weight: 600;
         color: black;
         position: absolute;
@@ -240,8 +240,6 @@ button.active {
     }
 
     .popular-spa-align {
-        margin-left: 268.5px;
-        margin-right:268.5px;
 
         .align-border {
             padding: 0;
@@ -255,7 +253,6 @@ button.active {
                     padding-left: 20px;
 
                     .text1 {
-                        font-size: 18px;
                         color: #fff;
                         margin-bottom: 0;
                     }
@@ -357,16 +354,20 @@ button.active {
     background-color: #ebebeb;
     padding: 10px 0px;
 
-    .about-massage-link {
-        margin-left: 268.5px;
-        margin-right:268.5px;
+    .row {
         display: flex;
         justify-content: space-between;
+    }
+
+    .about-massage-link {
+        // display: flex;
+        // justify-content: space-between;
+        padding: 10px;
         flex: 1;
 
         div {
-            flex: 1;
-            padding: 10px;
+            //flex: 1;
+            //padding: 10px;
 
             p {
                 margin: 5px;
@@ -387,24 +388,31 @@ button.active {
         }
     }
 
-    .about-massage-info {
-        flex: 1;
-        padding: 10px;
+    .align-column {
+        margin-left: auto;
 
-        p {
-            margin: 5px;
-        }
+        .about-massage-info {
+            flex: 1;
+            padding: 10px;
 
-        a {
-            text-decoration: none;
-            color: black;
+            p {
+                margin: 5px;
+            }
 
-            :hover {
-                text-decoration: underline;
+            a {
+                text-decoration: none;
+                color: black;
+
+                :hover {
+                    text-decoration: underline;
+                }
             }
         }
     }
+
+
 }
+
 
 @media (max-width: 768px) {
     .popular-spa {
@@ -419,6 +427,7 @@ button.active {
             flex-direction: column;
             align-items: center;
         }
+
         .button {
             align-items: center;
         }
