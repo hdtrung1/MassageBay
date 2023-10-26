@@ -74,10 +74,32 @@
                                     <p class="font-style">Spa uy tín</p>
                                 </div>
                                 <div class="col col-button">
-                                    <button class="button">MIỀN BẮC</button>
+                                    <ul class="nav nav-tabs" id="myTabs" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="mien-bac-tab" data-bs-toggle="tab" data-bs-target="#mien-bac" type="button" role="tab" aria-controls="mien-bac" aria-selected="true">MIỀN BẮC</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="mien-trung-tab" data-bs-toggle="tab" data-bs-target="#mien-trung" type="button" role="tab" aria-controls="mien-trung" aria-selected="false">MIỀN TRUNG</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="mien-nam-tab" data-bs-toggle="tab" data-bs-target="#mien-nam" type="button" role="tab" aria-controls="mien-nam" aria-selected="false">MIỀN NAM</button>
+                                        </li>
+                                    </ul>
+                                    <!-- <button class="button">MIỀN BẮC</button>
                                     <button class="button">MIỀN TRUNG</button>
-                                    <button class="button">MIỀN NAM</button>
+                                    <button class="button">MIỀN NAM</button> -->
                                     <hr class="absolute">
+                                </div>
+                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="mien-bac" role="tabpanel" aria-labelledby="mien-bac-tab">
+                                    <!-- Content -->
+                                </div>
+                                <div class="tab-pane fade" id="mien-trung" role="tabpanel" aria-labelledby="mien-trung-tab">
+                                    <!-- Content -->
+                                </div>
+                                <div class="tab-pane fade" id="mien-nam" role="tabpanel" aria-labelledby="mien-nam-tab">
+                                    <!-- Content -->
                                 </div>
                             </div>
                         </div>
@@ -701,7 +723,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
     <!--Footer-->

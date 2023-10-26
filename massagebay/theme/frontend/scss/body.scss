@@ -53,6 +53,13 @@
                 font-weight: bold;
             }
         }
+        .nav-link {
+            color: black;
+        }
+        .nav-link.active {
+            border: 1px solid black;
+            border-radius: 0;
+        }
     }
 
     .absolute {
@@ -262,6 +269,14 @@ button.active {
                         text-align: left;
                     }
                 }
+            }
+
+            .align-items-start {
+                padding-left: 0;
+            }
+
+            .align-items-end {
+                padding-right: 0;
             }
         }
     }
