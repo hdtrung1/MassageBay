@@ -1,113 +1,131 @@
-// * {
-//     box-sizing: border-box;
-//     padding: 0;
-//     font-size: 100%;
-//     font-family: Arial;
-//     font-size: 14pt;
-// }
-
-// .body-content {
-//     margin-left: 84px;
-//     margin-right: 84px;
-// }
+* {
+    box-sizing: border-box;
+    padding: 0;
+    font-size: 100%;
+    font-family: Arial;
+    font-size: 14px;
+}
 
 @font-face {
     font-family: UVNKieuBold;
     src: url("../fonts/UVNKieu_B.TTF");
 }
 
-// .font-style {
-//     font-family: UVNKieuBold;
-//     font-size: 30pt; //50pt; 
-//     font-weight: 600;
-//     color: black;
-//     position: absolute;
-//     margin: 0px;
-//     top: -10px;
-// }
+// Nội dung chính
+.MyriadPro-font {
+    font-family: MyriadProRegular;
+}
 
-// // Spa uy tín
-// .title {
-//     position: relative;
+.content-title>p {
+    font-size: 24px;
+    color: #7b0200;
+}
 
-//     >.col-button {
-//         width: 100%;
-//         display: flex;
-//         justify-content: flex-end;
-//         position: relative;
-//         border-bottom: 1px solid #000;
-//         align-items: end;
+.main-content {
+    img {
+        padding-bottom: 20px;
+        width: 100%;
+        height: 100%;
+    }
+}
 
-//         >button {
-//             background-color: white;
-//             height: 40px;
-//             padding: 0 10px;
-//             margin: 0px;
-//             border: 1px solid transparent;
-//             // width: 102px;
-//             // height: 34px;
+.content-rating {
+    display: flex;
 
-//             &:hover {
-//                 border: 1px solid black;
-//                 background-color: #e9e9e9;
-//                 font-weight: bold;
-//             }
-//         }
-//     }
+    .star-icon {
+        padding-right: 15px;
 
-//     .absolute {
-//         position: absolute;
-//     }
-// }
+        .checked {
+            color: #f7b208;
+        }
+    }
 
-// button.active {
-//     font-weight: bold;
-//     border: 1px solid #000;
-// }
+    .like-btn,
+    .share-btn {
+        display: inline-block;
+        padding: 5px 10px;
+        border: 1px solid #3B5998;
+        border-radius: 4px;
+        margin-right: 15px;
+        background: #3B5998;
+    }
 
-// .massage-item {
-//     font-size: small;
-//     background-color: rgb(235, 235, 235);
-//     background-size: 100%;
-//     margin: 20px 0;
-//     // width: 270px;
-//     // height: 308px;
+    .facebook-like-btn,
+    .facebook-share-btn {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
 
-//     .massage-item-image {
-//         object-fit: cover;
-//         width: 100%;
-//         height: 100%;
+    .facebook-like-btn i {
+        background: white;
+        color: #3B5998;
+        //margin-right: 5px;
+        border: 1px solid #3B5998;
+        padding: 2px 2px 0 5px;
+        border-radius: 1px;
+    }
 
-//         >a>img {
-//             width: 100%;
-//             object-fit: cover;
-//         }
-//     }
+    .message-icon {
+        position: relative;
+        display: inline-block;
+        margin-right: 15px;
 
-//     .massage-item-text {
-//         padding: 5px 10px;
+        i {
+            font-size: 33px;
+            border: #707070;
+        }
 
-//         .massage-item-text-title {
-//             margin-bottom: 0rem;
-//         }
+        .message-icon-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 14px;
+            color: black;
+        }
+    }
 
-//         .start-align {
-//             text-align: start;
-//         }
+    .zalo-icon {
+        object-fit: fill;
+    }
+}
 
-//         .end-align {
-//             text-align: end;
-//         }
 
-//         .small-fontsize {
-//             font-size: 12px;
-//         }
-//     }
 
-//     .checked {
-//         color: rgb(216, 190, 75);
-//     }
-// }
+// Comment
+hr.hr-style {
+    color: e1e1e1;
+}
+
+.comment-field {
+    display: flex;
+    align-items: center;
+
+    .comment-input-field {
+        width: 100%;
+        padding: 3px 15px;
+        margin: 0 10px;
+        height: 45px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+}
+
+.facebook-icon {
+    text-decoration: none;
+    color: #3B5998;
+
+    i {
+        background: #3B5998;
+        color: white;
+        //margin-right: 5px;
+        border: 1px solid #3B5998;
+        padding: 2px 2px 0 5px;
+        border-radius: 1px;
+    }
+}
 
 // Tìm kiếm
 .searching {
@@ -115,7 +133,7 @@
     color: #ffb628;
     padding: 2px;
     margin-bottom: 20px;
-    margin-left: auto;
+    //margin-left: auto;
     width: 271px;
     height: 284px;
 
@@ -123,14 +141,14 @@
         color: black;
         background-color: #ffb628;
         border: none;
-        padding: 2px;
-        margin-bottom: 5px 5px 26px 5px;
+        padding: 5px;
+        margin-bottom: 26px;
         text-align: center;
-        font-family: MyriadProRegular;
+        font-family: 'Roboto';
     }
 
     .searching-field {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
 
         label {
             margin-left: 20px;
@@ -187,7 +205,7 @@
             float: right;
 
             .button {
-                margin-right: 5px;
+                margin: 3px 15px;
                 background-color: #ffb628;
                 border: none;
                 width: 58px;
@@ -197,18 +215,56 @@
     }
 }
 
-.advertise {
-    display: block;
+// Chủ đề mới nhất
+.latest-topic {
+    background-color: black;
+    color: #ffb628;
+    padding: 2px;
+    margin-bottom: 20px;
+    //margin-left: auto;
+    width: 272px;
+    //height: 409px;
 
-    #advertise1 {
-        width: 270px;
-        height: 382px;
-
-        img {
-            margin-bottom: 20px;
-        }
+    >p {
+        color: black;
+        background-color: #ffb628;
+        border: none;
+        padding: 5px;
+        margin-bottom: 18px;
+        text-align: center;
+        font-family: 'Roboto';
     }
 
+    .latest-topic-item {
+        padding: 5px;
+
+        .latest-topic-item-style {
+            padding-bottom: 18px;
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                padding-right: 7px;
+                height: 100%;
+                max-height: 100%;
+                object-fit: cover;
+                //width: 101px;
+                //height: 69px;
+            }
+
+            .latest-topic-text>p {
+                color: #707070;
+                margin: 0;
+
+                .text1 {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.advertise {
     #advertise2 {
         width: 269px;
         height: 365px;
@@ -240,8 +296,8 @@
     }
 
     .latest-news-align {
-        margin-left: 84px;
-        margin-right: 84px;
+        // margin-left: 84px;
+        // margin-right: 84px;
 
         .latest-news-content {
             display: flex;
@@ -273,12 +329,11 @@
                     display: flex;
                     flex-direction: column;
                     padding: 10px 20px;
-                    font-size: 14pt;
 
                     .lastest-news-item-text-title {
                         font-weight: bold;
                         font-family: MyriadProRegular;
-                        color: #7b0200;
+                        color: black;
                     }
 
                     .lastest-news-item-text-content {
@@ -368,6 +423,7 @@
             flex-direction: column;
             align-items: center;
         }
+
         .button {
             align-items: center;
         }

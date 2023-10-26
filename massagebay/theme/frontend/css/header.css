@@ -31,14 +31,40 @@ header .logo-image {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 60%;
-  font-family: MyriadProRegular !important;
-  font-size: 18pt !important;
 }
 .menu-container .menu > li {
   display: inline-block;
+  position: relative;
 }
-.menu-container .menu > li :hover {
-  text-decoration: underline;
+.menu-container .menu > li a {
+  font-family: MyriadProRegular !important;
+  font-size: 18px !important;
+}
+.menu-container .menu > li :hover::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  bottom: 10px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(35%, rgb(49, 39, 11)), to(rgb(255, 255, 255)));
+  background: linear-gradient(0deg, rgb(49, 39, 11) 35%, rgb(255, 255, 255) 100%);
+  opacity: 0.5;
+  border-radius: 2px;
+}
+.menu-container .menu > li:last-child::after {
+  display: none;
+}
+.menu-container .menu > li::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 30px;
+  top: 2px;
+  right: 0;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(35%, rgb(49, 39, 11)), to(rgb(255, 255, 255)));
+  background: linear-gradient(0deg, rgb(49, 39, 11) 35%, rgb(255, 255, 255) 100%);
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
 }
 .menu-container .menu > li > ul {
   left: 0;
