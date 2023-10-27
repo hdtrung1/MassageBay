@@ -11,154 +11,119 @@
     src: url("../fonts/UVNKieu_B.TTF");
 }
 
-// Nội dung chính
+// Main news
 .MyriadPro-font {
     font-family: MyriadProRegular;
 }
 
-.content-title>p {
-    font-size: 24px;
-    color: #7b0200;
-}
-
 .main-content {
+    position: relative;
+
     img {
         padding-bottom: 20px;
         width: 100%;
         height: 100%;
     }
-}
 
-.margin-bottom {
-    margin-bottom: 50px;
-}
+    .main-content-overlay {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 25px 20px 0 20px;
 
-.content-rating {
-    display: flex;
-    margin-bottom: 30px;
+        .main-content-title {
+            font-family: 'Roboto';
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffb628;
+        }
 
-    .star-icon {
-        margin-right: 10px;
-
-        .checked {
-            color: #f7b208;
+        .main-content-text {
+            color: white;
         }
     }
 
-    .like-btn,
-    .share-btn {
-        display: inline-block;
-        padding: 5px 1.5px;
-        border: 1px solid #4a67b7;
-        border-radius: 3px;
-        margin-right: 6px;
-        background: #4a67b7;
-        position: relative;
-    }
+}
 
-    .facebook-like-btn,
-    .facebook-share-btn {
-        text-decoration: none;
-        color: white;
+// Tin tức mới nhất
+.latest-news {
+    .latest-news-item-title {
+        font-family: 'UVNKieuBold';
+        color: #7b0200;
+        font-size: 50px;
         font-weight: bold;
-        top: -5px;
-        position: relative;
     }
 
-    .facebook-like-btn i {
-        background: white;
-        color: #3B5998;
-        border: 1px solid #4a67b7;
-        padding: 2px 2px 0 5px;
-        border-radius: 1px;
+    .latest-news-item-align {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        .latest-news-item-text {
+            // flex: 1;
+            padding-left: 30px;
+
+            .latest-news-item-text-title {
+                color: #7b0200;
+                font-family: 'Roboto';
+            }
+
+            .latest-news-item-text-rating {
+                display: flex;
+                justify-content: space-between;
+
+                .checked {
+                    color: #ffb628;
+                }
+
+                .text {
+                    font-size: 12px;
+                }
+            }
+
+            .clock-icon {
+                color: #b7b7b7
+            }
+        }
     }
+}
 
-    .message-icon {
-        position: relative;
-        display: inline-block;
-        margin-right: 7px;
+// Chuyển trang
+.pagination {
+    // display: flex;
+    // justify-content: center;
+    margin: 20px 0;
 
-        i {
-            font-size: 25px;
-            border: #707070;
+    a {
+        text-decoration: none;
+        color: #f9c636;
+        padding: 6px 10px;
+        background-color: #7b0200;
+        margin: 5px;
+        //border: 1px solid #7b0200;
+
+        &:hover {
+            color: #7b0200;
+            background-color: #e1e1e1;
         }
 
-        .message-icon-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 12px;
-            color: black;
+        &:first-child {
+            padding-left: 0;
+            margin-left: 0;
         }
     }
 
-    .zalo-icon {
-        object-fit: fill;
+    .prev, .next {
+        color: #7b0200;
+        background-color: white;
     }
-}
-
-
-
-// Comment
-.comment-order {
-    display: flex;
-    justify-content: space-between;
-
-    .comment-order-text {
-        color: #a3a2a2;
-    }
-
-    .comment-order-field {
-        background-color: #ebebeb;
-        width: 80px;
-        height: 30px;
-        padding: 0 5px;
-        margin: 3px 5px;
-        outline: none;
-        appearance: none;
-        background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
-        background-repeat: no-repeat;
-        background-position: right 0.7rem top 50%;
-        background-size: 0.65rem auto;
-    }
-}
-
-.hr-style {
-    color: e1e1e1;
-}
-
-.comment-field {
-    display: flex;
-    align-items: center;
-
-    .comment-input-field {
-        width: 100%;
-        padding: 3px 15px;
-        margin: 0 10px;
-        height: 45px;
-        display: inline-block;
-        border: 1px solid #ccc;
-        box-sizing: border-box;
     
-        &::placeholder {
-            font-family: 'Roboto', sans-serif;
-        }
+    .page-box {
+        padding: 6px 10px;
+        margin: 5px;
     }
-}
 
-.facebook-icon {
-    text-decoration: none;
-    color: #3B5998;
-
-    i {
-        background: #3B5998;
-        color: white;
-        //margin-right: 5px;
-        border: 1px solid #3B5998;
-        padding: 2px 2px 0 5px;
-        border-radius: 1px;
-    }
 }
 
 // Tìm kiếm
@@ -306,85 +271,6 @@
         img {
             margin-bottom: 20px;
         }
-    }
-}
-
-// Tin tức mới nhất
-.latest-news {
-    text-align: center;
-    background-image: url("../images/home/font2-background.png");
-    background-size: cover;
-    padding: 50px 0px;
-    background-repeat: no-repeat;
-
-    .latest-news-font-style {
-        font-family: UVNKieuBold;
-        font-size: 50px;
-        font-weight: 600;
-        color: #7b0200;
-        margin: 0;
-    }
-
-    >img {
-        padding-bottom: 30px;
-    }
-
-    .latest-news-align {
-        // margin-left: 84px;
-        // margin-right: 84px;
-
-        .latest-news-content {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            background-color: transparent;
-            background-size: 100%;
-
-            .lastest-news-item {
-                //width: 95%;
-                width: 370px;
-                background-color: #fff;
-                margin: 10px 0px;
-
-
-                .lastest-news-item-image {
-
-                    //width: 100%;
-                    >a>img {
-                        width: 100%;
-                        //object-fit: cover;
-                    }
-                }
-
-                .lastest-news-item-text {
-                    margin-top: 20px;
-                    box-sizing: border-box;
-                    text-align: left;
-                    display: flex;
-                    flex-direction: column;
-                    padding: 10px 20px;
-
-                    .lastest-news-item-text-title {
-                        font-weight: bold;
-                        font-family: MyriadProRegular;
-                        color: black;
-                    }
-
-                    .lastest-news-item-text-content {
-                        font-family: Arial;
-                    }
-                }
-            }
-        }
-    }
-
-    button {
-        border: 1px solid brown;
-        background-color: transparent;
-        margin-top: 2%;
-        //padding: 0.2cm 5cm;
-        height: 50px;
-        width: 370px;
     }
 }
 
