@@ -104,7 +104,7 @@
                                 điện
                                 hoạt động.
                             </p>
-                            <p class="MyriadPro-font">
+                            <p class="MyriadPro-font margin-bottom">
                                 Tái sử dụng năng lượng dư thừa là ưu điểm lớn nhất của xe Hybrid. Khi ô tô chạy trên
                                 đường,
                                 cứ mỗi lần đạp phanh là năng lượng của xe bị thất thoát. Xe chạy càng nhanh, nhất là lao
@@ -137,14 +137,25 @@
                             </div>
 
                             <div class="zalo-icon">
-                                <img src="./frontend/images/detail/logo-icon2.png" alt="">
+                                <a href=""><img id="zalo-img" src="./frontend/images/detail/logo-icon2.png" alt=""></a>
                             </div>
-                            
+
                         </div>
 
                         <!--Comment-->
                         <div class="comment">
-                            <p><b class="MyriadPro-font">0 bình luận</b></p>
+                            <div class="comment-order">
+                                <p><b class="MyriadPro-font">0 bình luận</b></p>                               
+                                <div>
+                                    <label for="order" class="comment-order-text MyriadPro-font">=Sắp xếp theo</label>
+                                    <select name="order" class="comment-order-field MyriadPro-font" style="height: 21px;">
+                                        <option value="">
+                                            Cũ nhất
+                                        </option>
+                                        <option value="Mới nhất">Mới nhất</option>
+                                    </select>
+                                </div>
+                            </div>
                             <hr class="hr-style">
                             <div class="comment-field">
                                 <img src="./frontend/images/detail/avatar.png" alt="">
@@ -250,190 +261,193 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <!--Tin tuc moi nhat-->
-        <div class="latest-news">
-            <p class="latest-news-font-style">Tin tức mới nhất</p>
-            <img src="./frontend/images/home/logo-font-2.png" alt="logo" />
-            <div class="latest-news-align container">
-                <div class="latest-news-content row">
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 d-flex justify-content-start align-items-start">
-                        <div class="lastest-news-item">
-                            <div class="lastest-news-item-image">
-                                <a href=""><img src="./frontend/images/home/font2-item1.png" class="img-fluid"
-                                        alt="item1" /></a>
-                            </div>
-                            <div class="lastest-news-item-text">
-                                <p class="lastest-news-item-text-title">
-                                    NỔI BẬT TRÊN KHÔNG GIAN LÀNG QUÊ YÊN TĨNH
-                                </p>
-                                <p class="lastest-news-item-text-content">
-                                    là một trong những khách sạn mới nhất của
-                                    TRÀNG AN LUXURY là một trong những khách sạn
-                                    mới nhất của
-                                </p>
-                            </div>
+    <!--Tin tuc moi nhat-->
+    <div class="latest-news">
+        <p class="latest-news-font-style">Tin tức mới nhất</p>
+        <img src="./frontend/images/home/logo-font-2.png" alt="logo" />
+        <div class="latest-news-align container">
+            <div class="latest-news-content row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 d-flex justify-content-start align-items-start">
+                    <div class="lastest-news-item">
+                        <div class="lastest-news-item-image">
+                            <a href=""><img src="./frontend/images/home/font2-item1.png" class="img-fluid"
+                                    alt="item1" /></a>
                         </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
-                        <div class="lastest-news-item">
-                            <div class="lastest-news-item-image">
-                                <a href=""><img src="./frontend/images/home/font2-item2.png" class="img-fluid"
-                                        alt="item2" /></a>
-                            </div>
-                            <div class="lastest-news-item-text">
-                                <p class="lastest-news-item-text-title">
-                                    NỔI BẬT TRÊN KHÔNG GIAN LÀNG QUÊ YÊN TĨNH
-                                </p>
-                                <p class="lastest-news-item-text-content">
-                                    là một trong những khách sạn mới nhất của
-                                    TRÀNG AN LUXURY là một trong những khách sạn
-                                    mới nhất của
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 d-flex justify-content-end align-items-end">
-                        <div class="lastest-news-item">
-                            <div class="lastest-news-item-image">
-                                <a href=""><img src="./frontend/images/home/font2-item3.png" class="img-fluid"
-                                        alt="item3" /></a>
-                            </div>
-                            <div class="lastest-news-item-text">
-                                <p class="lastest-news-item-text-title">
-                                    NỔI BẬT TRÊN KHÔNG GIAN LÀNG QUÊ YÊN TĨNH
-                                </p>
-                                <p class="lastest-news-item-text-content">
-                                    là một trong những khách sạn mới nhất của
-                                    TRÀNG AN LUXURY là một trong những khách sạn
-                                    mới nhất của
-                                </p>
-                            </div>
+                        <div class="lastest-news-item-text">
+                            <p class="lastest-news-item-text-title">
+                                NỔI BẬT TRÊN KHÔNG GIAN LÀNG QUÊ YÊN TĨNH
+                            </p>
+                            <p class="lastest-news-item-text-content">
+                                là một trong những khách sạn mới nhất của
+                                TRÀNG AN LUXURY là một trong những khách sạn
+                                mới nhất của
+                            </p>
                         </div>
                     </div>
                 </div>
-                <button>XEM TẤT CẢ</button>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
+                    <div class="lastest-news-item">
+                        <div class="lastest-news-item-image">
+                            <a href=""><img src="./frontend/images/home/font2-item2.png" class="img-fluid"
+                                    alt="item2" /></a>
+                        </div>
+                        <div class="lastest-news-item-text">
+                            <p class="lastest-news-item-text-title">
+                                NỔI BẬT TRÊN KHÔNG GIAN LÀNG QUÊ YÊN TĨNH
+                            </p>
+                            <p class="lastest-news-item-text-content">
+                                là một trong những khách sạn mới nhất của
+                                TRÀNG AN LUXURY là một trong những khách sạn
+                                mới nhất của
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 d-flex justify-content-end align-items-end">
+                    <div class="lastest-news-item">
+                        <div class="lastest-news-item-image">
+                            <a href=""><img src="./frontend/images/home/font2-item3.png" class="img-fluid"
+                                    alt="item3" /></a>
+                        </div>
+                        <div class="lastest-news-item-text">
+                            <p class="lastest-news-item-text-title">
+                                NỔI BẬT TRÊN KHÔNG GIAN LÀNG QUÊ YÊN TĨNH
+                            </p>
+                            <p class="lastest-news-item-text-content">
+                                là một trong những khách sạn mới nhất của
+                                TRÀNG AN LUXURY là một trong những khách sạn
+                                mới nhất của
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>XEM TẤT CẢ</button>
+        </div>
+    </div>
+
+    <!--About massage-->
+    <div class="about-massage">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="about-massage-link">
+                        <div>
+                            <p><b>Về hotel84.com</b></p>
+                            <ul>
+                                <a href="">
+                                    <li>Trang chủ</li>
+                                </a>
+                                <a href="">
+                                    <li>Giới thiệu</li>
+                                </a>
+                                <a href="">
+                                    <li>Điều khoản sử dụng</li>
+                                </a>
+                                <a href="">
+                                    <li>Thông tin cá nhân</li>
+                                </a>
+                                <a href="">
+                                    <li>Tin tức công ty</li>
+                                </a>
+                                <a href="">
+                                    <li>Sitemap</li>
+                                </a>
+                                <a href="">
+                                    <li>Hướng dẫn sử dụng</li>
+                                </a>
+                                <a href="">
+                                    <li>Liên hệ</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="about-massage-link">
+                        <div>
+                            <p><b>Về hotel84.com</b></p>
+                            <ul>
+                                <a href="">
+                                    <li>Viết bài PR quảng cáo khách sạn</li>
+                                </a>
+                                <a href="">
+                                    <li>Tư vấn quảng bá khách sạn</li>
+                                </a>
+                                <a href="">
+                                    <li>Đặt phòng khách sạn</li>
+                                </a>
+                                <a href="">
+                                    <li>Đặt phòng du thuyền</li>
+                                </a>
+                                <a href="">
+                                    <li>Khách sạn tuyển dụng</li>
+                                </a>
+                                <a href="">
+                                    <li>Thuê xe du lịch</li>
+                                </a>
+                                <a href="">
+                                    <li>Sản phẩm cho khách sạn</li>
+                                </a>
+                                <a href="">
+                                    <li>Dịch vụ Quảng cáo Khách sạn</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 align-column">
+                    <div class="about-massage-info">
+                        <p>Quảng bá khách sạn Việt Nam</p>
+                        <p>Địa chỉ: 38B ngách 6/31/5 Đặng Văn Ngữ</p>
+                        <p>
+                            Tel: <a href="tel:024357359928">024 39958520</a> ; Mobile:
+                            <a href="tel:0903215458">0903215458</a> (không liên hệ đặt
+                            phòng ở đây)
+                        </p>
+                        <p>
+                            Email: <a href="mail:info@hotel184.com">info@hotel84.com</a>
+                        </p>
+                        <p>Website khách sạn: <a href="">http://www.hotel84.com</a></p>
+                        <p>
+                            Website Vietnam hotels:
+                            <a href="">http://www.hotel84.com</a>
+                        </p>
+                        <p>Đối tác khách sạn</p>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
 
-        <!--About massage-->
-        <div class="about-massage">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="about-massage-link">
-                            <div>
-                                <p><b>Về hotel84.com</b></p>
-                                <ul>
-                                    <a href="">
-                                        <li>Trang chủ</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Giới thiệu</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Điều khoản sử dụng</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Thông tin cá nhân</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Tin tức công ty</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Sitemap</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Hướng dẫn sử dụng</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Liên hệ</li>
-                                    </a>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="col-lg-3">
-                        <div class="about-massage-link">
-                            <div>
-                                <p><b>Về hotel84.com</b></p>
-                                <ul>
-                                    <a href="">
-                                        <li>Viết bài PR quảng cáo khách sạn</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Tư vấn quảng bá khách sạn</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Đặt phòng khách sạn</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Đặt phòng du thuyền</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Khách sạn tuyển dụng</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Thuê xe du lịch</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Sản phẩm cho khách sạn</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Dịch vụ Quảng cáo Khách sạn</li>
-                                    </a>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="col-lg-6 align-column">
-                        <div class="about-massage-info">
-                            <p>Quảng bá khách sạn Việt Nam</p>
-                            <p>Địa chỉ: 38B ngách 6/31/5 Đặng Văn Ngữ</p>
-                            <p>
-                                Tel: <a href="tel:024357359928">024 39958520</a> ; Mobile:
-                                <a href="tel:0903215458">0903215458</a> (không liên hệ đặt
-                                phòng ở đây)
-                            </p>
-                            <p>
-                                Email: <a href="mail:info@hotel184.com">info@hotel84.com</a>
-                            </p>
-                            <p>Website khách sạn: <a href="">http://www.hotel84.com</a></p>
-                            <p>
-                                Website Vietnam hotels:
-                                <a href="">http://www.hotel84.com</a>
-                            </p>
-                            <p>Đối tác khách sạn</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>  
+    <!--Footer-->
+    <footer>
+        <div class="footer">
+            <p>
+                Địa chỉ: số nhà 38b ngách 6/31/5 Đặng Văn Ngữ, phường Phương
+                Liên, quận Đống Đa, Hà Nội
+            </p>
+            <p>
+                Điện thoại: 024 357359928 - 39958520; Fax: 024 35735928; Di
+                động: 0903215458
+            </p>
+            <p>
+                Email: info@hotel84.com ; Website: www.hotel84.com ;
+                www.hotel84.com ; www.vietnamtradefair.com ;
+                www.halongtravelguide.com
+            </p>
+            <p>
+                Số ĐKKD: 0103003424; Ngày cấp: 02/1/2004; Giám đốc: Phan Văn
+                Thu
+            </p>
+        </div>
+    </footer>
+    <script src="./frontend/js/javascript.js"></script>
 
-        <!--Footer-->
-        <footer>
-            <div class="footer">
-                <p>
-                    Địa chỉ: số nhà 38b ngách 6/31/5 Đặng Văn Ngữ, phường Phương
-                    Liên, quận Đống Đa, Hà Nội
-                </p>
-                <p>
-                    Điện thoại: 024 357359928 - 39958520; Fax: 024 35735928; Di
-                    động: 0903215458
-                </p>
-                <p>
-                    Email: info@hotel84.com ; Website: www.hotel84.com ;
-                    www.hotel84.com ; www.vietnamtradefair.com ;
-                    www.halongtravelguide.com
-                </p>
-                <p>
-                    Số ĐKKD: 0103003424; Ngày cấp: 02/1/2004; Giám đốc: Phan Văn
-                    Thu
-                </p>
-            </div>
-        </footer>
 </body>
 
 </html>

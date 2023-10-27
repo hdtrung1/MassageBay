@@ -26,13 +26,18 @@
   height: 100%;
 }
 
+.margin-bottom {
+  margin-bottom: 50px;
+}
+
 .content-rating {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 30px;
 }
 .content-rating .star-icon {
-  padding-right: 15px;
+  margin-right: 10px;
 }
 .content-rating .star-icon .checked {
   color: #f7b208;
@@ -40,32 +45,35 @@
 .content-rating .like-btn,
 .content-rating .share-btn {
   display: inline-block;
-  padding: 5px 10px;
-  border: 1px solid #3B5998;
-  border-radius: 4px;
-  margin-right: 15px;
-  background: #3B5998;
+  padding: 5px 1.5px;
+  border: 1px solid #4a67b7;
+  border-radius: 3px;
+  margin-right: 6px;
+  background: #4a67b7;
+  position: relative;
 }
 .content-rating .facebook-like-btn,
 .content-rating .facebook-share-btn {
   text-decoration: none;
   color: white;
   font-weight: bold;
+  top: -5px;
+  position: relative;
 }
 .content-rating .facebook-like-btn i {
   background: white;
   color: #3B5998;
-  border: 1px solid #3B5998;
+  border: 1px solid #4a67b7;
   padding: 2px 2px 0 5px;
   border-radius: 1px;
 }
 .content-rating .message-icon {
   position: relative;
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 7px;
 }
 .content-rating .message-icon i {
-  font-size: 33px;
+  font-size: 25px;
   border: #707070;
 }
 .content-rating .message-icon .message-icon-text {
@@ -74,7 +82,7 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-size: 14px;
+  font-size: 12px;
   color: black;
 }
 .content-rating .zalo-icon {
@@ -82,7 +90,34 @@
      object-fit: fill;
 }
 
-hr.hr-style {
+.comment-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.comment-order .comment-order-text {
+  color: #a3a2a2;
+}
+.comment-order .comment-order-field {
+  background-color: #ebebeb;
+  width: 80px;
+  height: 30px;
+  padding: 0 5px;
+  margin: 3px 5px;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 0.65rem auto;
+}
+
+.hr-style {
   color: e1e1e1;
 }
 
@@ -103,6 +138,21 @@ hr.hr-style {
   border: 1px solid #ccc;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+.comment-field .comment-input-field::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+}
+.comment-field .comment-input-field::-moz-placeholder {
+  font-family: "Roboto", sans-serif;
+}
+.comment-field .comment-input-field:-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+}
+.comment-field .comment-input-field::-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+}
+.comment-field .comment-input-field::placeholder {
+  font-family: "Roboto", sans-serif;
 }
 
 .facebook-icon {
