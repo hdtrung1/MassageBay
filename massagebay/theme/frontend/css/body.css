@@ -234,6 +234,9 @@
 .searching .searching-rating .searching-rating-left .icon .checked {
   color: rgb(216, 190, 75);
 }
+.searching .searching-rating .searching-rating-left .icon .unchecked {
+  color: #999999;
+}
 .searching .searching-rating .searching-rating-right {
   float: right;
 }
