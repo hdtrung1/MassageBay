@@ -90,13 +90,17 @@
   background-color: #7b0200;
   margin: 5px;
 }
-.pagination a:hover {
+.pagination a:active {
   color: #7b0200;
   background-color: #e1e1e1;
 }
-.pagination a:first-child {
-  padding-left: 0;
-  margin-left: 0;
+.pagination > a {
+  margin: 5px 0;
+  padding: 6px 0;
+}
+.pagination > a:active {
+  color: #e1e1e1;
+  background: none;
 }
 .pagination .prev, .pagination .next {
   color: #7b0200;

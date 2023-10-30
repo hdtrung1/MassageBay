@@ -101,16 +101,29 @@
         padding: 6px 10px;
         background-color: #7b0200;
         margin: 5px;
-        //border: 1px solid #7b0200;
 
-        &:hover {
+        // &:hover {
+        //     color: #7b0200;
+        //     background-color: #e1e1e1;
+        // }
+
+        // &:first-child {
+        //     padding-left: 0;
+        //     margin-left: 0;
+        // }
+
+        &:active {
             color: #7b0200;
             background-color: #e1e1e1;
         }
+    }
 
-        &:first-child {
-            padding-left: 0;
-            margin-left: 0;
+    >a {
+        margin: 5px 0;
+        padding: 6px 0;
+        &:active {
+            color: #e1e1e1;
+            background: none;
         }
     }
 
