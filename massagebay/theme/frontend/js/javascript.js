@@ -13,3 +13,13 @@ shareBtns.forEach((btn) => {
 
 const messageIcon = document.querySelector('.message-icon');
 messageIcon.style.height = `${zaloIconHeight}px`;
+
+
+function menuMobileFunction() {
+    var x = document.getElementById("mobileMenu");
+    if (x.className === "menu") {
+        x.className += " responsive";
+    } else {
+        x.className = "menu";
+    }
+}

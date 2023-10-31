@@ -348,26 +348,26 @@
 }
 
 @media (max-width: 768px) {
-    .popular-spa {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
     .latest-news {
-        .latest-news-content {
+        .latest-news-item-align {
             flex-direction: column;
             align-items: center;
-        }
 
-        .button {
-            align-items: center;
+            img {
+                margin-bottom: 15px;
+            }
         }
-
     }
 
     .about-massage {
         flex-direction: column;
+    }
+
+    .advertise {
+        #advertise1 {
+            img {
+                margin-bottom: 20px;
+            }
+        }
     }
 }

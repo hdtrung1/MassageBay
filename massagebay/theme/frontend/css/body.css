@@ -303,22 +303,7 @@
 }
 
 @media (max-width: 768px) {
-  .popular-spa {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .latest-news .latest-news-content {
+  .latest-news .latest-news-item-align {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -327,15 +312,16 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .latest-news .button {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .latest-news .latest-news-item-align img {
+    margin-bottom: 15px;
   }
   .about-massage {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .advertise #advertise1 img {
+    margin-bottom: 20px;
   }
 }
