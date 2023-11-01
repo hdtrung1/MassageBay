@@ -435,12 +435,35 @@ button.active {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+
+        .justify-content-start {
+            justify-content: center !important;
+        }
+        
+        .justify-content-end {
+            justify-content: center !important;
+        }
+        
+        .align-items-start {
+            padding-left: 20px !important;
+        }
+
+        .align-items-end {
+            padding-right: 20px !important;
+        }
     }
 
     .latest-news {
         .latest-news-content {
             flex-direction: column;
-            align-items: center;
+
+            .justify-content-start {
+                justify-content: center !important;
+            }
+            
+            .justify-content-end {
+                justify-content: center !important;
+            }
         }
 
         .button {
@@ -451,5 +474,30 @@ button.active {
 
     .about-massage {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 992px) {
+    .popular-spa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .justify-content-start {
+            justify-content: center !important;
+        }
+        
+        .justify-content-end {
+            justify-content: center !important;
+        }
+        
+        .align-items-start {
+            padding-left: 20px !important;
+        }
+
+        .align-items-end {
+            padding-right: 20px !important;
+        }
     }
 }
