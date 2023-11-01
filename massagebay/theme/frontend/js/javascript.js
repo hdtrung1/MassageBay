@@ -16,7 +16,7 @@ messageIcon.style.height = `${zaloIconHeight}px`;
 
 
 function menuMobileFunction() {
-    var x = document.getElementById("myLinks");
+    var x = document.getElementById("link");
     if (x.style.display === "block") {
       x.style.display = "none";
     } else {
