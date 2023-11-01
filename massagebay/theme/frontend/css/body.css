@@ -426,7 +426,7 @@
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 764px) {
   .popular-spa {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -447,9 +447,16 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  }
+  .latest-news .latest-news-content .justify-content-start {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .latest-news .latest-news-content .justify-content-end {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
   }
   .latest-news .button {
     -webkit-box-align: center;
