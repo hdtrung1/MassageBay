@@ -442,14 +442,37 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .popular-spa .justify-content-start {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .popular-spa .justify-content-end {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .popular-spa .align-items-start {
+    padding-left: 20px !important;
+  }
+  .popular-spa .align-items-end {
+    padding-right: 20px !important;
+  }
   .latest-news .latest-news-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  }
+  .latest-news .latest-news-content .justify-content-start {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .latest-news .latest-news-content .justify-content-end {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
   }
   .latest-news .button {
     -webkit-box-align: center;
@@ -461,5 +484,36 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .container .row > p {
+    padding-top: 15px;
+  }
+  .searching {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .searching {
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .latest-topic {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .advertise {
+    text-align: center !important;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .main-content-overlay .main-content-title {
+    font-size: 14px;
+  }
+  .main-content .main-content-overlay .main-content-text {
+    font-size: 10px;
   }
 }

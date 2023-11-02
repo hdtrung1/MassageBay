@@ -23,8 +23,9 @@ header .logo-image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin: 0 auto 30px auto;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -35,17 +36,33 @@ header .logo-image {
 .menu-container .menu > li {
   display: inline-block;
   position: relative;
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.menu-container .menu > li a {
+.menu-container .menu > li .menu-main-item {
+  font-size: 16px !important;
   font-family: MyriadProRegular !important;
-  font-size: 18px !important;
+  width: 100%;
 }
-.menu-container .menu > li :hover::before {
+.menu-container .menu > li .menu-main-item .menu-main-item-info {
+  font-size: 16px !important;
+  font-family: MyriadProRegular !important;
+  position: relative;
+}
+.menu-container .menu > li .menu-main-item-info:hover::before {
   content: "";
   position: absolute;
-  width: 80px;
+  width: 80%;
   height: 3px;
-  bottom: 10px;
+  bottom: 0px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(35%, rgb(49, 39, 11)), to(rgb(255, 255, 255)));
   background: linear-gradient(0deg, rgb(49, 39, 11) 35%, rgb(255, 255, 255) 100%);
   opacity: 0.5;
@@ -60,14 +77,14 @@ header .logo-image {
   width: 1px;
   height: 30px;
   top: 2px;
-  right: 0;
+  right: 30px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(35%, rgb(49, 39, 11)), to(rgb(255, 255, 255)));
   background: linear-gradient(0deg, rgb(49, 39, 11) 35%, rgb(255, 255, 255) 100%);
   -webkit-transform: translateX(50px);
           transform: translateX(50px);
 }
 .menu-container .menu > li > ul {
-  left: 0;
+  left: -10px;
   top: 100%;
   padding: 0;
 }
@@ -105,6 +122,123 @@ header .logo-image {
   margin: none;
 }
 
-.menu li:hover > ul {
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  display: none;
+}
+.topnav #link {
+  display: none;
+}
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
   display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: rgb(245, 184, 75);
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 600px) {
+  .topnav {
+    display: block;
+  }
+  .menu-container {
+    display: none;
+  }
+}
+@media (min-width: 0px) {
+  .menu > li {
+    font-size: 14px;
+    width: 5% !important;
+  }
+  .menu > li > a {
+    width: 100%;
+    overflow-wrap: break-word !important;
+  }
+  .menu > li::after {
+    height: 90% !important;
+    right: 42%;
+  }
+}
+@media (min-width: 576px) {
+  .menu > li {
+    font-size: 16px;
+    width: 12% !important;
+  }
+  .menu > li > a {
+    width: 100%;
+    overflow-wrap: break-word !important;
+  }
+  .menu > li::after {
+    height: 90% !important;
+    right: 60%;
+  }
+}
+@media (min-width: 768px) {
+  .menu > li {
+    font-size: 16px;
+    width: 12% !important;
+  }
+  .menu > li > a {
+    width: 100%;
+    overflow-wrap: break-word !important;
+  }
+  .menu > li::after {
+    height: 90% !important;
+    right: 42%;
+  }
+}
+@media (min-width: 850px) {
+  .menu > li {
+    width: 13% !important;
+  }
+  .menu > li > a {
+    width: 100%;
+    overflow-wrap: break-word !important;
+  }
+  .menu > li::after {
+    height: 90% !important;
+    right: 55%;
+  }
+}
+@media (min-width: 992px) {
+  .menu > li {
+    width: 15% !important;
+  }
+  .menu > li > a {
+    width: 100%;
+    overflow-wrap: break-word !important;
+  }
+  .menu > li::after {
+    height: 90% !important;
+    right: 55%;
+  }
+}
+@media (min-width: 1200px) {
+  .menu > li::after {
+    height: 90% !important;
+    right: 0%;
+  }
 }

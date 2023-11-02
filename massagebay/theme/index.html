@@ -25,24 +25,41 @@
             <img class="logo-image" src="./frontend/images/home/logo.png" alt="logo-image">
         </div>
     </header>
+    
     <!-- Menu -->
     <div class="menu-container">
         <ul class="menu">
-            <li><a href="">MASSAGEBAY</a></li>
+            <li><a class="menu-main-item" href="">
+                    <div class="menu-main-item-info">MASSAGEBAY</div>
+                </a></li>
             <li>
-                <a href="">DIỄN ĐÀN</a>
+                <a class="menu-main-item" href="">
+                    <div class="menu-main-item-info">DIỄN ĐÀN</div>
+                </a>
                 <ul>
-                    <li><a href="">Mục con 1</a>
+                    <li><a href="">
+                            <p>Mục con 1</p>
+                        </a>
                         <ul>
-                            <li><a href="">Mục con 1.1</a></li>
-                            <li><a href="">Mục con 1.2</a></li>
+                            <li><a href="">
+                                    <p>Mục con 1.1</p>
+                                </a></li>
+                            <li><a href="">
+                                    <p>Mục con 1.2</p>
+                                </a></li>
                             <!-- other submenu -->
                         </ul>
                     </li>
-                    <li><a href="">Mục con 2</a>
+                    <li><a href="">
+                            <p>Mục con 2</p>
+                        </a>
                         <ul>
-                            <li><a href="">Mục con 2.1</a></li>
-                            <li><a href="">Mục con 2.2</a></li>
+                            <li><a href="">
+                                    <p>Mục con 2.1</p>
+                                </a></li>
+                            <li><a href="">
+                                    <p>Mục con 2.2</p>
+                                </a></li>
                             <!-- other submenu -->
                         </ul>
                     </li>
@@ -50,16 +67,97 @@
                 </ul>
             </li>
             <li>
-                <a href="">TIN TỨC</a>
+                <a class="menu-main-item" href="">
+                    <div class="menu-main-item-info">TIN TỨC</div>
+                </a>
                 <ul>
-                    <li><a href="">Mục con 1</a></li>
-                    <li><a href="">Mục con 2</a></li>
+                    <li><a href="">
+                            <p>Mục con 1</p>
+                        </a></li>
+                    <li><a href="">
+                            <p>Mục con 2</p>
+                        </a></li>
                     <!-- other submenu -->
                 </ul>
             </li>
-            <li><a href="">COUPON</a></li>
-            <li><a href="">LIÊN HỆ</a></li>
+            <li><a class="menu-main-item" href="">
+                    <div class="menu-main-item-info">COUPON</div>
+                </a></li>
+            <li><a class="menu-main-item" href="">
+                    <div class="menu-main-item-info">LIÊN HỆ</div>
+                </a></li>
+            <!-- <li><a href="javascript:void(0);" class="icon" onclick="menuMobileFunction()">&#9776;></a></li> -->
         </ul>
+    </div>
+
+    <!-- Menu for mobile -->
+    <div class="topnav">
+        <a href="javascript:void(0);" class="icon" onclick="menuMobileFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="" class="active">Menu</a>
+        <div id="link">
+            <ul>
+                <li><a href="">
+                        <p>MASSAGEBAY</p>
+                    </a></li>
+                <li>
+                    <a href="">
+                        <p>DIỄN ĐÀN</p>
+                    </a>
+                    <ul>
+                        <li><a href="">
+                                <p>Mục con 1</p>
+                            </a>
+                            <ul>
+                                <li><a href="">
+                                        <p>Mục con 1.1</p>
+                                    </a></li>
+                                <li><a href="">
+                                        <p>Mục con 1.2</p>
+                                    </a></li>
+                                <!-- other submenu -->
+                            </ul>
+                        </li>
+                        <li><a href="">
+                                <p>Mục con 2</p>
+                            </a>
+                            <ul>
+                                <li><a href="">
+                                        <p>Mục con 2.1</p>
+                                    </a></li>
+                                <li><a href="">
+                                        <p>Mục con 2.2</p>
+                                    </a></li>
+                                <!-- other submenu -->
+                            </ul>
+                        </li>
+                        <!-- other submenu -->
+                    </ul>
+                </li>
+                <li>
+                    <a href="">
+                        <p>TIN TỨC</p>
+                    </a>
+                    <ul>
+                        <li><a href="">
+                                <p>Mục con 1</p>
+                            </a></li>
+                        <li><a href="">
+                                <p>Mục con 2</p>
+                            </a></li>
+                        <!-- other submenu -->
+                    </ul>
+                </li>
+                <li><a href="">
+                        <p>COUPON</p>
+                    </a></li>
+                <li><a href="">
+                        <p>LIÊN HỆ</p>
+                    </a></li>
+                <!-- <li><a href="javascript:void(0);" class="icon" onclick="menuMobileFunction()">&#9776;></a></li> -->
+            </ul>
+        </div>
     </div>
 
     <!-- Body -->
