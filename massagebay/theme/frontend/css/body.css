@@ -102,7 +102,8 @@
   color: #e1e1e1;
   background: none;
 }
-.pagination .prev, .pagination .next {
+.pagination .prev,
+.pagination .next {
   color: #7b0200;
   background-color: white;
 }
@@ -321,12 +322,46 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .advertise #advertise1 img {
+  .advertise #advertise2 img {
     margin-bottom: 20px;
   }
 }
 @media (max-width: 600px) {
   .container .row > p {
     padding-top: 15px;
+  }
+  .searching {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .searching {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .latest-topic {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .advertise .advertise-align {
+    margin-bottom: 20px;
+    text-align: center !important;
+  }
+  .advertise .advertise-align #advertise2 {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .advertise #advertise2 {
+    margin-right: 0 !important;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .main-content-overlay .main-content-title {
+    font-size: 14px;
+  }
+  .main-content .main-content-overlay .main-content-text {
+    font-size: 10px;
   }
 }

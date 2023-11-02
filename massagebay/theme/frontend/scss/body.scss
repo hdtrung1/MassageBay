@@ -121,17 +121,19 @@
     >a {
         margin: 5px 0;
         padding: 6px 0;
+
         &:active {
             color: #e1e1e1;
             background: none;
         }
     }
 
-    .prev, .next {
+    .prev,
+    .next {
         color: #7b0200;
         background-color: white;
     }
-    
+
     .page-box {
         padding: 6px 10px;
         margin: 5px;
@@ -210,7 +212,7 @@
                 .checked {
                     color: rgb(216, 190, 75);
                 }
-                
+
                 .unchecked {
                     color: #999999;
                 }
@@ -364,7 +366,7 @@
     }
 
     .advertise {
-        #advertise1 {
+        #advertise2 {
             img {
                 margin-bottom: 20px;
             }
@@ -373,7 +375,50 @@
 }
 
 @media (max-width: 600px) {
-    .container .row >p {
+    .container .row>p {
         padding-top: 15px;
+    }
+
+    .searching {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .searching {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .latest-topic {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .advertise .advertise-align {
+        margin-bottom: 20px;
+        text-align: center !important;
+
+        #advertise2 {
+            margin-right: 20px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .advertise #advertise2 {
+        margin-right: 0 !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-content .main-content-overlay {
+        .main-content-title{
+            font-size: 14px;
+        }
+        .main-content-text {
+            font-size: 10px;
+        }
     }
 }
