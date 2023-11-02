@@ -53,9 +53,11 @@
                 font-weight: bold;
             }
         }
+
         .nav-link {
             color: black;
         }
+
         .nav-link.active {
             border: 1px solid black;
             border-radius: 0;
@@ -443,11 +445,11 @@ button.active {
         .justify-content-start {
             justify-content: center !important;
         }
-        
+
         .justify-content-end {
             justify-content: center !important;
         }
-        
+
         .align-items-start {
             padding-left: 20px !important;
         }
@@ -464,7 +466,7 @@ button.active {
             .justify-content-start {
                 justify-content: center !important;
             }
-            
+
             .justify-content-end {
                 justify-content: center !important;
             }
@@ -491,17 +493,84 @@ button.active {
         .justify-content-start {
             justify-content: center !important;
         }
-        
+
         .justify-content-end {
             justify-content: center !important;
         }
-        
+
         .align-items-start {
             padding-left: 20px !important;
         }
 
         .align-items-end {
             padding-right: 20px !important;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .title {
+        .font-style {
+            padding-top: 43px;
+            font-size: 35px;
+        }
+
+        >.col-button {
+            padding-top: 20px;
+
+            #mien-bac-tab,
+            #mien-trung-tab,
+            #mien-nam-tab {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .searching {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .searching {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .advertise .text-end {
+        // display: flex;
+        // justify-content: space-around;
+        margin-bottom: 20px;
+        text-align: center !important;
+
+        #advertise1 {
+            margin-right: 20px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .advertise #advertise1 {
+        margin-right: 0 !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .title {
+        .font-style {
+            padding-top: 43px;
+            font-size: 30px;
+        }
+
+        >.col-button {
+            padding-top: 20px;
+
+            #mien-bac-tab,
+            #mien-trung-tab,
+            #mien-nam-tab {
+                font-size: 10px;
+            }
         }
     }
 }

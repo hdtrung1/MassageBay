@@ -466,3 +466,53 @@ button.active {
     padding-right: 20px !important;
   }
 }
+@media (max-width: 600px) {
+  .title .font-style {
+    padding-top: 43px;
+    font-size: 35px;
+  }
+  .title > .col-button {
+    padding-top: 20px;
+  }
+  .title > .col-button #mien-bac-tab,
+  .title > .col-button #mien-trung-tab,
+  .title > .col-button #mien-nam-tab {
+    font-size: 12px;
+  }
+  .searching {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .searching {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .advertise .text-end {
+    margin-bottom: 20px;
+    text-align: center !important;
+  }
+  .advertise .text-end #advertise1 {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .advertise #advertise1 {
+    margin-right: 0 !important;
+  }
+}
+@media (max-width: 400px) {
+  .title .font-style {
+    padding-top: 43px;
+    font-size: 30px;
+  }
+  .title > .col-button {
+    padding-top: 20px;
+  }
+  .title > .col-button #mien-bac-tab,
+  .title > .col-button #mien-trung-tab,
+  .title > .col-button #mien-nam-tab {
+    font-size: 10px;
+  }
+}

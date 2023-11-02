@@ -27,21 +27,37 @@
     <!-- Menu -->
     <div class="menu-container">
         <ul class="menu">
-            <li><a href="">MASSAGEBAY</a></li>
+            <li><a class="menu-main-item" href="">
+                    <div class="menu-main-item-info">MASSAGEBAY</div>
+                </a></li>
             <li>
-                <a href="">DIỄN ĐÀN</a>
+                <a class="menu-main-item" href="">
+                    <div class="menu-main-item-info">DIỄN ĐÀN</div>
+                </a>
                 <ul>
-                    <li><a href="">Mục con 1</a>
+                    <li><a href="">
+                            <p>Mục con 1</p>
+                        </a>
                         <ul>
-                            <li><a href="">Mục con 1.1</a></li>
-                            <li><a href="">Mục con 1.2</a></li>
+                            <li><a href="">
+                                    <p>Mục con 1.1</p>
+                                </a></li>
+                            <li><a href="">
+                                    <p>Mục con 1.2</p>
+                                </a></li>
                             <!-- other submenu -->
                         </ul>
                     </li>
-                    <li><a href="">Mục con 2</a>
+                    <li><a href="">
+                            <p>Mục con 2</p>
+                        </a>
                         <ul>
-                            <li><a href="">Mục con 2.1</a></li>
-                            <li><a href="">Mục con 2.2</a></li>
+                            <li><a href="">
+                                    <p>Mục con 2.1</p>
+                                </a></li>
+                            <li><a href="">
+                                    <p>Mục con 2.2</p>
+                                </a></li>
                             <!-- other submenu -->
                         </ul>
                     </li>
@@ -49,16 +65,97 @@
                 </ul>
             </li>
             <li>
-                <a href="">TIN TỨC</a>
+                <a class="menu-main-item" href="">
+                    <div class="menu-main-item-info">TIN TỨC</div>
+                </a>
                 <ul>
-                    <li><a href="">Mục con 1</a></li>
-                    <li><a href="">Mục con 2</a></li>
+                    <li><a href="">
+                            <p>Mục con 1</p>
+                        </a></li>
+                    <li><a href="">
+                            <p>Mục con 2</p>
+                        </a></li>
                     <!-- other submenu -->
                 </ul>
             </li>
-            <li><a href="">COUPON</a></li>
-            <li><a href="">LIÊN HỆ</a></li>
+            <li><a class="menu-main-item" href="">
+                    <div class="menu-main-item-info">COUPON</div>
+                </a></li>
+            <li><a class="menu-main-item" href="">
+                    <div class="menu-main-item-info">LIÊN HỆ</div>
+                </a></li>
+            <!-- <li><a href="javascript:void(0);" class="icon" onclick="menuMobileFunction()">&#9776;></a></li> -->
         </ul>
+    </div>
+
+    <!-- Menu for mobile -->
+    <div class="topnav">
+        <a href="javascript:void(0);" class="icon" onclick="menuMobileFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="" class="active">Menu</a>
+        <div id="link">
+            <ul>
+                <li><a href="">
+                        <p>MASSAGEBAY</p>
+                    </a></li>
+                <li>
+                    <a href="">
+                        <p>DIỄN ĐÀN</p>
+                    </a>
+                    <ul>
+                        <li><a href="">
+                                <p>Mục con 1</p>
+                            </a>
+                            <ul>
+                                <li><a href="">
+                                        <p>Mục con 1.1</p>
+                                    </a></li>
+                                <li><a href="">
+                                        <p>Mục con 1.2</p>
+                                    </a></li>
+                                <!-- other submenu -->
+                            </ul>
+                        </li>
+                        <li><a href="">
+                                <p>Mục con 2</p>
+                            </a>
+                            <ul>
+                                <li><a href="">
+                                        <p>Mục con 2.1</p>
+                                    </a></li>
+                                <li><a href="">
+                                        <p>Mục con 2.2</p>
+                                    </a></li>
+                                <!-- other submenu -->
+                            </ul>
+                        </li>
+                        <!-- other submenu -->
+                    </ul>
+                </li>
+                <li>
+                    <a href="">
+                        <p>TIN TỨC</p>
+                    </a>
+                    <ul>
+                        <li><a href="">
+                                <p>Mục con 1</p>
+                            </a></li>
+                        <li><a href="">
+                                <p>Mục con 2</p>
+                            </a></li>
+                        <!-- other submenu -->
+                    </ul>
+                </li>
+                <li><a href="">
+                        <p>COUPON</p>
+                    </a></li>
+                <li><a href="">
+                        <p>LIÊN HỆ</p>
+                    </a></li>
+                <!-- <li><a href="javascript:void(0);" class="icon" onclick="menuMobileFunction()">&#9776;></a></li> -->
+            </ul>
+        </div>
     </div>
 
     <!-- Body -->
@@ -76,13 +173,19 @@
                                 <div class="col col-button">
                                     <ul class="nav nav-tabs" id="myTabs" role="tablist">
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link active" id="mien-bac-tab" data-bs-toggle="tab" data-bs-target="#mien-bac" type="button" role="tab" aria-controls="mien-bac" aria-selected="true">MIỀN BẮC</button>
+                                            <button class="nav-link active" id="mien-bac-tab" data-bs-toggle="tab"
+                                                data-bs-target="#mien-bac" type="button" role="tab"
+                                                aria-controls="mien-bac" aria-selected="true">MIỀN BẮC</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="mien-trung-tab" data-bs-toggle="tab" data-bs-target="#mien-trung" type="button" role="tab" aria-controls="mien-trung" aria-selected="false">MIỀN TRUNG</button>
+                                            <button class="nav-link" id="mien-trung-tab" data-bs-toggle="tab"
+                                                data-bs-target="#mien-trung" type="button" role="tab"
+                                                aria-controls="mien-trung" aria-selected="false">MIỀN TRUNG</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="mien-nam-tab" data-bs-toggle="tab" data-bs-target="#mien-nam" type="button" role="tab" aria-controls="mien-nam" aria-selected="false">MIỀN NAM</button>
+                                            <button class="nav-link" id="mien-nam-tab" data-bs-toggle="tab"
+                                                data-bs-target="#mien-nam" type="button" role="tab"
+                                                aria-controls="mien-nam" aria-selected="false">MIỀN NAM</button>
                                         </li>
                                     </ul>
                                     <!-- <button class="button">MIỀN BẮC</button>
@@ -92,10 +195,12 @@
                                 </div>
                             </div>
                             <div class="tab-content">
-                                <div class="tab-pane fade show active" id="mien-bac" role="tabpanel" aria-labelledby="mien-bac-tab">
+                                <div class="tab-pane fade show active" id="mien-bac" role="tabpanel"
+                                    aria-labelledby="mien-bac-tab">
                                     <!-- Content -->
                                 </div>
-                                <div class="tab-pane fade" id="mien-trung" role="tabpanel" aria-labelledby="mien-trung-tab">
+                                <div class="tab-pane fade" id="mien-trung" role="tabpanel"
+                                    aria-labelledby="mien-trung-tab">
                                     <!-- Content -->
                                 </div>
                                 <div class="tab-pane fade" id="mien-nam" role="tabpanel" aria-labelledby="mien-nam-tab">
@@ -453,11 +558,13 @@
                             </div>
                         </form>
                     </div>
-                    <div class="advertise text-end">
-                        <a id="advertise1" href=""><img src="./frontend/images/home/advertise-1.png" class="img-fluid"
-                                alt="advertisement" /></a>
-                        <a id="advertise2" href=""><img src="./frontend/images/home/advertise-2.png" class="img-fluid"
-                                alt="advertisement" /></a>
+                    <div class="advertise">
+                        <div class="text-end">
+                            <a id="advertise1" href=""><img src="./frontend/images/home/advertise-1.png"
+                                    class="img-fluid" alt="advertisement" /></a>
+                            <a id="advertise2" href=""><img src="./frontend/images/home/advertise-2.png"
+                                    class="img-fluid" alt="advertisement" /></a>
+                        </div>
                     </div>
                 </div>
             </div>
