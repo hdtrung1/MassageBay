@@ -448,7 +448,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 764px) {
     .popular-spa {
         display: flex;
         justify-content: center;
@@ -474,6 +474,7 @@
 
     .latest-news {
         .latest-news-content {
+            //display: flex;
             flex-direction: column;
 
             .justify-content-start {
