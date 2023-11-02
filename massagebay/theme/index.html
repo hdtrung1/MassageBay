@@ -93,6 +93,16 @@
     <div class="topnav">
         <a href="javascript:void(0);" class="icon" onclick="menuMobileFunction()">
             <i class="fa fa-bars"></i>
+            <script>
+                function menuMobileFunction() {
+                    var x = document.getElementById("link");
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                    }
+                }
+            </script>
         </a>
         <a href="" class="active">Menu</a>
         <div id="link">
