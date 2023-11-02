@@ -371,3 +371,9 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    .container .row >p {
+        padding-top: 15px;
+    }
+}

@@ -23,8 +23,9 @@ header .logo-image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin: 0 auto 30px auto;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -35,21 +36,33 @@ header .logo-image {
 .menu-container .menu > li {
   display: inline-block;
   position: relative;
-  width: 30%;
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.menu-container .menu > li a {
+.menu-container .menu > li .menu-main-item {
+  font-size: 16px !important;
   font-family: MyriadProRegular !important;
-}
-.menu-container .menu > li a p {
-  font-size: 18px !important;
   width: 100%;
 }
-.menu-container .menu > li a:hover::before {
+.menu-container .menu > li .menu-main-item .menu-main-item-info {
+  font-size: 16px !important;
+  font-family: MyriadProRegular !important;
+  position: relative;
+}
+.menu-container .menu > li .menu-main-item-info:hover::before {
   content: "";
   position: absolute;
   width: 80%;
   height: 3px;
-  bottom: 10px;
+  bottom: 0px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(35%, rgb(49, 39, 11)), to(rgb(255, 255, 255)));
   background: linear-gradient(0deg, rgb(49, 39, 11) 35%, rgb(255, 255, 255) 100%);
   opacity: 0.5;
@@ -64,13 +77,14 @@ header .logo-image {
   width: 1px;
   height: 30px;
   top: 2px;
+  right: 30px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(35%, rgb(49, 39, 11)), to(rgb(255, 255, 255)));
   background: linear-gradient(0deg, rgb(49, 39, 11) 35%, rgb(255, 255, 255) 100%);
   -webkit-transform: translateX(50px);
           transform: translateX(50px);
 }
 .menu-container .menu > li > ul {
-  left: 0;
+  left: -10px;
   top: 100%;
   padding: 0;
 }
@@ -129,7 +143,7 @@ header .logo-image {
   background: black;
   display: block;
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
 }
 

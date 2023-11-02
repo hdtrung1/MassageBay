@@ -22,7 +22,7 @@ header {
     .menu {
         text-align: center;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         margin: 0 auto 30px auto;
         flex-direction: row;
         width: 60%;
@@ -31,27 +31,37 @@ header {
             display: inline-block;
             // border-right: 1px solid #000;
             position: relative;
-            width: 30%;
+            width: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-            a {
+            .menu-main-item {
+                font-size: 16px !important;
                 font-family: MyriadProRegular !important;
+                width: 100%;
 
-                p {
-                    font-size: 18px !important;
-                    width: 100%;
+                .menu-main-item-info {
+                    font-size: 16px !important;
+                    font-family: MyriadProRegular !important;
+                    position: relative;
                 }
             }
 
-            a:hover::before {
+            .menu-main-item-info:hover::before {
                 content: "";
                 position: absolute;
                 width: 80%;
                 height: 3px;
-                bottom: 10px;
+                bottom: 0px;   
                 background: linear-gradient(0deg, rgba(49, 39, 11, 1) 35%, rgba(255, 255, 255, 1) 100%);
                 opacity: 0.5;
                 border-radius: 2px;
             }
+
+            // .menu-main-item-info:hover {
+            //     text-decoration: underline;
+            // }
 
             &:last-child::after {
                 display: none;
@@ -63,14 +73,14 @@ header {
                 width: 1px;
                 height: 30px;
                 top: 2px;
-                //left: 0px;
+                right: 30px;
                 // background: radial-gradient(circle, rgba(7,5,1,1) 35%, rgba(255,255,255,1) 100%);
                 background: linear-gradient(0deg, rgba(49, 39, 11, 1) 35%, rgba(255, 255, 255, 1) 100%);
                 transform: translateX(50px);
             }
 
             >ul {
-                left: 0;
+                left: -10px;
                 top: 100%;
                 padding: 0;
 
@@ -141,7 +151,7 @@ header {
     background: black;
     display: block;
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
 }
 
@@ -160,6 +170,7 @@ header {
     .topnav {
         display: block;
     }
+
     .menu-container {
         display: none;
     }
