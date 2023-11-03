@@ -180,6 +180,7 @@
 }
 .searching .searching-rating .searching-rating-left .icon {
   margin-left: 30px;
+  line-height: 0.8;
 }
 .searching .searching-rating .searching-rating-left .icon .checked {
   color: rgb(216, 190, 75);
