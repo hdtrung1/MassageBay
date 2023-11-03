@@ -51,10 +51,13 @@
 }
 .title > .col-button .nav-link {
   color: black;
+  background-color: white;
 }
 .title > .col-button .nav-link.active {
   border: 1px solid black;
   border-radius: 0;
+  background-color: #e9e9e9;
+  border-bottom: none;
 }
 .title .absolute {
   position: absolute;
@@ -124,6 +127,7 @@ button.active {
 }
 .searching .searching-field label {
   margin-left: 20px;
+  color: #f9c636;
 }
 .searching .searching-field .searching-input-field {
   width: 240px;
@@ -136,6 +140,7 @@ button.active {
   width: 240px;
   height: 38px;
   padding: 5px;
+  padding-left: 14px;
   margin: 3px 15px;
   outline: none;
   -webkit-appearance: none;
@@ -145,6 +150,10 @@ button.active {
   background-repeat: no-repeat;
   background-position: right 0.7rem top 50%;
   background-size: 0.65rem auto;
+  color: #003333;
+}
+.searching .searching-field select option {
+  color: #003333;
 }
 .searching .searching-rating {
   display: -webkit-box;

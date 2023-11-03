@@ -51,11 +51,14 @@
 
         .nav-link {
             color: black;
+            background-color: white;
         }
 
         .nav-link.active {
             border: 1px solid black;
             border-radius: 0;
+            background-color: #e9e9e9;
+            border-bottom: none;
         }
     }
 
@@ -138,6 +141,7 @@ button.active {
 
         label {
             margin-left: 20px;
+            color: #f9c636
         }
 
         .searching-input-field {
@@ -152,6 +156,7 @@ button.active {
             width: 240px;
             height: 38px;
             padding: 5px;
+            padding-left: 14px;
             margin: 3px 15px;
             outline: none;
             appearance: none;
@@ -159,6 +164,11 @@ button.active {
             background-repeat: no-repeat;
             background-position: right 0.7rem top 50%;
             background-size: 0.65rem auto;
+            color: #003333;
+        }
+        
+        select option {
+            color: #003333;
         }
 
     }
