@@ -166,6 +166,7 @@
 
         label {
             margin-left: 20px;
+            color: #f9c636
         }
 
         .searching-input-field {
@@ -187,8 +188,12 @@
             background-repeat: no-repeat;
             background-position: right 0.7rem top 50%;
             background-size: 0.65rem auto;
+            color: #003333;
         }
 
+        select option {
+            color: #003333;
+        }
     }
 
     .searching-rating {
