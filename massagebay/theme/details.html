@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massage Bay</title>
+    <link rel="stylesheet" href="./frontend/css/header.css" />
+    <link rel="stylesheet" href="./frontend/css/body_details.css">
+    <link rel="stylesheet" href="./frontend/css/footer.css">
+    <script src="https://kit.fontawesome.com/1c8367bfe7.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <img class="logo-image" src="./frontend/images/home/logo.png" alt="logo-image">
+        </div>
+    </header>
+    
+    <!-- Menu -->
+    <div class="menu-container">
+        <ul class="menu">
+            <li><a class="menu-main-item" href="">
+                    <div class="menu-main-item-info">MASSAGEBAY</div>
+                </a></li>
+            <li>
+                <a class="menu-main-item" href="">
+                    <div class="menu-main-item-info">DIỄN ĐÀN</div>
+                </a>
+                <ul>
+                    <li><a href="">
+                            <p>Mục con 1</p>
+                        </a>
+                        <ul>
+                            <li><a href="">
+                                    <p>Mục con 1.1</p>
+                                </a></li>
+                            <li><a href="">
+                                    <p>Mục con 1.2</p>
+                                </a></li>
+                            <!-- other submenu -->
+                        </ul>
+                    </li>
+                    <li><a href="">
+                            <p>Mục con 2</p>
+                        </a>
+                        <ul>
+                            <li><a href="">
+                                    <p>Mục con 2.1</p>
+                                </a></li>
+                            <li><a href="">
+                                    <p>Mục con 2.2</p>
+                                </a></li>
+                            <!-- other submenu -->
+                        </ul>
+                    </li>
+                    <!-- other submenu -->
+                </ul>
+            </li>
+            <li>
+                <a class="menu-main-item" href="">
+                    <div class="menu-main-item-info">TIN TỨC</div>
+                </a>
+                <ul>
+                    <li><a href="">
+                            <p>Mục con 1</p>
+                        </a></li>
+                    <li><a href="">
+                            <p>Mục con 2</p>
+                        </a></li>
+                    <!-- other submenu -->
+                </ul>
+            </li>
+            <li><a class="menu-main-item" href="">
+                    <div class="menu-main-item-info">COUPON</div>
+                </a></li>
+            <li><a class="menu-main-item" href="">
+                    <div class="menu-main-item-info">LIÊN HỆ</div>
+                </a></li>
+            <!-- <li><a href="javascript:void(0);" class="icon" onclick="menuMobileFunction()">&#9776;></a></li> -->
+        </ul>
+    </div>
+
+    <!-- Menu for mobile -->
+    <div class="topnav">
+        <a href="javascript:void(0);" class="icon" onclick="menuMobileFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="" class="active">Menu</a>
+        <div id="link">
+            <ul>
+                <li><a href="">
+                        <p>MASSAGEBAY</p>
+                    </a></li>
+                <li>
+                    <a href="">
+                        <p>DIỄN ĐÀN</p>
+                    </a>
+                    <ul>
+                        <li><a href="">
+                                <p>Mục con 1</p>
+                            </a>
+                            <ul>
+                                <li><a href="">
+                                        <p>Mục con 1.1</p>
+                                    </a></li>
+                                <li><a href="">
+                                        <p>Mục con 1.2</p>
+                                    </a></li>
+                                <!-- other submenu -->
+                            </ul>
+                        </li>
+                        <li><a href="">
+                                <p>Mục con 2</p>
+                            </a>
+                            <ul>
+                                <li><a href="">
+                                        <p>Mục con 2.1</p>
+                                    </a></li>
+                                <li><a href="">
+                                        <p>Mục con 2.2</p>
+                                    </a></li>
+                                <!-- other submenu -->
+                            </ul>
+                        </li>
+                        <!-- other submenu -->
+                    </ul>
+                </li>
+                <li>
+                    <a href="">
+                        <p>TIN TỨC</p>
+                    </a>
+                    <ul>
+                        <li><a href="">
+                                <p>Mục con 1</p>
+                            </a></li>
+                        <li><a href="">
+                                <p>Mục con 2</p>
+                            </a></li>
+                        <!-- other submenu -->
+                    </ul>
+                </li>
+                <li><a href="">
+                        <p>COUPON</p>
+                    </a></li>
+                <li><a href="">
+                        <p>LIÊN HỆ</p>
+                    </a></li>
+                <!-- <li><a href="javascript:void(0);" class="icon" onclick="menuMobileFunction()">&#9776;></a></li> -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Body -->
+    <div class="body-content">
+        <!--Nội dung-->
+        <div class="container">
+            <div class="row">
+                <p>Trang chủ > Tin tức > Trong nước</p>
+                <div class="col-lg-9">
+                    <div class="content">
+                        <p><i>06:57 | 26/08/2017</i></p>
+                        <div class="content-title">
+                            <p class="MyriadPro-font">CÒN NHIỀU RÀO CẢN TÂM LÝ VÀ CHÍNH SÁCH ĐỐI VỚI XE HYBRID</p>
+                        </div>
+                        <br>
+                        <div class="main-content">
+                            <p>
+                                Nếu năm 2010 có 289 xe, năm 2011 tăng lên 347, thì đến 2015 chỉ còn 131 xe, 2016 chỉ còn
+                                84
+                                và 3 tháng đầu năm 2017 vỏn vẹn 5 xe. Mặc dù một sô DN ô tô đã đề nghị các cơ quan chức
+                                năng
+                                cần xem xet ưu đãi thuế cho xe ô tô sử dụng động cơ Hybrid, nhưng Bộ Tài chính vẫn nói
+                                không
+                                với đề nghị này.
+                            </p>
+                            <p>
+                                Bộ Tài chính cho rằng, Luật thuế Tiêu thụ đặc biệt (TTĐB) hiện hành quy định: xe ô tô
+                                chạy
+                                bằng xăng kết hợp năng lượng điện, năng lượng sinh học, trong đó tỷ trọng xăng chiếm
+                                không
+                                quá 70%
+                            </p>
+
+                            <img src="./frontend/images/detail/main-news.png" alt="news-item1">
+
+                            <p class="MyriadPro-font">
+                                Xe Hybrid sử dụng 1 động cơ đốt trong, nhưng có dung tích xi lanh và công suất nhỏ. Điều
+                                này
+                                giúp tiết kiệm nhiên liệu và giảm khí thải độc hại ra môi trường. Ngoài động cơ xăng, xe
+                                Hybrid được trang bị 1 hoặc nhiều động cơ điện để hỗ trợ động cơ xăng, giúp xe tăng công
+                                suất, cùng với đó là 1 pin nhiên liệu cỡ lớn để tích điện và cung cấp điện cho động cơ
+                                điện
+                                hoạt động.
+                            </p>
+                            <p class="MyriadPro-font margin-bottom">
+                                Tái sử dụng năng lượng dư thừa là ưu điểm lớn nhất của xe Hybrid. Khi ô tô chạy trên
+                                đường,
+                                cứ mỗi lần đạp phanh là năng lượng của xe bị thất thoát. Xe chạy càng nhanh, nhất là lao
+                                từ
+                                trên dốc cao xuống, thì động năng của nó càng lớn cứ mỗi lần đạp phanh là
+                            </p>
+                        </div>
+                        <div class="content-rating">
+                            <div class="star-icon">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+
+                            <div class="like-btn">
+                                <a href="" class="facebook-like-btn">
+                                    <i class="fa fa-facebook"></i> Like
+                                </a>
+                            </div>
+
+                            <div class="share-btn">
+                                <a href="" class="facebook-share-btn">Share</a>
+                            </div>
+
+                            <div class="message-icon">
+                                <i class="far fa-comment-alt"></i>
+                                <span class="message-icon-text">243</span>
+                            </div>
+
+                            <div class="zalo-icon">
+                                <a href=""><img id="zalo-img" src="./frontend/images/detail/logo-icon2.png" alt=""></a>
+                            </div>
+
+                        </div>
+
+                        <!--Comment-->
+                        <div class="comment">
+                            <div class="comment-order">
+                                <p><b class="MyriadPro-font">0 bình luận</b></p>                               
+                                <div>
+                                    <label for="order" class="comment-order-text MyriadPro-font">=Sắp xếp theo</label>
+                                    <select name="order" class="comment-order-field MyriadPro-font" style="height: 21px;">
+                                        <option value="">
+                                            Cũ nhất
+                                        </option>
+                                        <option value="Mới nhất">Mới nhất</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <hr class="hr-style">
+                            <div class="comment-field">
+                                <img src="./frontend/images/detail/avatar.png" alt="">
+                                <input type="text" name="comment" placeholder="Thêm bình luận..."
+                                    class="comment-input-field">
+                            </div>
+
+                            <hr class="hr-style">
+
+                            <div class="fb-icon">
+                                <a href="" class="facebook-icon">
+                                    <i class="fa fa-facebook"></i> Facebook Comments Plugin
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Tim kiem-->
+                <div class="col-lg-3">
+                    <div class="searching">
+                        <p>TÌM KIẾM</p>
+                        <form action="/tim-kiem" method="GET">
+                            <div class="searching-field">
+                                <label for="tu-khoa">Từ khóa</label>
+                                <br />
+                                <input type="text" name="tu-khoa" placeholder="Từ khóa ..." style="width: 90%"
+                                    class="searching-input-field" />
+                            </div>
+                            <div class="searching-field">
+                                <label for="thanh-pho">Thành phố</label>
+                                <br />
+                                <select name="thanh-pho" style="width: 90%" class="searching-select-field">
+                                    <option value="">
+                                        --- Chọn điểm đến ---
+                                    </option>
+                                    <option value="Hà Nội">Hà Nội</option>
+                                    <option value="Hồ Chí Minh">
+                                        Hồ Chí Minh
+                                    </option>
+                                    <option value="Hải Phòng">Hải Phòng</option>
+                                    <option value="Đà Nẵng">Đà Nẵng</option>
+                                    <option value="Nha Trang">Nha Trang</option>
+                                    <!-- And other cities ... -->
+                                </select>
+                            </div>
+                            <div class="searching-rating">
+                                <div class="searching-rating-left">
+                                    <label>Rating</label>
+                                    <div class="icon">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star unchecked"></span>
+                                    </div>
+                                </div>
+                                <div class="searching-rating-right">
+                                    <button type="submit" class="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="latest-topic">
+                        <p>CHỦ ĐỀ MỚI NHẤT</p>
+                        <div class="latest-topic-item">
+                            <div class="latest-topic-item-style">
+                                <img src="./frontend/images/detail/latest-topic.png" alt="">
+                                <div class="latest-topic-text">
+                                    <p><b class="text1">Khu du lịch sinh</b></p>
+                                    <p class="text2">Ba Be eco khu du lịch sinh thái</p>
+                                </div>
+                            </div>
+                            <div class="latest-topic-item-style">
+                                <img src="./frontend/images/detail/latest-topic.png" alt="">
+                                <div class="latest-topic-text">
+                                    <p><b class="text1">Khu du lịch sinh</b></p>
+                                    <p class="text2">Ba Be eco khu du lịch sinh thái</p>
+                                </div>
+                            </div>
+                            <div class="latest-topic-item-style">
+                                <img src="./frontend/images/detail/latest-topic.png" alt="">
+                                <div class="latest-topic-text">
+                                    <p><b class="text1">Khu du lịch sinh</b></p>
+                                    <p class="text2">Ba Be eco khu du lịch sinh thái</p>
+                                </div>
+                            </div>
+                            <div class="latest-topic-item-style">
+                                <img src="./frontend/images/detail/latest-topic.png" alt="">
+                                <div class="latest-topic-text">
+                                    <p><b class="text1">Khu du lịch sinh</b></p>
+                                    <p class="text2">Ba Be eco khu du lịch sinh thái</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advertise">
+                        <a id="advertise2" href=""><img src="./frontend/images/home/advertise-2.png" class="img-fluid"
+                                alt="advertisement" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Tin tuc moi nhat-->
+    <div class="latest-news">
+        <p class="latest-news-font-style">Tin tức mới nhất</p>
+        <img src="./frontend/images/home/logo-font-2.png" alt="logo" />
+        <div class="latest-news-align container">
+            <div class="latest-news-content row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 d-flex justify-content-start align-items-start">
+                    <div class="lastest-news-item">
+                        <div class="lastest-news-item-image">
+                            <a href=""><img src="./frontend/images/home/font2-item1.png" class="img-fluid"
+                                    alt="item1" /></a>
+                        </div>
+                        <div class="lastest-news-item-text">
+                            <p class="lastest-news-item-text-title">
+                                NỔI BẬT TRÊN KHÔNG GIAN LÀNG QUÊ YÊN TĨNH
+                            </p>
+                            <p class="lastest-news-item-text-content">
+                                là một trong những khách sạn mới nhất của
+                                TRÀNG AN LUXURY là một trong những khách sạn
+                                mới nhất của
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
+                    <div class="lastest-news-item">
+                        <div class="lastest-news-item-image">
+                            <a href=""><img src="./frontend/images/home/font2-item2.png" class="img-fluid"
+                                    alt="item2" /></a>
+                        </div>
+                        <div class="lastest-news-item-text">
+                            <p class="lastest-news-item-text-title">
+                                NỔI BẬT TRÊN KHÔNG GIAN LÀNG QUÊ YÊN TĨNH
+                            </p>
+                            <p class="lastest-news-item-text-content">
+                                là một trong những khách sạn mới nhất của
+                                TRÀNG AN LUXURY là một trong những khách sạn
+                                mới nhất của
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 d-flex justify-content-end align-items-end">
+                    <div class="lastest-news-item">
+                        <div class="lastest-news-item-image">
+                            <a href=""><img src="./frontend/images/home/font2-item3.png" class="img-fluid"
+                                    alt="item3" /></a>
+                        </div>
+                        <div class="lastest-news-item-text">
+                            <p class="lastest-news-item-text-title">
+                                NỔI BẬT TRÊN KHÔNG GIAN LÀNG QUÊ YÊN TĨNH
+                            </p>
+                            <p class="lastest-news-item-text-content">
+                                là một trong những khách sạn mới nhất của
+                                TRÀNG AN LUXURY là một trong những khách sạn
+                                mới nhất của
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>XEM TẤT CẢ</button>
+        </div>
+    </div>
+
+    <!--About massage-->
+    <div class="about-massage">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="about-massage-link">
+                        <div>
+                            <p><b>Về hotel84.com</b></p>
+                            <ul>
+                                <a href="">
+                                    <li>Trang chủ</li>
+                                </a>
+                                <a href="">
+                                    <li>Giới thiệu</li>
+                                </a>
+                                <a href="">
+                                    <li>Điều khoản sử dụng</li>
+                                </a>
+                                <a href="">
+                                    <li>Thông tin cá nhân</li>
+                                </a>
+                                <a href="">
+                                    <li>Tin tức công ty</li>
+                                </a>
+                                <a href="">
+                                    <li>Sitemap</li>
+                                </a>
+                                <a href="">
+                                    <li>Hướng dẫn sử dụng</li>
+                                </a>
+                                <a href="">
+                                    <li>Liên hệ</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="about-massage-link">
+                        <div>
+                            <p><b>Về hotel84.com</b></p>
+                            <ul>
+                                <a href="">
+                                    <li>Viết bài PR quảng cáo khách sạn</li>
+                                </a>
+                                <a href="">
+                                    <li>Tư vấn quảng bá khách sạn</li>
+                                </a>
+                                <a href="">
+                                    <li>Đặt phòng khách sạn</li>
+                                </a>
+                                <a href="">
+                                    <li>Đặt phòng du thuyền</li>
+                                </a>
+                                <a href="">
+                                    <li>Khách sạn tuyển dụng</li>
+                                </a>
+                                <a href="">
+                                    <li>Thuê xe du lịch</li>
+                                </a>
+                                <a href="">
+                                    <li>Sản phẩm cho khách sạn</li>
+                                </a>
+                                <a href="">
+                                    <li>Dịch vụ Quảng cáo Khách sạn</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 align-column">
+                    <div class="about-massage-info">
+                        <p>Quảng bá khách sạn Việt Nam</p>
+                        <p>Địa chỉ: 38B ngách 6/31/5 Đặng Văn Ngữ</p>
+                        <p>
+                            Tel: <a href="tel:024357359928">024 39958520</a> ; Mobile:
+                            <a href="tel:0903215458">0903215458</a> (không liên hệ đặt
+                            phòng ở đây)
+                        </p>
+                        <p>
+                            Email: <a href="mail:info@hotel184.com">info@hotel84.com</a>
+                        </p>
+                        <p>Website khách sạn: <a href="">http://www.hotel84.com</a></p>
+                        <p>
+                            Website Vietnam hotels:
+                            <a href="">http://www.hotel84.com</a>
+                        </p>
+                        <p>Đối tác khách sạn</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer">
+            <p>
+                Địa chỉ: số nhà 38b ngách 6/31/5 Đặng Văn Ngữ, phường Phương
+                Liên, quận Đống Đa, Hà Nội
+            </p>
+            <p>
+                Điện thoại: 024 357359928 - 39958520; Fax: 024 35735928; Di
+                động: 0903215458
+            </p>
+            <p>
+                Email: info@hotel84.com ; Website: www.hotel84.com ;
+                www.hotel84.com ; www.vietnamtradefair.com ;
+                www.halongtravelguide.com
+            </p>
+            <p>
+                Số ĐKKD: 0103003424; Ngày cấp: 02/1/2004; Giám đốc: Phan Văn
+                Thu
+            </p>
+        </div>
+    </footer>
+    <script src="./frontend/js/javascript.js"></script>
+
+</body>
+
+</html>

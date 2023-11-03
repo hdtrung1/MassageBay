@@ -1,0 +1,433 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    font-size: 100%;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+@font-face {
+    font-family: UVNKieuBold;
+    src: url("../fonts/UVNKieu_B.TTF");
+}
+
+// Main news
+.MyriadPro-font {
+    font-family: MyriadProRegular;
+}
+
+.main-content {
+    position: relative;
+
+    img {
+        padding-bottom: 20px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-content-overlay {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 25px 20px 0 20px;
+
+        .main-content-title {
+            font-family: 'Roboto';
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffb628;
+        }
+
+        .main-content-text {
+            color: white;
+        }
+    }
+
+}
+
+// Tin tức mới nhất
+.latest-news {
+    .latest-news-item-title {
+        font-family: 'UVNKieuBold';
+        color: #7b0200;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .latest-news-item-align {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        .latest-news-item-text {
+            // flex: 1;
+            padding-left: 30px;
+
+            .latest-news-item-text-title {
+                color: #7b0200;
+                font-family: 'Roboto';
+            }
+
+            .latest-news-item-text-rating {
+                display: flex;
+                justify-content: space-between;
+
+                .checked {
+                    color: #ffb628;
+                }
+
+                .text {
+                    font-size: 12px;
+                }
+            }
+
+            .clock-icon {
+                color: #b7b7b7
+            }
+        }
+    }
+}
+
+// Chuyển trang
+.pagination {
+    // display: flex;
+    // justify-content: center;
+    margin: 20px 0;
+
+    a {
+        text-decoration: none;
+        color: #f9c636;
+        padding: 6px 10px;
+        background-color: #7b0200;
+        margin: 5px;
+
+        // &:hover {
+        //     color: #7b0200;
+        //     background-color: #e1e1e1;
+        // }
+
+        // &:first-child {
+        //     padding-left: 0;
+        //     margin-left: 0;
+        // }
+
+        &:active {
+            color: #7b0200;
+            background-color: #e1e1e1;
+        }
+    }
+
+    >a {
+        margin: 5px 0;
+        padding: 6px 0;
+
+        &:active {
+            color: #e1e1e1;
+            background: none;
+        }
+    }
+
+    .prev,
+    .next {
+        color: #7b0200;
+        background-color: white;
+    }
+
+    .page-box {
+        padding: 6px 10px;
+        margin: 5px;
+    }
+
+}
+
+// Tìm kiếm
+.searching {
+    background-color: black;
+    color: #ffb628;
+    padding: 2px;
+    margin-bottom: 20px;
+    //margin-left: auto;
+    width: 271px;
+    height: 284px;
+
+    p {
+        color: black;
+        background-color: #ffb628;
+        border: none;
+        padding: 5px;
+        margin-bottom: 26px;
+        text-align: center;
+        font-family: 'Roboto';
+    }
+
+    .searching-field {
+        margin-bottom: 20px;
+
+        label {
+            margin-left: 20px;
+            color: #f9c636
+        }
+
+        .searching-input-field {
+            width: 240px;
+            height: 38px;
+            padding: 14px;
+            outline: none;
+            margin: 3px 15px;
+        }
+
+        .searching-select-field {
+            width: 240px;
+            height: 38px;
+            padding: 5px;
+            margin: 3px 15px;
+            outline: none;
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0.7rem top 50%;
+            background-size: 0.65rem auto;
+            color: #003333;
+        }
+
+        select option {
+            color: #003333;
+        }
+    }
+
+    .searching-rating {
+        display: flex;
+        justify-content: space-between;
+
+        .searching-rating-left {
+            float: left;
+
+            label {
+                margin-left: 20px;
+            }
+
+            .fa-star {
+                font-size: 70% !important;
+            }
+
+            .icon {
+                margin-left: 30px;
+
+                .checked {
+                    color: rgb(216, 190, 75);
+                }
+
+                .unchecked {
+                    color: #999999;
+                }
+            }
+        }
+
+        .searching-rating-right {
+            float: right;
+
+            .button {
+                margin: 3px 15px;
+                background-color: #ffb628;
+                border: none;
+                width: 58px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+// Chủ đề mới nhất
+.latest-topic {
+    background-color: black;
+    color: #ffb628;
+    padding: 2px;
+    margin-bottom: 20px;
+    //margin-left: auto;
+    width: 272px;
+    //height: 409px;
+
+    >p {
+        color: black;
+        background-color: #ffb628;
+        border: none;
+        padding: 5px;
+        margin-bottom: 18px;
+        text-align: center;
+        font-family: 'Roboto';
+    }
+
+    .latest-topic-item {
+        padding: 5px;
+
+        .latest-topic-item-style {
+            padding-bottom: 18px;
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                padding-right: 7px;
+                height: 100%;
+                max-height: 100%;
+                object-fit: cover;
+                //width: 101px;
+                //height: 69px;
+            }
+
+            .latest-topic-text>p {
+                color: #707070;
+                margin: 0;
+
+                .text1 {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.advertise {
+    #advertise2 {
+        width: 269px;
+        height: 365px;
+
+        img {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+// About massage
+.about-massage {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ebebeb;
+    padding: 10px 60px;
+    font-size: 14pt;
+    font-family: Arial;
+
+    .about-massage-link {
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+
+        div {
+            flex: 1;
+            padding: 10px;
+
+            p {
+                margin: 5px;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+
+                :hover {
+                    text-decoration: underline;
+                }
+
+                li {
+                    margin: 5px;
+                }
+            }
+        }
+    }
+
+    .about-massage-info {
+        flex: 1;
+        padding: 10px;
+
+        p {
+            margin: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+
+            :hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .latest-news {
+        .latest-news-item-align {
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .about-massage {
+        flex-direction: column;
+    }
+
+    .advertise {
+        #advertise2 {
+            img {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .container .row>p {
+        padding-top: 15px;
+    }
+
+    .searching {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .searching {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .latest-topic {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .advertise .advertise-align {
+        margin-bottom: 20px;
+        text-align: center !important;
+
+        #advertise2 {
+            margin-right: 20px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .latest-news .latest-news-item-title {
+        text-align: center;
+    }
+        
+    .advertise #advertise2 {
+        margin-right: 0 !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-content .main-content-overlay {
+        .main-content-title{
+            font-size: 14px;
+        }
+        .main-content-text {
+            font-size: 10px;
+        }
+    }
+}

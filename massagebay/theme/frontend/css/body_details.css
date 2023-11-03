@@ -11,97 +11,160 @@
   font-family: UVNKieuBold;
   src: url("../fonts/UVNKieu_B.TTF");
 }
-.title {
-  position: relative;
-}
-.title .font-style {
-  font-family: UVNKieuBold;
-  font-size: 50px;
-  font-weight: 600;
-  color: black;
-  position: absolute;
-  margin: 0px;
-  top: -30px;
-}
-.title > .col-button {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  position: relative;
-  border-bottom: 1px solid #000;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-}
-.title > .col-button > button {
-  background-color: white;
-  padding: 0 10px;
-  margin: 0px;
-  border: 1px solid transparent;
-  height: 34px;
-}
-.title > .col-button > button:hover {
-  border: 1px solid black;
-  background-color: #e9e9e9;
-  font-weight: bold;
-}
-.title > .col-button .nav-link {
-  color: black;
-  background-color: white;
-}
-.title > .col-button .nav-link.active {
-  border: 1px solid black;
-  border-radius: 0;
-  background-color: #e9e9e9;
-  border-bottom: none;
-}
-.title .absolute {
-  position: absolute;
+.MyriadPro-font {
+  font-family: MyriadProRegular;
 }
 
-button.active {
-  font-weight: bold;
-  border: 1px solid #000;
+.content-title > p {
+  font-size: 24px;
+  color: #7b0200;
 }
 
-.massage-item {
-  font-size: small;
-  background-color: rgb(235, 235, 235);
-  background-size: 100%;
-  margin: 20px 0;
-}
-.massage-item .massage-item-image {
-  -o-object-fit: cover;
-     object-fit: cover;
+.main-content img {
+  padding-bottom: 20px;
   width: 100%;
   height: 100%;
 }
-.massage-item .massage-item-image > a > img {
+
+.margin-bottom {
+  margin-bottom: 50px;
+}
+
+.content-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+.content-rating .star-icon {
+  margin-right: 10px;
+}
+.content-rating .star-icon .checked {
+  color: #f7b208;
+}
+.content-rating .like-btn,
+.content-rating .share-btn {
+  display: inline-block;
+  padding: 5px 1.5px;
+  border: 1px solid #4a67b7;
+  border-radius: 3px;
+  margin-right: 6px;
+  background: #4a67b7;
+  position: relative;
+}
+.content-rating .facebook-like-btn,
+.content-rating .facebook-share-btn {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  top: -5px;
+  position: relative;
+}
+.content-rating .facebook-like-btn i {
+  background: white;
+  color: #3B5998;
+  border: 1px solid #4a67b7;
+  padding: 2px 2px 0 5px;
+  border-radius: 1px;
+}
+.content-rating .message-icon {
+  position: relative;
+  display: inline-block;
+  margin-right: 7px;
+}
+.content-rating .message-icon i {
+  font-size: 25px;
+  border: #707070;
+}
+.content-rating .message-icon .message-icon-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 12px;
+  color: black;
+}
+.content-rating .zalo-icon {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.comment-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.comment-order .comment-order-text {
+  color: #a3a2a2;
+}
+.comment-order .comment-order-field {
+  background-color: #ebebeb;
+  width: 80px;
+  height: 30px;
+  padding: 0 5px;
+  margin: 3px 5px;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 0.65rem auto;
+}
+
+.hr-style {
+  color: e1e1e1;
+}
+
+.comment-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.comment-field .comment-input-field {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  padding: 3px 15px;
+  margin: 0 10px;
+  height: 45px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-.massage-item .massage-item-text {
-  padding: 5px 10px;
+.comment-field .comment-input-field::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
 }
-.massage-item .massage-item-text .massage-item-text-title {
-  margin-bottom: 0rem;
+.comment-field .comment-input-field::-moz-placeholder {
+  font-family: "Roboto", sans-serif;
 }
-.massage-item .massage-item-text .start-align {
-  text-align: start;
+.comment-field .comment-input-field:-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
 }
-.massage-item .massage-item-text .end-align {
-  text-align: end;
+.comment-field .comment-input-field::-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
 }
-.massage-item .massage-item-text .small-fontsize {
-  font-size: 12px !important;
+.comment-field .comment-input-field::placeholder {
+  font-family: "Roboto", sans-serif;
 }
-.massage-item .checked {
-  color: rgb(216, 190, 75);
+
+.facebook-icon {
+  text-decoration: none;
+  color: #3B5998;
+}
+.facebook-icon i {
+  background: #3B5998;
+  color: white;
+  border: 1px solid #3B5998;
+  padding: 2px 2px 0 5px;
+  border-radius: 1px;
 }
 
 .searching {
@@ -109,7 +172,6 @@ button.active {
   color: #ffb628;
   padding: 2px;
   margin-bottom: 20px;
-  margin-left: auto;
   width: 271px;
   height: 284px;
 }
@@ -117,10 +179,10 @@ button.active {
   color: black;
   background-color: #ffb628;
   border: none;
-  padding: 2px;
-  margin-bottom: 5px 5px 26px 5px;
+  padding: 5px;
+  margin-bottom: 26px;
   text-align: center;
-  font-family: MyriadProRegular;
+  font-family: "Roboto";
 }
 .searching .searching-field {
   margin-bottom: 20px;
@@ -140,7 +202,6 @@ button.active {
   width: 240px;
   height: 38px;
   padding: 5px;
-  padding-left: 14px;
   margin: 3px 15px;
   outline: none;
   -webkit-appearance: none;
@@ -192,69 +253,55 @@ button.active {
   height: 30px;
 }
 
-.advertise {
-  display: block;
-}
-.advertise #advertise1 {
-  width: 270px;
-  height: 382px;
-}
-.advertise #advertise1 img {
+.latest-topic {
+  background-color: black;
+  color: #ffb628;
+  padding: 2px;
   margin-bottom: 20px;
+  width: 272px;
 }
+.latest-topic > p {
+  color: black;
+  background-color: #ffb628;
+  border: none;
+  padding: 5px;
+  margin-bottom: 18px;
+  text-align: center;
+  font-family: "Roboto";
+}
+.latest-topic .latest-topic-item {
+  padding: 5px;
+}
+.latest-topic .latest-topic-item .latest-topic-item-style {
+  padding-bottom: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.latest-topic .latest-topic-item .latest-topic-item-style img {
+  padding-right: 7px;
+  height: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.latest-topic .latest-topic-item .latest-topic-item-style .latest-topic-text > p {
+  color: #707070;
+  margin: 0;
+}
+.latest-topic .latest-topic-item .latest-topic-item-style .latest-topic-text > p .text1 {
+  color: white;
+}
+
 .advertise #advertise2 {
   width: 269px;
   height: 365px;
 }
 .advertise #advertise2 img {
   margin-bottom: 20px;
-}
-
-.popular-spa {
-  text-align: center;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("../images/home/font1-background.png");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/home/font1-background.png");
-  background-size: cover;
-  padding-bottom: 20px;
-}
-.popular-spa .popular-spa-font-style {
-  font-family: UVNKieuBold;
-  font-size: 50px;
-  font-weight: 600;
-  color: #f9c636;
-  margin: 0;
-}
-.popular-spa > img {
-  padding-bottom: 30px;
-}
-.popular-spa .popular-spa-align .align-border {
-  padding: 0;
-}
-.popular-spa .popular-spa-align .align-border .spa-align {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 0 20px 20px 20px;
-}
-.popular-spa .popular-spa-align .align-border .spa-align .text-style {
-  padding-left: 20px;
-}
-.popular-spa .popular-spa-align .align-border .spa-align .text-style .text1 {
-  color: #fff;
-  margin-bottom: 0;
-}
-.popular-spa .popular-spa-align .align-border .spa-align .text-style .text2 {
-  color: gray;
-  text-align: left;
-}
-.popular-spa .popular-spa-align .align-border .align-items-start {
-  padding-left: 0;
-}
-.popular-spa .popular-spa-align .align-border .align-items-end {
-  padding-right: 0;
 }
 
 .latest-news {
@@ -312,7 +359,7 @@ button.active {
 .latest-news .latest-news-align .latest-news-content .lastest-news-item .lastest-news-item-text .lastest-news-item-text-title {
   font-weight: bold;
   font-family: MyriadProRegular;
-  color: #7b0200;
+  color: black;
 }
 .latest-news .latest-news-align .latest-news-content .lastest-news-item .lastest-news-item-text .lastest-news-item-text-content {
   font-family: Arial;
@@ -333,21 +380,26 @@ button.active {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #ebebeb;
-  padding: 10px 0px;
+  padding: 10px 60px;
+  font-size: 14pt;
+  font-family: Arial;
 }
-.about-massage .row {
+.about-massage .about-massage-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-.about-massage .about-massage-link {
-  padding: 10px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+.about-massage .about-massage-link div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px;
 }
 .about-massage .about-massage-link div p {
   margin: 5px;
@@ -362,27 +414,24 @@ button.active {
 .about-massage .about-massage-link div a li {
   margin: 5px;
 }
-.about-massage .align-column {
-  margin-left: auto;
-}
-.about-massage .align-column .about-massage-info {
+.about-massage .about-massage-info {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   padding: 10px;
 }
-.about-massage .align-column .about-massage-info p {
+.about-massage .about-massage-info p {
   margin: 5px;
 }
-.about-massage .align-column .about-massage-info a {
+.about-massage .about-massage-info a {
   text-decoration: none;
   color: black;
 }
-.about-massage .align-column .about-massage-info a :hover {
+.about-massage .about-massage-info a :hover {
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 764px) {
   .popular-spa {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -442,51 +491,9 @@ button.active {
             flex-direction: column;
   }
 }
-@media (max-width: 992px) {
-  .popular-spa {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .popular-spa .justify-content-start {
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
-  }
-  .popular-spa .justify-content-end {
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
-  }
-  .popular-spa .align-items-start {
-    padding-left: 20px !important;
-  }
-  .popular-spa .align-items-end {
-    padding-right: 20px !important;
-  }
-}
 @media (max-width: 600px) {
-  .title .font-style {
-    padding-top: 43px;
-    font-size: 35px;
-  }
-  .title > .col-button {
-    padding-top: 20px;
-  }
-  .title > .col-button #mien-bac-tab,
-  .title > .col-button #mien-trung-tab,
-  .title > .col-button #mien-nam-tab {
-    font-size: 12px;
+  .container .row > p {
+    padding-top: 15px;
   }
   .searching {
     margin: auto;
@@ -497,31 +504,21 @@ button.active {
   .searching {
     margin: auto;
     margin-bottom: 20px;
+    margin-top: 20px;
   }
-  .advertise .text-end {
+  .latest-topic {
+    margin: auto;
     margin-bottom: 20px;
+  }
+  .advertise {
     text-align: center !important;
-  }
-  .advertise .text-end #advertise1 {
-    margin-right: 20px;
-  }
-}
-@media (max-width: 767px) {
-  .advertise #advertise1 {
-    margin-right: 0 !important;
   }
 }
 @media (max-width: 400px) {
-  .title .font-style {
-    padding-top: 43px;
-    font-size: 30px;
+  .main-content .main-content-overlay .main-content-title {
+    font-size: 14px;
   }
-  .title > .col-button {
-    padding-top: 20px;
-  }
-  .title > .col-button #mien-bac-tab,
-  .title > .col-button #mien-trung-tab,
-  .title > .col-button #mien-nam-tab {
+  .main-content .main-content-overlay .main-content-text {
     font-size: 10px;
   }
 }
