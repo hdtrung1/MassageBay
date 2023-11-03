@@ -407,6 +407,10 @@
 }
 
 @media (max-width: 767px) {
+    .latest-news .latest-news-item-title {
+        text-align: center;
+    }
+        
     .advertise #advertise2 {
         margin-right: 0 !important;
     }
