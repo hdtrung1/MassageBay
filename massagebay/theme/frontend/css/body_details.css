@@ -7,6 +7,15 @@
   font-size: 14px;
 }
 
+.breadcrumb-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">" !important;
+}
+
 @font-face {
   font-family: UVNKieuBold;
   src: url("../fonts/UVNKieu_B.TTF");
@@ -18,8 +27,12 @@
 .content-title > p {
   font-size: 24px;
   color: #7b0200;
+  margin-bottom: 30px;
 }
 
+.main-content .remove-margin {
+  margin: 0;
+}
 .main-content img {
   padding-bottom: 20px;
   width: 100%;
@@ -121,6 +134,10 @@
   color: e1e1e1;
 }
 
+.without-margin {
+  margin: 0 0 14px 0;
+}
+
 .comment-field {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -132,7 +149,7 @@
 .comment-field .comment-input-field {
   width: 100%;
   padding: 3px 15px;
-  margin: 0 10px;
+  margin: 0 0 0 10px;
   height: 45px;
   display: inline-block;
   border: 1px solid #ccc;
@@ -293,6 +310,9 @@
   color: #707070;
   margin: 0;
 }
+.latest-topic .latest-topic-item .latest-topic-item-style .latest-topic-text > p a {
+  text-decoration: none;
+}
 .latest-topic .latest-topic-item .latest-topic-item-style .latest-topic-text > p .text1 {
   color: white;
 }
@@ -357,6 +377,9 @@
           flex-direction: column;
   padding: 10px 20px;
 }
+.latest-news .latest-news-align .latest-news-content .lastest-news-item .lastest-news-item-text a {
+  text-decoration: none;
+}
 .latest-news .latest-news-align .latest-news-content .lastest-news-item .lastest-news-item-text .lastest-news-item-text-title {
   font-weight: bold;
   font-family: MyriadProRegular;
@@ -370,7 +393,6 @@
   background-color: transparent;
   margin-top: 2%;
   height: 50px;
-  width: 370px;
 }
 
 .about-massage {
@@ -409,7 +431,7 @@
   text-decoration: none;
   color: black;
 }
-.about-massage .about-massage-link div a :hover {
+.about-massage .about-massage-link div a:hover {
   text-decoration: underline;
 }
 .about-massage .about-massage-link div a li {
@@ -428,7 +450,7 @@
   text-decoration: none;
   color: black;
 }
-.about-massage .about-massage-info a :hover {
+.about-massage .about-massage-info a:hover {
   text-decoration: underline;
 }
 
@@ -499,6 +521,9 @@
   .searching {
     margin: auto;
     margin-bottom: 20px;
+  }
+  .about-massage {
+    padding: 10px 0;
   }
 }
 @media (max-width: 992px) {

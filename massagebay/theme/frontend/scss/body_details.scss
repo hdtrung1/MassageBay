@@ -6,6 +6,15 @@
     font-size: 14px;
 }
 
+.breadcrumb-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: ">" !important;
+}
+
 @font-face {
     font-family: UVNKieuBold;
     src: url("../fonts/UVNKieu_B.TTF");
@@ -19,9 +28,14 @@
 .content-title>p {
     font-size: 24px;
     color: #7b0200;
+    margin-bottom: 30px;
 }
 
 .main-content {
+    .remove-margin {
+        margin: 0;
+    }
+
     img {
         padding-bottom: 20px;
         width: 100%;
@@ -128,6 +142,10 @@
     color: e1e1e1;
 }
 
+.without-margin {
+    margin: 0 0 14px 0;
+}
+
 .comment-field {
     display: flex;
     align-items: center;
@@ -135,7 +153,7 @@
     .comment-input-field {
         width: 100%;
         padding: 3px 15px;
-        margin: 0 10px;
+        margin: 0 0 0 10px;
         height: 45px;
         display: inline-block;
         border: 1px solid #ccc;
@@ -301,6 +319,9 @@
                 color: #707070;
                 margin: 0;
 
+                a {
+                    text-decoration: none;
+                }
                 .text1 {
                     color: white;
                 }
@@ -352,7 +373,6 @@
             background-size: 100%;
 
             .lastest-news-item {
-                //width: 95%;
                 width: 370px;
                 background-color: #fff;
                 margin: 10px 0px;
@@ -375,6 +395,10 @@
                     flex-direction: column;
                     padding: 10px 20px;
 
+                    a {
+                        text-decoration: none;
+                    }
+
                     .lastest-news-item-text-title {
                         font-weight: bold;
                         font-family: MyriadProRegular;
@@ -393,9 +417,7 @@
         border: 1px solid brown;
         background-color: transparent;
         margin-top: 2%;
-        //padding: 0.2cm 5cm;
         height: 50px;
-        width: 370px;
     }
 }
 
@@ -425,7 +447,7 @@
                 text-decoration: none;
                 color: black;
 
-                :hover {
+                &:hover {
                     text-decoration: underline;
                 }
 
@@ -448,7 +470,7 @@
             text-decoration: none;
             color: black;
 
-            :hover {
+            &:hover {
                 text-decoration: underline;
             }
         }
@@ -513,6 +535,10 @@
         margin: auto;
         margin-bottom: 20px;
     }
+
+    .about-massage {
+        padding: 10px 0;
+    }
 }
 
 @media (max-width: 992px) {
@@ -537,6 +563,7 @@
         .main-content-title{
             font-size: 14px;
         }
+
         .main-content-text {
             font-size: 10px;
         }

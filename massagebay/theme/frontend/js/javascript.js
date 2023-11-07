@@ -22,3 +22,25 @@ function menuMobileFunction() {
         x.style.display = "block";
     }
 }
+
+// resize button width
+const firstLastestNewsItem = document.querySelector('.lastest-news-item');
+
+const button = document.getElementById('latest-news-btn');
+
+function updateButtonWidth() {
+    const itemWidth = firstLastestNewsItem.clientWidth;
+    button.style.width = `${itemWidth}px`;
+}
+updateButtonWidth();
+
+window.addEventListener('resize', updateButtonWidth);
+
+function openMobileMenu() {
+    var mobileMenu = document.getElementById("mobile-menu-content");
+    if (mobileMenu.style.display === "block") {
+        mobileMenu.style.display = "none";
+    } else {
+        mobileMenu.style.display = "block";
+    }
+}
