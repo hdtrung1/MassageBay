@@ -81,6 +81,11 @@
 }
 
 .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 20px 0;
 }
 .pagination a {
@@ -101,6 +106,12 @@
 .pagination > a:active {
   color: #e1e1e1;
   background: none;
+}
+.pagination strong {
+  padding: 6px 10px;
+  margin: 5px;
+  color: #7b0200;
+  background-color: #e1e1e1;
 }
 .pagination .prev,
 .pagination .next {
@@ -336,9 +347,23 @@
   .container .row > p {
     padding-top: 15px;
   }
+  .breadcrumb {
+    margin-top: 14px;
+  }
+  .pagination a, .pagination strong {
+    padding: 4px 8px;
+    margin: 3px;
+  }
+  .pagination > a {
+    margin: 3px 0;
+    padding: 7px 0;
+  }
   .searching {
     margin: auto;
     margin-bottom: 20px;
+  }
+  .about-massage {
+    padding: 10px 0;
   }
 }
 @media (max-width: 992px) {
@@ -372,5 +397,15 @@
   }
   .main-content .main-content-overlay .main-content-text {
     font-size: 10px;
+  }
+}
+@media (max-width: 290px) {
+  .pagination a, .pagination strong {
+    padding: 2px 4px;
+    margin: 2px;
+  }
+  .pagination > a {
+    margin: 2px 0;
+    padding: 9px 0;
   }
 }

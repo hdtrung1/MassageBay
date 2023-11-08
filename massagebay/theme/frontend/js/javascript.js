@@ -1,46 +1,42 @@
-const zaloIcon = document.getElementById('zalo-img');
-const zaloIconHeight = zaloIcon.clientHeight;
-
-const likeBtns = document.querySelectorAll('.like-btn');
-likeBtns.forEach((btn) => {
-    btn.style.height = `${zaloIconHeight}px`;
-});
-
-const shareBtns = document.querySelectorAll('.share-btn');
-shareBtns.forEach((btn) => {
-    btn.style.height = `${zaloIconHeight}px`;
-});
-
-const messageIcon = document.querySelector('.message-icon');
-messageIcon.style.height = `${zaloIconHeight}px`;
-
-function menuMobileFunction() {
-    var x = document.getElementById("link");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
+// Menu mobile
+function menuMobile() {
+    var x = document.getElementsByClassName("link");
+    for (var i = 0; i < x.length; i++) {
+        if (x[i].style.display === "block") {
+            x[i].style.display = "none";
+        } else {
+            x[i].style.display = "block";
+        }
     }
 }
 
-// resize button width
-const firstLastestNewsItem = document.querySelector('.lastest-news-item');
-
-const button = document.getElementById('latest-news-btn');
-
-function updateButtonWidth() {
-    const itemWidth = firstLastestNewsItem.clientWidth;
-    button.style.width = `${itemWidth}px`;
-}
-updateButtonWidth();
-
-window.addEventListener('resize', updateButtonWidth);
-
-function openMobileMenu() {
-    var mobileMenu = document.getElementById("mobile-menu-content");
-    if (mobileMenu.style.display === "block") {
-        mobileMenu.style.display = "none";
+// toggle submenu visibility
+function toggleSubMenu(element) {
+    var submenu = element.nextElementSibling;
+    if (submenu.style.display === "block") {
+        submenu.style.display = "none";
     } else {
-        mobileMenu.style.display = "block";
+        submenu.style.display = "block";
     }
 }
+
+
+// // 3. Menu mobile for home 
+// function menuMobileForHome() {
+//     var x = document.getElementById("linkHome");
+//     if (x.style.display === "block") {
+//         x.style.display = "none";
+//     } else {
+//         x.style.display = "block";
+//     }
+// }
+
+// // toggle submenu visibility
+// function toggleSubMenuForHome(element) {
+//     var submenu = element.nextElementSibling;
+//     if (submenu.style.display === "block") {
+//         submenu.style.display = "none";
+//     } else {
+//         submenu.style.display = "block";
+//     }
+// }

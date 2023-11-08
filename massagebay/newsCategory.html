@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Massage Bay</title>
-    <link rel="stylesheet" href="./theme/frontend/css/header.css" />
+    <link rel="stylesheet" href="./theme/frontend/css/header.css">
     <link rel="stylesheet" href="./theme/frontend/css/body_newsCategory.css">
     <link rel="stylesheet" href="./theme/frontend/css/footer.css">
     <script src="https://kit.fontawesome.com/1c8367bfe7.js" crossorigin="anonymous"></script>
@@ -91,70 +91,47 @@
 
     <!-- Menu for mobile -->
     <div class="topnav">
-        <a href="javascript:void(0);" class="icon" onclick="menuMobileFunction()">
+        <a href="javascript:void(0);" class="icon" onclick="menuMobile()">
             <i class="fa fa-bars"></i>
         </a>
-        <a href="" class="active">Menu</a>
-        <div id="link">
+        <a href="javascript:void(0);" class="active">MASSAGEBAY.XYZ</a>
+        <div class="link" style="display:none;">
             <ul>
-                <li><a href="">
-                        <p>MASSAGEBAY</p>
-                    </a></li>
                 <li>
-                    <a href="">
-                        <p>DIỄN ĐÀN</p>
-                    </a>
-                    <ul>
-                        <li><a href="">
-                                <p>Mục con 1</p>
-                            </a>
-                            <ul>
-                                <li><a href="">
-                                        <p>Mục con 1.1</p>
-                                    </a></li>
-                                <li><a href="">
-                                        <p>Mục con 1.2</p>
-                                    </a></li>
-                                <!-- other submenu -->
+                    <a href="javascript:void(0);" onclick="toggleSubMenu(this)">MASSAGEBAY</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" onclick="toggleSubMenu(this)">DIỄN ĐÀN</a>
+                    <ul style="display:none;">
+                        <li>
+                            <a href="javascript:void(0);" onclick="toggleSubMenu(this)">Mục con 1</a>
+                            <ul style="display:none;">
+                                <li><a href="">Mục con 1.1</a></li>
+                                <li><a href="">Mục con 1.2</a></li>
                             </ul>
                         </li>
-                        <li><a href="">
-                                <p>Mục con 2</p>
-                            </a>
-                            <ul>
-                                <li><a href="">
-                                        <p>Mục con 2.1</p>
-                                    </a></li>
-                                <li><a href="">
-                                        <p>Mục con 2.2</p>
-                                    </a></li>
-                                <!-- other submenu -->
+                        <li>
+                            <a href="javascript:void(0);" onclick="toggleSubMenu(this)">Mục con 2</a>
+                            <ul style="display:none;">
+                                <li><a href="">Mục con 2.1</a></li>
+                                <li><a href="">Mục con 2.2</a></li>
                             </ul>
                         </li>
-                        <!-- other submenu -->
                     </ul>
                 </li>
                 <li>
-                    <a href="">
-                        <p>TIN TỨC</p>
-                    </a>
-                    <ul>
-                        <li><a href="">
-                                <p>Mục con 1</p>
-                            </a></li>
-                        <li><a href="">
-                                <p>Mục con 2</p>
-                            </a></li>
-                        <!-- other submenu -->
+                    <a href="javascript:void(0);" onclick="toggleSubMenu(this)">TIN TỨC</a>
+                    <ul style="display:none;">
+                        <li><a href="">Mục con 1</a></li>
+                        <li><a href="">Mục con 2</a></li>
                     </ul>
                 </li>
-                <li><a href="">
-                        <p>COUPON</p>
-                    </a></li>
-                <li><a href="">
-                        <p>LIÊN HỆ</p>
-                    </a></li>
-                <!-- <li><a href="javascript:void(0);" class="icon" onclick="menuMobileFunction()">&#9776;></a></li> -->
+                <li>
+                    <a href="">COUPON</a>
+                </li>
+                <li>
+                    <a href="">LIÊN HỆ</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -188,7 +165,8 @@
                                 <p class="latest-news-item-title">Tin tức mới nhất</p>
                                 <!--item 1-->
                                 <div class="latest-news-item-align">
-                                    <a href=""><img src="./frontend/images/news-category/latest-item1.png" alt=""></a>
+                                    <a href=""><img src="./theme/frontend/images/news-category/latest-item1.png"
+                                            alt=""></a>
                                     <div class="latest-news-item-text">
                                         <p><b class="latest-news-item-text-title">TRÀNG AN LUXURY</b></p>
                                         <div class="latest-news-item-text-rating">
@@ -215,7 +193,8 @@
                                 </div>
                                 <!--item 2-->
                                 <div class="latest-news-item-align">
-                                    <a href=""><img src="./frontend/images/news-category/latest-item2.png" alt=""></a>
+                                    <a href=""><img src="./theme/frontend/images/news-category/latest-item2.png"
+                                            alt=""></a>
                                     <div class="latest-news-item-text">
                                         <p><b class="latest-news-item-text-title">TRÀNG AN LUXURY</b></p>
                                         <div class="latest-news-item-text-rating">
@@ -242,7 +221,8 @@
                                 </div>
                                 <!--item 3-->
                                 <div class="latest-news-item-align">
-                                    <a href=""><img src="./frontend/images/news-category/latest-item3.png" alt=""></a>
+                                    <a href=""><img src="./theme/frontend/images/news-category/latest-item3.png"
+                                            alt=""></a>
                                     <div class="latest-news-item-text">
                                         <p><b class="latest-news-item-text-title">TRÀNG AN LUXURY</b></p>
                                         <div class="latest-news-item-text-rating">
@@ -269,7 +249,8 @@
                                 </div>
                                 <!--item 4-->
                                 <div class="latest-news-item-align">
-                                    <a href=""><img src="./frontend/images/news-category/latest-item4.png" alt=""></a>
+                                    <a href=""><img src="./theme/frontend/images/news-category/latest-item4.png"
+                                            alt=""></a>
                                     <div class="latest-news-item-text">
                                         <p><b class="latest-news-item-text-title">TRÀNG AN LUXURY</b></p>
                                         <div class="latest-news-item-text-rating">
@@ -301,12 +282,12 @@
                         <div class="pagination">
                             <a href="" class="prev">|&lt;&lt;</a>
                             <div class="page-box">
-                                <a href="">1</a>
-                                <a href="">2</a>
-                                <a href="">3</a>
-                                <a href="">4</a>
-                                <a href="">5</a>
-                                <a href="">6</a>
+                                <a href="#" title="Go to page 1" onclick="setCurrentPage(this)">1</a>
+                                <a href="#" title="Go to page 2" onclick="setCurrentPage(this)">2</a>
+                                <a href="#" title="Go to page 3" onclick="setCurrentPage(this)">3</a>
+                                <a href="#" title="Go to page 4" onclick="setCurrentPage(this)">4</a>
+                                <strong class="index">5</strong>
+                                <a href="#" title="Go to page 6" onclick="setCurrentPage(this)">6</a>
                             </div>
                             <a href="" class="next">&gt;&gt;|</a>
                         </div>
@@ -319,14 +300,15 @@
                         <form action="/tim-kiem" method="GET">
                             <div class="searching-field">
                                 <label for="tu-khoa">Từ khóa</label>
-                                <br />
-                                <input type="text" name="tu-khoa" placeholder="Từ khóa ..." style="width: 90%"
-                                    class="searching-input-field" />
+                                <br>
+                                <input type="text" id="tu-khoa" name="tu-khoa" placeholder="Từ khóa ..."
+                                    style="width: 90%" class="searching-input-field">
                             </div>
                             <div class="searching-field">
                                 <label for="thanh-pho">Thành phố</label>
-                                <br />
-                                <select name="thanh-pho" style="width: 90%" class="searching-select-field">
+                                <br>
+                                <select id="thanh-pho" name="thanh-pho" style="width: 90%"
+                                    class="searching-select-field">
                                     <option value="">
                                         --- Chọn điểm đến ---
                                     </option>
@@ -363,28 +345,28 @@
                         <p>CHỦ ĐỀ MỚI NHẤT</p>
                         <div class="latest-topic-item">
                             <div class="latest-topic-item-style">
-                                <img src="./frontend/images/detail/latest-topic.png" alt="">
+                                <img src="./theme/frontend/images/detail/latest-topic.png" alt="">
                                 <div class="latest-topic-text">
                                     <p><b class="text1">Khu du lịch sinh</b></p>
                                     <p class="text2">Ba Be eco khu du lịch sinh thái</p>
                                 </div>
                             </div>
                             <div class="latest-topic-item-style">
-                                <img src="./frontend/images/detail/latest-topic.png" alt="">
+                                <img src="./theme/frontend/images/detail/latest-topic.png" alt="">
                                 <div class="latest-topic-text">
                                     <p><b class="text1">Khu du lịch sinh</b></p>
                                     <p class="text2">Ba Be eco khu du lịch sinh thái</p>
                                 </div>
                             </div>
                             <div class="latest-topic-item-style">
-                                <img src="./frontend/images/detail/latest-topic.png" alt="">
+                                <img src="./theme/frontend/images/detail/latest-topic.png" alt="">
                                 <div class="latest-topic-text">
                                     <p><b class="text1">Khu du lịch sinh</b></p>
                                     <p class="text2">Ba Be eco khu du lịch sinh thái</p>
                                 </div>
                             </div>
                             <div class="latest-topic-item-style">
-                                <img src="./frontend/images/detail/latest-topic.png" alt="">
+                                <img src="./theme/frontend/images/detail/latest-topic.png" alt="">
                                 <div class="latest-topic-text">
                                     <p><b class="text1">Khu du lịch sinh</b></p>
                                     <p class="text2">Ba Be eco khu du lịch sinh thái</p>
@@ -394,10 +376,10 @@
                     </div>
                     <div class="advertise">
                         <div class="advertise-align">
-                            <a id="advertise2" href=""><img src="./frontend/images/home/advertise-2.png"
-                                    class="img-fluid" alt="advertisement" /></a>
-                            <a id="advertise1" href=""><img src="./frontend/images/home/advertise-1.png"
-                                    class="img-fluid" alt="advertisement" /></a>
+                            <a id="advertise2" href=""><img src="./theme/frontend/images/home/advertise-2.png"
+                                    class="img-fluid" alt="advertisement"></a>
+                            <a id="advertise1" href=""><img src="./theme/frontend/images/home/advertise-1.png"
+                                    class="img-fluid" alt="advertisement"></a>
                         </div>
                     </div>
                 </div>
@@ -491,7 +473,8 @@
             </p>
         </div>
     </footer>
-    <script src="./frontend/js/javascript.js"></script>
+    <script src="./theme/frontend/js/javascript.js"></script>
+    <script src="./theme/frontend/js/newsCategory.js"></script>
 
 </body>
 

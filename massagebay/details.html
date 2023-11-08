@@ -92,83 +92,49 @@
 
     <!-- Menu for mobile -->
     <div class="topnav">
-        <a href="javascript:void(0);" class="icon" onclick="openMobileMenu()">
+        <a href="javascript:void(0);" class="icon" onclick="menuMobile()">
             <i class="fa fa-bars"></i>
         </a>
-        <a href="" class="active">Menu</a>
-        <div id="link">
+        <a href="javascript:void(0);" class="active">MASSAGEBAY.XYZ</a>
+        <div class="link" style="display:none;">
             <ul>
-                <li><a href="">
-                        <p>MASSAGEBAY</p>
-                    </a></li>
                 <li>
-                    <a href="">
-                        <p>DIỄN ĐÀN</p>
-                    </a>
-                    <ul>
-                        <li><a href="">
-                                <p>Mục con 1</p>
-                            </a>
-                            <ul>
-                                <li><a href="">
-                                        <p>Mục con 1.1</p>
-                                    </a></li>
-                                <li><a href="">
-                                        <p>Mục con 1.2</p>
-                                    </a></li>
+                    <a href="javascript:void(0);" onclick="toggleSubMenu(this)">MASSAGEBAY</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" onclick="toggleSubMenu(this)">DIỄN ĐÀN</a>
+                    <ul style="display:none;">
+                        <li>
+                            <a href="javascript:void(0);" onclick="toggleSubMenu(this)">Mục con 1</a>
+                            <ul style="display:none;">
+                                <li><a href="">Mục con 1.1</a></li>
+                                <li><a href="">Mục con 1.2</a></li>
                             </ul>
                         </li>
-                        <li><a href="">
-                                <p>Mục con 2</p>
-                            </a>
-                            <ul>
-                                <li><a href="">
-                                        <p>Mục con 2.1</p>
-                                    </a></li>
-                                <li><a href="">
-                                        <p>Mục con 2.2</p>
-                                    </a></li>
+                        <li>
+                            <a href="javascript:void(0);" onclick="toggleSubMenu(this)">Mục con 2</a>
+                            <ul style="display:none;">
+                                <li><a href="">Mục con 2.1</a></li>
+                                <li><a href="">Mục con 2.2</a></li>
                             </ul>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="">
-                        <p>TIN TỨC</p>
-                    </a>
-                    <ul>
-                        <li><a href="">
-                                <p>Mục con 1</p>
-                            </a></li>
-                        <li><a href="">
-                                <p>Mục con 2</p>
-                            </a></li>
+                    <a href="javascript:void(0);" onclick="toggleSubMenu(this)">TIN TỨC</a>
+                    <ul style="display:none;">
+                        <li><a href="">Mục con 1</a></li>
+                        <li><a href="">Mục con 2</a></li>
                     </ul>
                 </li>
-                <li><a href="">
-                        <p>COUPON</p>
-                    </a></li>
-                <li><a href="">
-                        <p>LIÊN HỆ</p>
-                    </a></li>
+                <li>
+                    <a href="">COUPON</a>
+                </li>
+                <li>
+                    <a href="">LIÊN HỆ</a>
+                </li>
             </ul>
         </div>
-        <!-- <div id="mobile-menu-content">
-            <a href="" class="active">Menu</a>
-            <ul>
-                <li><a href=""><p>MASSAGEBAY</p></a></li>
-                <li>
-                    <a href=""><p>DIỄN ĐÀN</p></a>
-                    <ul>
-                        <li><a href=""><p>Mục con 1</p></a></li>
-                        <li><a href=""><p>Mục con 2</p></a></li>
-                    </ul>
-                </li>
-                <li><a href=""><p>TIN TỨC</p></a></li>
-                <li><a href=""><p>COUPON</p></a></li>
-                <li><a href=""><p>LIÊN HỆ</p></a></li>
-            </ul>
-        </div> -->
     </div>
 
     <!-- Body -->
@@ -536,6 +502,7 @@
         </div>
     </footer>
     <script src="./theme/frontend/js/javascript.js"></script>
+    <script src="./theme/frontend/js/details.js"></script>
 
 </body>
 

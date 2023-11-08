@@ -364,7 +364,7 @@
   width: 100%;
 }
 .latest-news .latest-news-align .latest-news-content .lastest-news-item .lastest-news-item-text {
-  margin-top: 20px;
+  margin: 0 11px 30px 11px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: left;
@@ -375,15 +375,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 10px 20px;
 }
 .latest-news .latest-news-align .latest-news-content .lastest-news-item .lastest-news-item-text a {
   text-decoration: none;
 }
 .latest-news .latest-news-align .latest-news-content .lastest-news-item .lastest-news-item-text .lastest-news-item-text-title {
-  font-weight: bold;
+  font-weight: 950;
   font-family: MyriadProRegular;
   color: black;
+  margin: 20px 0;
 }
 .latest-news .latest-news-align .latest-news-content .lastest-news-item .lastest-news-item-text .lastest-news-item-text-content {
   font-family: Arial;
@@ -427,15 +427,18 @@
 .about-massage .about-massage-link div p {
   margin: 5px;
 }
-.about-massage .about-massage-link div a {
+.about-massage .about-massage-link div ul {
+  list-style-type: disc;
+}
+.about-massage .about-massage-link div ul li {
+  margin: 5px;
+}
+.about-massage .about-massage-link div ul li a {
   text-decoration: none;
   color: black;
 }
-.about-massage .about-massage-link div a:hover {
+.about-massage .about-massage-link div ul li a:hover {
   text-decoration: underline;
-}
-.about-massage .about-massage-link div a li {
-  margin: 5px;
 }
 .about-massage .about-massage-info {
   -webkit-box-flex: 1;
@@ -518,6 +521,9 @@
   .container .row > p {
     padding-top: 15px;
   }
+  .breadcrumb {
+    margin-top: 14px;
+  }
   .searching {
     margin: auto;
     margin-bottom: 20px;
@@ -546,5 +552,10 @@
   }
   .main-content .main-content-overlay .main-content-text {
     font-size: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1171px !important;
   }
 }

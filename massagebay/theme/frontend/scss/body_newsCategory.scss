@@ -91,8 +91,8 @@
 
 // Chuyển trang
 .pagination {
-    // display: flex;
-    // justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
     margin: 20px 0;
 
     a {
@@ -101,16 +101,6 @@
         padding: 6px 10px;
         background-color: #7b0200;
         margin: 5px;
-
-        // &:hover {
-        //     color: #7b0200;
-        //     background-color: #e1e1e1;
-        // }
-
-        // &:first-child {
-        //     padding-left: 0;
-        //     margin-left: 0;
-        // }
 
         &:active {
             color: #7b0200;
@@ -128,6 +118,13 @@
         }
     }
 
+    strong {
+        padding: 6px 10px;
+        margin: 5px;
+        color: #7b0200;
+        background-color: #e1e1e1;
+    }
+
     .prev,
     .next {
         color: #7b0200;
@@ -138,7 +135,6 @@
         padding: 6px 10px;
         margin: 5px;
     }
-
 }
 
 // Tìm kiếm
@@ -385,9 +381,29 @@
         padding-top: 15px;
     }
 
+    .breadcrumb {
+        margin-top: 14px;
+    }
+
+    .pagination {
+        a, strong {
+            padding: 4px 8px; 
+            margin: 3px;
+        }
+
+        >a {
+            margin: 3px 0;
+            padding: 7px 0;
+        }
+    }
+
     .searching {
         margin: auto;
         margin-bottom: 20px;
+    }
+
+    .about-massage {
+        padding: 10px 0;
     }
 }
 
@@ -429,6 +445,20 @@
         }
         .main-content-text {
             font-size: 10px;
+        }
+    }
+}
+
+@media (max-width: 290px) {
+    .pagination {
+        a, strong {
+            padding: 2px 4px; 
+            margin: 2px;
+        }
+
+        >a {
+            margin: 2px 0;
+            padding: 9px 0;
         }
     }
 }
