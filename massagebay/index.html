@@ -91,80 +91,47 @@
 
     <!-- Menu for mobile -->
     <div class="topnav">
-        <a href="javascript:void(0);" class="icon" onclick="menuMobileFunction()">
+        <a href="javascript:void(0);" class="icon" onclick="menuMobile()">
             <i class="fa fa-bars"></i>
-            <script>
-                function menuMobileFunction() {
-                    var x = document.getElementById("link");
-                    if (x.style.display === "block") {
-                        x.style.display = "none";
-                    } else {
-                        x.style.display = "block";
-                    }
-                }
-            </script>
         </a>
-        <a href="" class="active">Menu</a>
-        <div id="link">
+        <a href="javascript:void(0);" class="active">MASSAGEBAY.XYZ</a>
+        <div class="link" style="display:none;">
             <ul>
-                <li><a href="">
-                        <p>MASSAGEBAY</p>
-                    </a></li>
                 <li>
-                    <a href="">
-                        <p>DIỄN ĐÀN</p>
-                    </a>
-                    <ul>
-                        <li><a href="">
-                                <p>Mục con 1</p>
-                            </a>
-                            <ul>
-                                <li><a href="">
-                                        <p>Mục con 1.1</p>
-                                    </a></li>
-                                <li><a href="">
-                                        <p>Mục con 1.2</p>
-                                    </a></li>
-                                <!-- other submenu -->
+                    <a href="javascript:void(0);" onclick="toggleSubMenu(this)">MASSAGEBAY</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" onclick="toggleSubMenu(this)">DIỄN ĐÀN</a>
+                    <ul style="display:none;">
+                        <li>
+                            <a href="javascript:void(0);" onclick="toggleSubMenu(this)">Mục con 1</a>
+                            <ul style="display:none;">
+                                <li><a href="">Mục con 1.1</a></li>
+                                <li><a href="">Mục con 1.2</a></li>
                             </ul>
                         </li>
-                        <li><a href="">
-                                <p>Mục con 2</p>
-                            </a>
-                            <ul>
-                                <li><a href="">
-                                        <p>Mục con 2.1</p>
-                                    </a></li>
-                                <li><a href="">
-                                        <p>Mục con 2.2</p>
-                                    </a></li>
-                                <!-- other submenu -->
+                        <li>
+                            <a href="javascript:void(0);" onclick="toggleSubMenu(this)">Mục con 2</a>
+                            <ul style="display:none;">
+                                <li><a href="">Mục con 2.1</a></li>
+                                <li><a href="">Mục con 2.2</a></li>
                             </ul>
                         </li>
-                        <!-- other submenu -->
                     </ul>
                 </li>
                 <li>
-                    <a href="">
-                        <p>TIN TỨC</p>
-                    </a>
-                    <ul>
-                        <li><a href="">
-                                <p>Mục con 1</p>
-                            </a></li>
-                        <li><a href="">
-                                <p>Mục con 2</p>
-                            </a></li>
-                        <!-- other submenu -->
+                    <a href="javascript:void(0);" onclick="toggleSubMenu(this)">TIN TỨC</a>
+                    <ul style="display:none;">
+                        <li><a href="">Mục con 1</a></li>
+                        <li><a href="">Mục con 2</a></li>
                     </ul>
                 </li>
-                <li><a href="">
-                        <p>COUPON</p>
-                    </a></li>
-                <li><a href="">
-                        <p>LIÊN HỆ</p>
-                    </a></li>
-                <!-- <li><a href="javascript:void(0);" class="icon" onclick="menuMobileFunction()">&#9776;></a></li> -->
+                <li>
+                    <a href="">COUPON</a>
+                </li>
+                <li>
+                    <a href="">LIÊN HỆ</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -219,7 +186,7 @@
                             <div class="massage-item">
                                 <div class="massage-item-image">
                                     <a href="">
-                                        <img src="./theme/sfrontend/images/home/item-1.png" class="img-fluid" alt="item-1">
+                                        <img src="./theme/frontend/images/home/item-1.png" class="img-fluid" alt="item-1">
                                     </a>
                                 </div>
 
@@ -525,14 +492,15 @@
                         <form action="/tim-kiem" method="GET">
                             <div class="searching-field">
                                 <label for="tu-khoa">Từ khóa</label>
-                                <br />
-                                <input type="text" name="tu-khoa" placeholder="Từ khóa ..." style="width: 90%"
-                                    class="searching-input-field" />
+                                <br>
+                                <input type="text" id="tu-khoa" name="tu-khoa" placeholder="Từ khóa ..."
+                                    style="width: 90%" class="searching-input-field">
                             </div>
                             <div class="searching-field">
                                 <label for="thanh-pho">Thành phố</label>
-                                <br />
-                                <select name="thanh-pho" style="width: 90%" class="searching-select-field">
+                                <br>
+                                <select id="thanh-pho" name="thanh-pho" style="width: 90%"
+                                    class="searching-select-field">
                                     <option value="">
                                         --- Chọn điểm đến ---
                                     </option>
@@ -587,7 +555,7 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 align-border">
                     <div class="spa-align d-flex justify-content-start align-items-start">
-                        <img src=".\frontend\images\home\font1-item1.png" alt="" />
+                        <img src="./theme/frontend/images/home/font1-item1.png" alt="" />
                         <div class="text-style">
                             <p class="text1">Spa LuxuryBoss</p>
                             <p class="text2"><i>Vũng Tàu</i></p>
@@ -597,7 +565,7 @@
 
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 align-border">
                     <div class="spa-align d-flex justify-content-center align-items-center">
-                        <img src=".\frontend\images\home\font1-item2.png" alt="" />
+                        <img src="./theme/frontend/images/home/font1-item2.png" alt="" />
                         <div class="text-style">
                             <p class="text1">Spa LuxuryBoss</p>
                             <p class="text2"><i>Vũng Tàu</i></p>
@@ -657,7 +625,7 @@
 
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 align-border">
                     <div class="spa-align d-flex justify-content-center align-items-center">
-                        <img src=".\frontend\images\home\font1-item8.png" alt="" />
+                        <img src="./theme/frontend/images/home/font1-item8.png" alt="" />
                         <div class="text-style">
                             <p class="text1">Spa LuxuryBoss</p>
                             <p class="text2"><i>Vũng Tàu</i></p>
@@ -667,7 +635,7 @@
 
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 align-border">
                     <div class="spa-align d-flex justify-content-end align-items-end">
-                        <img src=".\frontend\images\home\font1-item9.png" alt="" />
+                        <img src="./theme/frontend/images/home/font1-item9.png" alt="" />
                         <div class="text-style">
                             <p class="text1">Spa LuxuryBoss</p>
                             <p class="text2"><i>Vũng Tàu</i></p>
@@ -681,13 +649,13 @@
     <!--Tin tuc moi nhat-->
     <div class="latest-news">
         <p class="latest-news-font-style">Tin tức mới nhất</p>
-        <img src="./frontend/images/home/logo-font-2.png" alt="logo" />
+        <img src="./theme/frontend/images/home/logo-font-2.png" alt="logo" />
         <div class="latest-news-align container">
             <div class="latest-news-content row">
                 <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-start align-items-start">
                     <div class="lastest-news-item">
                         <div class="lastest-news-item-image">
-                            <a href=""><img src="./frontend/images/home/font2-item1.png" class="img-fluid"
+                            <a href=""><img src="./theme/frontend/images/home/font2-item1.png" class="img-fluid"
                                     alt="item1" /></a>
                         </div>
                         <div class="lastest-news-item-text">
@@ -705,7 +673,7 @@
                 <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
                     <div class="lastest-news-item">
                         <div class="lastest-news-item-image">
-                            <a href=""><img src="./frontend/images/home/font2-item2.png" class="img-fluid"
+                            <a href=""><img src="./theme/frontend/images/home/font2-item2.png" class="img-fluid"
                                     alt="item2" /></a>
                         </div>
                         <div class="lastest-news-item-text">
@@ -723,7 +691,7 @@
                 <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-end align-items-end">
                     <div class="lastest-news-item">
                         <div class="lastest-news-item-image">
-                            <a href=""><img src="./frontend/images/home/font2-item3.png" class="img-fluid"
+                            <a href=""><img src="./theme/frontend/images/home/font2-item3.png" class="img-fluid"
                                     alt="item3" /></a>
                         </div>
                         <div class="lastest-news-item-text">

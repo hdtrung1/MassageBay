@@ -42,6 +42,14 @@
   color: black;
   background-color: white;
 }
+.title > .col-button .nav-link:hover, .title > .col-button .nav-link:focus {
+  background-color: transparent !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: none !important;
+  border: none !important;
+  color: black;
+}
 .title > .col-button .nav-link.active {
   border: 1px solid black;
   border-radius: 0;
@@ -472,6 +480,7 @@ button.active {
   .title .font-style {
     padding-top: 43px;
     font-size: 35px;
+    top: -35px !important;
   }
   .title > .col-button {
     padding-top: 20px;

@@ -19,24 +19,3 @@ function toggleSubMenu(element) {
         submenu.style.display = "block";
     }
 }
-
-
-// // 3. Menu mobile for home 
-// function menuMobileForHome() {
-//     var x = document.getElementById("linkHome");
-//     if (x.style.display === "block") {
-//         x.style.display = "none";
-//     } else {
-//         x.style.display = "block";
-//     }
-// }
-
-// // toggle submenu visibility
-// function toggleSubMenuForHome(element) {
-//     var submenu = element.nextElementSibling;
-//     if (submenu.style.display === "block") {
-//         submenu.style.display = "none";
-//     } else {
-//         submenu.style.display = "block";
-//     }
-// }
