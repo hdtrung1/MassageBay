@@ -523,7 +523,7 @@ button.active {
 }
 @media (max-width: 400px) {
   .title .font-style {
-    padding-top: 43px;
+    padding-top: 48px;
     font-size: 30px;
   }
   .title > .col-button {
@@ -533,6 +533,35 @@ button.active {
   .title > .col-button #mien-trung-tab,
   .title > .col-button #mien-nam-tab {
     font-size: 10px;
+  }
+}
+@media (max-width: 360px) {
+  .title .font-style {
+    padding-top: 52px;
+    font-size: 25px;
+  }
+  .title > .col-button {
+    padding-top: 20px;
+  }
+  .title > .col-button #mien-bac-tab,
+  .title > .col-button #mien-trung-tab,
+  .title > .col-button #mien-nam-tab {
+    font-size: 8px;
+  }
+}
+@media (max-width: 320px) {
+  .title .font-style {
+    padding-top: 48px;
+    font-size: 22px;
+  }
+  .title > .col-button {
+    padding-top: 15px;
+  }
+  .title > .col-button #mien-bac-tab,
+  .title > .col-button #mien-trung-tab,
+  .title > .col-button #mien-nam-tab {
+    font-size: 8px;
+    padding: 6px 8px;
   }
 }
 @media (min-width: 1200px) {
