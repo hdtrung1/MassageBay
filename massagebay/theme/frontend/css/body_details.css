@@ -55,52 +55,21 @@
 .content-rating .star-icon .checked {
   color: #f7b208;
 }
-.content-rating .like-btn,
-.content-rating .share-btn {
-  display: inline-block;
-  padding: 5px 1.5px;
-  border: 1px solid #4a67b7;
-  border-radius: 3px;
-  margin-right: 6px;
-  background: #4a67b7;
-  position: relative;
-}
-.content-rating .facebook-like-btn,
-.content-rating .facebook-share-btn {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  top: -5px;
-  position: relative;
-}
-.content-rating .facebook-like-btn i {
-  background: white;
-  color: #3B5998;
-  border: 1px solid #4a67b7;
-  padding: 2px 2px 0 5px;
-  border-radius: 1px;
+.content-rating .like-btn, .content-rating .share-btn, .content-rating .message-icon, .content-rating .zalo-icon {
+  padding: 0px 2px;
 }
 .content-rating .message-icon {
   position: relative;
   display: inline-block;
-  margin-right: 7px;
 }
-.content-rating .message-icon i {
-  font-size: 25px;
-  border: #707070;
-}
-.content-rating .message-icon .message-icon-text {
+.content-rating .message-icon .fb-message-img-text {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-40%, -40%);
+          transform: translate(-40%, -40%);
   font-size: 12px;
   color: black;
-}
-.content-rating .zalo-icon {
-  -o-object-fit: fill;
-     object-fit: fill;
 }
 
 .comment-order {

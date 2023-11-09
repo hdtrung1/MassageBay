@@ -1,17 +1,17 @@
 const zaloIcon = document.getElementById('zalo-img');
 const zaloIconHeight = zaloIcon.clientHeight;
 
-const likeBtns = document.querySelectorAll('.like-btn');
+const likeBtns = document.querySelectorAll('.fb-like-img');
 likeBtns.forEach((btn) => {
     btn.style.height = `${zaloIconHeight}px`;
 });
 
-const shareBtns = document.querySelectorAll('.share-btn');
+const shareBtns = document.querySelectorAll('.fb-share-img');
 shareBtns.forEach((btn) => {
     btn.style.height = `${zaloIconHeight}px`;
 });
 
-const messageIcon = document.querySelector('.message-icon');
+const messageIcon = document.querySelector('.fb-message-img');
 messageIcon.style.height = `${zaloIconHeight}px`;
 
 // resize button width that equals to the width of items

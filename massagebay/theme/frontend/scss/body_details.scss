@@ -59,57 +59,27 @@
         }
     }
 
-    .like-btn,
-    .share-btn {
-        display: inline-block;
-        padding: 5px 1.5px;
-        border: 1px solid #4a67b7;
-        border-radius: 3px;
-        margin-right: 6px;
-        background: #4a67b7;
-        position: relative;
-    }
-
-    .facebook-like-btn,
-    .facebook-share-btn {
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-        top: -5px;
-        position: relative;
-    }
-
-    .facebook-like-btn i {
-        background: white;
-        color: #3B5998;
-        border: 1px solid #4a67b7;
-        padding: 2px 2px 0 5px;
-        border-radius: 1px;
+    .like-btn, .share-btn, .message-icon, .zalo-icon {
+        padding: 0px 2px;
     }
 
     .message-icon {
         position: relative;
         display: inline-block;
-        margin-right: 7px;
 
-        i {
-            font-size: 25px;
-            border: #707070;
-        }
-
-        .message-icon-text {
+        .fb-message-img-text {
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-40%, -40%);
             font-size: 12px;
             color: black;
         }
     }
 
-    .zalo-icon {
-        object-fit: fill;
-    }
+    // .zalo-icon {
+    //     object-fit: fill;
+    // }
 }
 
 
