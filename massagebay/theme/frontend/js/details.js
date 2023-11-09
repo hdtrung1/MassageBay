@@ -26,3 +26,16 @@ function updateButtonWidth() {
 updateButtonWidth();
 
 window.addEventListener('resize', updateButtonWidth);
+
+// resize searching field
+const imgAd = document.querySelector('.advertise');
+
+const searching = document.getElementById('searching');
+
+function updateSearchingWidth() {
+    const searchingWidth = imgAd.clientWidth;
+    searching.style.width = `${searchingWidth}px + 2px`;
+}
+updateSearchingWidth();
+
+window.addEventListener('resize', updateSearchingWidth);
