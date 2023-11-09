@@ -133,12 +133,6 @@ header .logo-image {
   width: 100%;
   z-index: 1000;
 }
-.topnav #linkDetails {
-  display: none;
-}
-.topnav #linkNewsCategory {
-  display: none;
-}
 .topnav a {
   color: white;
   padding: 14px 16px;

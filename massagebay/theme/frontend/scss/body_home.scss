@@ -38,7 +38,8 @@
             color: black;
             background-color: white;
 
-            &:hover, &:focus {
+            &:hover,
+            &:focus {
                 background-color: transparent !important;
                 //border-color: #000;
                 box-shadow: none !important;
@@ -164,7 +165,7 @@ button.active {
             background-size: 0.65rem auto;
             color: #003333;
         }
-        
+
         select option {
             color: #003333;
         }
@@ -531,6 +532,17 @@ button.active {
         }
     }
 
+    .popular-spa {
+        .row {
+            flex-wrap: nowrap;
+            overflow: auto;
+        }
+
+        .spa-align {
+            padding: 0 !important;
+        }
+    }
+
     .searching {
         margin: auto;
         margin-bottom: 20px;
@@ -577,5 +589,11 @@ button.active {
                 font-size: 10px;
             }
         }
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1171px !important;
     }
 }

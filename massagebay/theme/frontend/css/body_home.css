@@ -490,6 +490,14 @@ button.active {
   .title > .col-button #mien-nam-tab {
     font-size: 12px;
   }
+  .popular-spa .row {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow: auto;
+  }
+  .popular-spa .spa-align {
+    padding: 0 !important;
+  }
   .searching {
     margin: auto;
     margin-bottom: 20px;
@@ -525,5 +533,10 @@ button.active {
   .title > .col-button #mien-trung-tab,
   .title > .col-button #mien-nam-tab {
     font-size: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1171px !important;
   }
 }
