@@ -341,17 +341,17 @@ button.active {
                 }
 
                 .lastest-news-item-text {
-                    margin-top: 20px;
+                    margin: 0 11px 30px 11px;
                     box-sizing: border-box;
                     text-align: left;
                     display: flex;
                     flex-direction: column;
-                    padding: 10px 20px;
 
                     .lastest-news-item-text-title {
                         font-weight: bold;
                         font-family: MyriadProRegular;
                         color: #7b0200;
+                        margin: 20px 0;
                     }
 
                     .lastest-news-item-text-content {

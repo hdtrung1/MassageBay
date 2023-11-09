@@ -297,7 +297,7 @@ button.active {
   width: 100%;
 }
 .latest-news .latest-news-align .latest-news-content .lastest-news-item .lastest-news-item-text {
-  margin-top: 20px;
+  margin: 0 11px 30px 11px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: left;
@@ -308,12 +308,12 @@ button.active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 10px 20px;
 }
 .latest-news .latest-news-align .latest-news-content .lastest-news-item .lastest-news-item-text .lastest-news-item-text-title {
   font-weight: bold;
   font-family: MyriadProRegular;
   color: #7b0200;
+  margin: 20px 0;
 }
 .latest-news .latest-news-align .latest-news-content .lastest-news-item .lastest-news-item-text .lastest-news-item-text-content {
   font-family: Arial;
