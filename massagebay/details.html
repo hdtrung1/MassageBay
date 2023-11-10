@@ -102,17 +102,26 @@
                     <a href="javascript:void(0);" onclick="toggleSubMenu(this)">MASSAGEBAY</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0);" onclick="toggleSubMenu(this)">DIỄN ĐÀN</a>
+                    <a href="javascript:void(0);" onclick="toggleSubMenu(this)">
+                        DIỄN ĐÀN
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
                     <ul style="display:none;">
                         <li>
-                            <a href="javascript:void(0);" onclick="toggleSubMenu(this)">Mục con 1</a>
+                            <a href="javascript:void(0);" onclick="toggleSubMenu(this)">
+                                Mục con 1
+                                <i class="fas fa-caret-down"></i>
+                            </a>
                             <ul style="display:none;">
                                 <li><a href="">Mục con 1.1</a></li>
                                 <li><a href="">Mục con 1.2</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="javascript:void(0);" onclick="toggleSubMenu(this)">Mục con 2</a>
+                            <a href="javascript:void(0);" onclick="toggleSubMenu(this)">
+                                Mục con 2
+                                <i class="fas fa-caret-down"></i>
+                            </a>
                             <ul style="display:none;">
                                 <li><a href="">Mục con 2.1</a></li>
                                 <li><a href="">Mục con 2.2</a></li>
@@ -121,7 +130,10 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="javascript:void(0);" onclick="toggleSubMenu(this)">TIN TỨC</a>
+                    <a href="javascript:void(0);" onclick="toggleSubMenu(this)">
+                        TIN TỨC
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
                     <ul style="display:none;">
                         <li><a href="">Mục con 1</a></li>
                         <li><a href="">Mục con 2</a></li>
@@ -212,13 +224,13 @@
                             <div class="share-btn">
                                 <!-- <a href="" class="facebook-share-btn">Share</a> -->
                                 <a href=""><img class="fb-share-img"
-                                    src="./theme/frontend/images/detail/fb-share-icon.png" alt=""></a>
+                                        src="./theme/frontend/images/detail/fb-share-icon.png" alt=""></a>
                             </div>
 
                             <div class="message-icon">
                                 <!-- <i class="far fa-comment-alt"></i> -->
                                 <a href=""><img class="fb-message-img"
-                                    src="./theme/frontend/images/detail/fb-message-icon.png" alt=""></a>
+                                        src="./theme/frontend/images/detail/fb-message-icon.png" alt=""></a>
                                 <div class="fb-message-img-text">243</div>
                             </div>
 
@@ -346,6 +358,17 @@
                                 class="img-fluid" alt="advertisement"></a>
                     </div>
                 </div>
+
+                <!-- Searching for mobile -->
+                <div class="search-container">
+                    <div class="search-button" onclick="toggleSearch()">
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <div id="searchBar" class="search-bar">
+                        <input type="text" placeholder="Search...">
+                        <button type="submit">Search</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -357,7 +380,7 @@
         <div class="latest-news-align container">
             <div class="latest-news-content row">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 d-flex justify-content-start align-items-start">
-                    <div class="lastest-news-item">
+                    <div class="lastest-news-item box-shadow">
                         <div class="lastest-news-item-image">
                             <a href=""><img src="./theme/frontend/images/home/font2-item1.png" class="img-fluid"
                                     alt="item1"></a>
@@ -377,7 +400,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
-                    <div class="lastest-news-item">
+                    <div class="lastest-news-item box-shadow">
                         <div class="lastest-news-item-image">
                             <a href=""><img src="./theme/frontend/images/home/font2-item2.png" class="img-fluid"
                                     alt="item2"></a>
@@ -397,7 +420,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 d-flex justify-content-end align-items-end">
-                    <div class="lastest-news-item">
+                    <div class="lastest-news-item box-shadow">
                         <div class="lastest-news-item-image">
                             <a href=""><img src="./theme/frontend/images/home/font2-item3.png" class="img-fluid"
                                     alt="item3"></a>
@@ -507,7 +530,7 @@
             </p>
         </div>
     </footer>
-    <script src="./theme/frontend/js/javascript.js"></script>
+    <script src="./theme/frontend/js/menuMobile.js"></script>
     <script src="./theme/frontend/js/details.js"></script>
 
 </body>

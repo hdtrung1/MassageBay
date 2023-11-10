@@ -257,6 +257,9 @@ button.active {
 .popular-spa .popular-spa-align .align-border .align-items-end {
   padding-right: 0;
 }
+.popular-spa .popular-spa-align .col-12 {
+  width: 80%;
+}
 
 .latest-news {
   text-align: center;
@@ -443,7 +446,7 @@ button.active {
             flex-direction: column;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .popular-spa {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -474,6 +477,10 @@ button.active {
   }
   .popular-spa .align-items-end {
     padding-right: 20px !important;
+  }
+  .box-shadow {
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0);
   }
 }
 @media (max-width: 600px) {

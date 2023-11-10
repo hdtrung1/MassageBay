@@ -39,3 +39,8 @@ function updateSearchingWidth() {
 updateSearchingWidth();
 
 window.addEventListener('resize', updateSearchingWidth);
+
+function toggleSearch() {
+    var searchBar = document.getElementById("searchBar");
+    searchBar.style.display = (searchBar.style.display === "block") ? "none" : "block";
+}
