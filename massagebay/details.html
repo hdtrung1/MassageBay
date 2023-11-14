@@ -360,17 +360,109 @@
                 </div>
 
                 <!-- Searching for mobile -->
-                <button id="mobile-search" class="mobile-search">
+                <!-- <el-button id="mobile-search" class="mobile-search">
+                    <i class="fa fa-search"></i>
+                </el-button> -->
+                <!-- <el-dialog title="Tips" :visible.sync="dialogVisible" width="30%" :before-close="handleClose">
+                    <p>TÌM KIẾM</p>
+                    <form action="/tim-kiem" method="GET">
+                        <div class="searching-field">
+                            <label for="tu-khoa">Từ khóa</label>
+                            <br>
+                            <input type="text" id="tu-khoa" name="tu-khoa" placeholder="Từ khóa ..." style="width: 90%"
+                                class="searching-input-field">
+                        </div>
+                        <div class="searching-field">
+                            <label for="thanh-pho">Thành phố</label>
+                            <br>
+                            <select id="thanh-pho" name="thanh-pho" style="width: 90%" class="searching-select-field">
+                                <option value="">
+                                    --- Chọn điểm đến ---
+                                </option>
+                                <option value="Hà Nội">Hà Nội</option>
+                                <option value="Hồ Chí Minh">
+                                    Hồ Chí Minh
+                                </option>
+                                <option value="Hải Phòng">Hải Phòng</option>
+                                <option value="Đà Nẵng">Đà Nẵng</option>
+                                <option value="Nha Trang">Nha Trang</option>
+                            </select>
+                        </div>
+                        <div class="searching-rating">
+                            <div class="searching-rating-left">
+                                <label>Rating</label>
+                                <div class="icon">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star unchecked"></span>
+                                </div>
+                            </div>
+                            <div class="searching-rating-right">
+                                <el-button @click type="submit" class="button">
+                                    <i class="fa fa-search"></i>
+                                    </button>
+                            </div>
+                        </div>
+                    </form>
+                </el-dialog> -->
+
+                <button type="button" class="mobile-search" data-bs-toggle="modal" data-bs-target="#searchModal">
                     <i class="fa fa-search"></i>
                 </button>
 
-                <!-- <el-dialog title="Tips" :visible.sync="dialogVisible" width="30%" :before-close="handleClose">
-                    <span>This is a message</span>
-                    <span slot="footer" class="dialog-footer">
-                        <el-button @click="dialogVisible = false">Cancel</el-button>
-                        <el-button type="primary" @click="dialogVisible = false">Confirm</el-button>
-                    </span>
-                </el-dialog> -->
+                <!-- Modal -->
+                <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center" id="searchModalLabel">TÌM KIẾM</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Form tìm kiếm -->
+                                <form action="/tim-kiem" method="GET">
+                                    <div class="mb-3">
+                                        <label for="tu-khoa" class="form-label">Từ khóa</label>
+                                        <input type="text" class="form-control" id="tu-khoa" name="tu-khoa"
+                                            placeholder="Từ khóa...">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="thanh-pho" class="form-label">Thành phố</label>
+                                        <select class="form-select" id="thanh-pho" name="thanh-pho">
+                                            <option value="">--- Chọn điểm đến ---</option>
+                                            <option value="Hà Nội">Hà Nội</option>
+                                            <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                                            <option value="Hải Phòng">Hải Phòng</option>
+                                            <option value="Đà Nẵng">Đà Nẵng</option>
+                                            <option value="Nha Trang">Nha Trang</option>
+                                            <!-- And other cities ... -->
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Rating</label>
+                                        <div class="icon">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star unchecked"></span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit" class="btn"><i class="fa fa-search"></i> Tìm
+                                            kiếm</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </div>

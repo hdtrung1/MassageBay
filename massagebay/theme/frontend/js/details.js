@@ -45,16 +45,18 @@ function toggleSearch() {
     searchBar.style.display = (searchBar.style.display === "block") ? "none" : "block";
 }
 
-document.getElementById('mobile-search').addEventListener('click', function () {
-    document.getElementById('mobile-search').addEventListener('click', function () {
-        var searchDialog = document.getElementById('searching');
-        if (searchDialog.style.display === "none" || searchDialog.style.display === "") {
-            searchDialog.style.display = "block"; 
-        } else {
-            searchDialog.style.display = "none";
-        }
-    });
-});
+// document.getElementById('mobile-search').addEventListener('click', function () {
+//     document.getElementById('mobile-search').addEventListener('click', function () {
+//         var searchDialog = document.getElementById('searching');
+//         if (searchDialog.style.display === "none" || searchDialog.style.display === "") {
+//             searchDialog.style.display = "block"; 
+//         } else {
+//             searchDialog.style.display = "none";
+//         }
+//     });
+// });
+
+var myModal = new bootstrap.Modal(document.getElementById('myModal'), options)
 
 // export default {
 //     data() {

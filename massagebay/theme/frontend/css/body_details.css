@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -257,18 +256,18 @@
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-#searching {
-  display: none; /* Hide the search dialog initially */
-  position: fixed; /* Make it fixed to overlay the content */
-  right: 0;
-  bottom: 0;
-  width: 100%; /* Full width on smaller screens */
-  height: auto;
-  background-color: white; /* Or any color that fits your design */
-  -webkit-box-shadow: -1px 0 5px rgba(0, 0, 0, 0.2);
-          box-shadow: -1px 0 5px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for better visibility */
-  z-index: 999; /* Below the button to allow button interaction */
-  /* Add more styling as needed */
+.modal-body .btn {
+  background-color: #ffb628;
+}
+.modal-body .icon {
+  margin-left: 30px;
+  line-height: 0.8;
+}
+.modal-body .icon .checked {
+  color: rgb(216, 190, 75);
+}
+.modal-body .icon .unchecked {
+  color: #999999;
 }
 
 .latest-topic {
@@ -551,25 +550,6 @@
   }
   .searching {
     display: none;
-  }
-  .mobile-search {
-    display: block;
-  }
-  .searching-popup {
-    display: none; /* Tạo thêm một class cho cửa sổ popup, mặc định là ẩn */
-    position: fixed; /* Hoặc bạn có thể sử dụng absolute tùy thuộc vào layout của bạn */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Màu nền semi-transparent để highlight cửa sổ popup */
-    z-index: 1000; /* Đảm bảo rằng nó nằm trên cùng của các thành phần khác */
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 @media (min-width: 992px) {
