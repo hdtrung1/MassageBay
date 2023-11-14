@@ -12,11 +12,19 @@ function toggleSubMenu(element) {
 
     if (submenu.style.display === "block") {
         submenu.style.display = "none";
-        chevron.classList.remove('fa-chevron-up');
-        caret.classList.remove('fa-caret-up');
+        if (chevron) {
+            chevron.classList.remove('fa-chevron-up');        
+        }
+        if (caret) {
+            caret.classList.remove('fa-caret-up');
+        }
     } else {
         submenu.style.display = "block";
-        chevron.classList.add('fa-chevron-up');
-        caret.classList.add('fa-caret-up');
+        if (chevron) {
+            chevron.classList.add('fa-chevron-up');
+        }
+        if (caret) {
+            caret.classList.add('fa-caret-up');
+        }
     }
 }

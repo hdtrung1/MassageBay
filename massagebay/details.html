@@ -360,15 +360,17 @@
                 </div>
 
                 <!-- Searching for mobile -->
-                <div class="search-container">
-                    <div class="search-button" onclick="toggleSearch()">
-                        <i class="fa fa-search"></i>
-                    </div>
-                    <div id="searchBar" class="search-bar">
-                        <input type="text" placeholder="Search...">
-                        <button type="submit">Search</button>
-                    </div>
-                </div>
+                <button id="mobile-search" class="mobile-search">
+                    <i class="fa fa-search"></i>
+                </button>
+
+                <!-- <el-dialog title="Tips" :visible.sync="dialogVisible" width="30%" :before-close="handleClose">
+                    <span>This is a message</span>
+                    <span slot="footer" class="dialog-footer">
+                        <el-button @click="dialogVisible = false">Cancel</el-button>
+                        <el-button type="primary" @click="dialogVisible = false">Confirm</el-button>
+                    </span>
+                </el-dialog> -->
             </div>
         </div>
     </div>

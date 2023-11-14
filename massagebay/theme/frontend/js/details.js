@@ -44,3 +44,32 @@ function toggleSearch() {
     var searchBar = document.getElementById("searchBar");
     searchBar.style.display = (searchBar.style.display === "block") ? "none" : "block";
 }
+
+document.getElementById('mobile-search').addEventListener('click', function () {
+    document.getElementById('mobile-search').addEventListener('click', function () {
+        var searchDialog = document.getElementById('searching');
+        if (searchDialog.style.display === "none" || searchDialog.style.display === "") {
+            searchDialog.style.display = "block"; 
+        } else {
+            searchDialog.style.display = "none";
+        }
+    });
+});
+
+// export default {
+//     data() {
+//         return {
+//             dialogVisible: false
+//         };
+//     },
+//     methods: {
+//         handleClose(done) {
+//             this.$confirm('Are you sure to close this dialog?')
+//                 .then(_ => {
+//                     done();
+//                 })
+//                 .catch(_ => {});
+//         }
+//     }
+// };
+

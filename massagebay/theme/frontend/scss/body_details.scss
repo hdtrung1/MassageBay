@@ -248,6 +248,34 @@
     }
 }
 
+.mobile-search {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffb628;
+    border: none;
+    border-radius: 50%;
+    width: 50px !important; 
+    height: 50px; 
+    font-size: 20px;
+    color: black;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+// dialog
+// #searching {
+//     display: none; 
+//     position: fixed; 
+//     right: 0;
+//     bottom: 0;
+//     width: 100%; 
+//     height: auto;
+//     background-color: white; 
+//     box-shadow: -1px 0 5px rgba(0, 0, 0, 0.2); 
+//     z-index: 999; 
+// }
+
 // Chủ đề mới nhất
 .latest-topic {
     background-color: black;
@@ -542,7 +570,39 @@
     .box-shadow {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1.19);
     }
+
+    .searching {
+        display: none;
+    }
+
+    .mobile-search {
+        display: block;
+    }
+
+    .searching-popup {
+        display: none; 
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 1000; 
+        justify-content: center;
+        align-items: center;
+    }
 }
+
+@media (min-width: 992px) {
+    .mobile-search {
+        display: none;
+    }
+
+    .searching {
+        display: block;
+    }
+}
+
 
 @media (max-width: 400px) {
     .main-content .main-content-overlay {
@@ -561,48 +621,3 @@
         width: 1171px !important;
     }
 }
-
-// .search-container {
-//     position: fixed;
-//     bottom: 20px;
-//     right: 20px;
-//     z-index: 1000;
-// }
-
-// .search-button {
-//     background-color: #333;
-//     color: #fff;
-//     width: 50px;
-//     height: 50px;
-//     border-radius: 50%;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     cursor: pointer;
-// }
-
-// #searchBar {
-//     display: none;
-//     position: absolute;
-//     bottom: 0;
-//     right: 0;
-//     background-color: #fff;
-//     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-//     padding: 10px;
-//     border-radius: 5px;
-// }
-
-// #searchBar input {
-//     width: 100%;
-//     padding: 8px;
-//     box-sizing: border-box;
-//     margin-bottom: 10px;
-// }
-
-// #searchBar button {
-//     background-color: #333;
-//     color: #fff;
-//     border: none;
-//     padding: 8px 12px;
-//     cursor: pointer;
-// }
